@@ -145,7 +145,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
         projectId: widget.projectId,
         volumeId: volumeId,
         chapterId: chapterId,
-        format: "m4a", // change to "m4a" later
+        format: "m4a",
       );
 
       // 🔹 Load Chapter
@@ -299,27 +299,33 @@ class _PlayerScreenState extends State<PlayerScreen> {
                     language: newLang,
                     textUrl: buildVersesUrl(
                       projectId: widget.projectId,
-                      volumeId: "volume${widget.volumeIndex.toString().padLeft(2, '0')}",
-                      chapterId: "chapter${widget.chapterIndex.toString().padLeft(2, '0')}",
+                      volumeId:
+                      "volume${widget.volumeIndex.toString().padLeft(2, '0')}",
+                      chapterId:
+                      "chapter${widget.chapterIndex.toString().padLeft(2, '0')}",
                       lang: newLang,
                     ),
                     meaningsUrl: buildMeaningsUrl(
                       projectId: widget.projectId,
-                      volumeId: "volume${widget.volumeIndex.toString().padLeft(2, '0')}",
-                      chapterId: "chapter${widget.chapterIndex.toString().padLeft(2, '0')}",
+                      volumeId:
+                      "volume${widget.volumeIndex.toString().padLeft(2, '0')}",
+                      chapterId:
+                      "chapter${widget.chapterIndex.toString().padLeft(2, '0')}",
                       lang: newLang,
                     ),
                     durationsUrl: buildDurationsUrl(
                       projectId: widget.projectId,
-                      volumeId: "volume${widget.volumeIndex.toString().padLeft(2, '0')}",
-                      chapterId: "chapter${widget.chapterIndex.toString().padLeft(2, '0')}",
+                      volumeId:
+                      "volume${widget.volumeIndex.toString().padLeft(2, '0')}",
+                      chapterId:
+                      "chapter${widget.chapterIndex.toString().padLeft(2, '0')}",
                     ),
                   );
                   setState(() {
                     _language = newLang;
                     _chapter = newChapter;
-                    _currentIndex = _indexAtTime(
-                        newChapter.lines, currentPos.inMilliseconds);
+                    _currentIndex =
+                        _indexAtTime(newChapter.lines, currentPos.inMilliseconds);
                   });
                 } catch (e) {
                   debugPrint('⚠️ Failed to load new language $newLang: $e');
@@ -391,9 +397,12 @@ class _PlayerScreenState extends State<PlayerScreen> {
                 final line = sarga.lines[i];
                 final isActive = i == _currentIndex;
 
+                final cfg = configFor(_language);
+
                 final currentMeaningLang =
                 AppSettings.meaningsInVerseLang ? _language : "en";
                 final meaning = line.meanings[currentMeaningLang];
+
                 final displayText =
                 renderVerseText(line.text, _language, isActive);
 
@@ -427,13 +436,13 @@ class _PlayerScreenState extends State<PlayerScreen> {
                         AutoSizeText(
                           displayText,
                           textAlign: TextAlign.center,
-                          maxLines: maxWrapLines(_language,
-                              isActive: isActive),
-                          overflow: TextOverflow.ellipsis,
                           style:
                           verseStyle(_language, isActive: isActive),
                           minFontSize: 12,
                           stepGranularity: 1,
+                          maxLines: maxWrapLines(_language,
+                              isActive: isActive),
+                          overflow: TextOverflow.ellipsis,
                         ),
                         if (_showMeanings &&
                             isActive &&

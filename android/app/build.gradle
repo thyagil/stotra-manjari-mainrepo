@@ -1,0 +1,115 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "dev.flutter.flutter-gradle-plugin"
+}
+
+def keystoreProperties = new Properties()
+def keystorePropertiesFile = rootProject.file("key.properties")
+if (keystorePropertiesFile.exists()) {
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+}
+
+android {
+    namespace "com.amrutham.stotra_manjari"
+    compileSdk 34
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
+    defaultConfig {
+        applicationId "com.amrutham.stotra_manjari"
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion 34
+        versionCode flutter.versionCode
+        versionName flutter.versionName
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        release {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile keystoreProperties['storeFile'] ? file(keystoreProperties['storeFile']) : null
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+        }
+    }
+    afterEvaluate {
+        // Copy APK release
+        tasks.matching { it.name == "assembleRelease" }.all { task ->
+            task.doLast {
+                def src = file("$buildDir/outputs/apk/release/app-release.apk")
+                def destDir = file("${rootProject.projectDir}/../build/app/outputs/flutter-apk")
+                def dest = file("$destDir/app-release.apk")
+
+                if (src.exists()) {
+                    destDir.mkdirs()
+                    copy {
+                        from src
+                        into destDir
+                    }
+                    println("✅ Copied APK to ${dest}")
+                }
+            }
+        }
+
+        // Copy APK debug
+        tasks.matching { it.name == "assembleDebug" }.all { task ->
+            task.doLast {
+                def src = file("$buildDir/outputs/apk/debug/app-debug.apk")
+                def destDir = file("${rootProject.projectDir}/../build/app/outputs/flutter-apk")
+                def dest = file("$destDir/app-debug.apk")
+                if (src.exists()) {
+                    destDir.mkdirs()
+                    copy {
+                        from src
+                        into destDir
+                    }
+                    println("✅ Copied Debug APK to ${dest}")
+                }
+            }
+        }
+
+        // ✅ Copy AAB release
+        tasks.matching { it.name == "bundleRelease" }.all { task ->
+            task.doLast {
+                def src = file("$buildDir/outputs/bundle/release/app-release.aab")
+                def destDir = file("${rootProject.projectDir}/../build/app/outputs/bundle/release")
+                def dest = file("$destDir/app-release.aab")
+                if (src.exists()) {
+                    destDir.mkdirs()
+                    copy {
+                        from src
+                        into destDir
+                    }
+                    println("✅ Copied AAB to ${dest}")
+                }
+            }
+        }
+    }
+
+
+}
+
+flutter {
+    source "../.."
+}
+
+dependencies {
+    implementation "androidx.multidex:multidex:2.0.1"
+}

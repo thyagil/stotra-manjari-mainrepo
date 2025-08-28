@@ -9,7 +9,7 @@ class InputType(Enum):
     FILE = 1
     STRING = 2
 
-from Global.Support.chanda import Chanda
+from scripts.python.Global.Support.chanda import Chanda
 
 BASE_DIR = Path(__file__).resolve().parent
 MAIN_DATA_PATH = BASE_DIR / "data"
@@ -83,6 +83,7 @@ class Translator:
         self.output_directory = ""
         self.do_splits = False
         self.insert_tabandbreak_in_output = True
+        self.skip_lines = 0
 
     @property
     def input_directory(self):
@@ -115,6 +116,14 @@ class Translator:
     @insert_tabandbreak_in_output.setter
     def insert_tabandbreak_in_output(self, value):
         self._insert_tabandbreak_in_output = value
+
+    @property
+    def skip_lines(self):
+        return self._skip_lines
+
+    @skip_lines.setter
+    def skip_lines(self, value):
+        self._skip_lines = value
 
     @property
     def exception_list(self):
@@ -266,7 +275,7 @@ class Translator:
         for k, v in self.mapping_sa:
             line = line.replace(k, v)
 
-        if do_splits:
+        if do_splits and "{b}{t}" not in line:
             line = self.split_line(line)
             print("Split line - " + line)
             SASPLITS = self.read_splits(os.path.join(MAIN_DATA_PATH, 'splits.csv'))
@@ -338,6 +347,7 @@ class Translator:
                 cnt = 0
                 lines_count = len(lines)
                 metasection = False
+                lines_skipped = 0
                 while cnt < lines_count:
                     line = lines[cnt].rstrip()
                     # Metadata section requires special handling
@@ -359,29 +369,35 @@ class Translator:
                         else:
                             outfile.write(line + "\n")
                     else:
-                        out_line = self.do_transliteration(line, input_lang, output_lang, False)
-                        if process_only_dandas:
-                            if not line.strip() == "" and all(
-                                    not line.startswith(elem) for elem in self.exception_list) and any(
-                                line.endswith(elem) for elem in end_exception_list) and not re.match(r'\t', line):
-                                # do some replaces
-                                out_line = self.do_transliteration(line, input_lang, output_lang, do_splits)
+                        if lines_skipped < self.skip_lines:
+                            outfile.write(lines[cnt].rstrip() + "\n")
+                            lines_skipped += 1
                         else:
-                            nextline = ""
-                            if cnt + 1 != lines_count:
-                                nextline = lines[cnt + 1]
-                            nextline_has_tab = False
-                            if nextline.startswith("\t"):
-                                nextline_has_tab = True
-                            if not line.strip() == "" and all(
-                                    not line.startswith(elem) for elem in self.exception_list) and not re.match(r'\t',
-                                                                                                                line) and not nextline_has_tab:
-                                out_line = self.do_transliteration(line, input_lang, output_lang, do_splits)
-                        # write output
+                            line = lines[cnt].rstrip()
+                            out_line = self.do_transliteration(line, input_lang, output_lang, False)
+                            if process_only_dandas:
+                                if not line.strip() == "" and all(
+                                        not line.startswith(elem) for elem in self.exception_list) and any(
+                                    line.endswith(elem) for elem in end_exception_list) and not re.match(r'\t', line):
+                                    # do some replaces
+                                    out_line = self.do_transliteration(line, input_lang, output_lang, do_splits)
+                            else:
+                                nextline = ""
+                                if cnt + 1 != lines_count:
+                                    nextline = lines[cnt + 1]
+                                nextline_has_tab = False
+                                if nextline.startswith("\t"):
+                                    nextline_has_tab = True
+                                if not line.strip() == "" and all(
+                                        not line.startswith(elem) for elem in self.exception_list) and not re.match(r'\t',
+                                                                                                                    line) and not nextline_has_tab:
+                                    out_line = self.do_transliteration(line, input_lang, output_lang, do_splits)
+                            # write output
 
-                        outfile.write(out_line + "\n")
-                    processed_text.append(out_line)
+                            outfile.write(out_line + "\n")
+                            processed_text.append(out_line)
                     cnt += 1
+
             outfile.close()
             processed_text.append("\n")
 

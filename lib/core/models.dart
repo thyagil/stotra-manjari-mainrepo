@@ -2,8 +2,6 @@ import 'dart:convert';
 import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
-// ========== VOLUME INFO ==========
-
 class VolumeInfo {
   final int index; // 1..6
   final String name;
@@ -12,7 +10,6 @@ class VolumeInfo {
 }
 
 // ========== VERSE LINE ==========
-
 class VerseLine {
   final String id;
   final int startMs;
@@ -62,7 +59,6 @@ class VerseLine {
 }
 
 // ========== CHAPTER ==========
-
 class Chapter {
   final String id;
   final String title;
@@ -84,7 +80,7 @@ class Chapter {
     required String textUrl,
     required String meaningsUrl,
     required String durationsUrl,
-    bool loadMeanings = true,      // 👈 new optional flag
+    bool loadMeanings = true,
   }) async {
     // --- Verses ---
     final textRes = await http.get(Uri.parse(textUrl));
@@ -132,29 +128,23 @@ class Chapter {
     required String durationsText,
   }) {
     // --- Verses ---
-    final allVerseLines = const LineSplitter()
-        .convert(stripBom(versesText));
-
-    int startIndex =
-    allVerseLines.indexWhere((line) => line.trim() == "--END METADATA");
+    final allVerseLines = const LineSplitter().convert(stripBom(versesText));
+    int startIndex = allVerseLines.indexWhere((line) => line.trim() == "--END METADATA");
     if (startIndex == -1) startIndex = -1;
 
     final verseLines = allVerseLines
-        .skip(startIndex + 1) // 👈 skip metadata
+        .skip(startIndex + 1)
         .map((e) => e.trim())
         .where((e) => e.isNotEmpty)
         .toList();
 
     // --- Meanings ---
-    final allMeaningLines = const LineSplitter()
-        .convert(stripBom(meaningsText));
-
-    int mStartIndex =
-    allMeaningLines.indexWhere((line) => line.trim() == "--END METADATA");
+    final allMeaningLines = const LineSplitter().convert(stripBom(meaningsText));
+    int mStartIndex = allMeaningLines.indexWhere((line) => line.trim() == "--END METADATA");
     if (mStartIndex == -1) mStartIndex = -1;
 
     final meaningLines = allMeaningLines
-        .skip(mStartIndex + 1) // 👈 skip metadata
+        .skip(mStartIndex + 1)
         .map((e) => e.trimRight())
         .where((e) => e.isNotEmpty)
         .toList();
@@ -191,7 +181,6 @@ class Chapter {
       if (i < timings.length) {
         (startMs, endMs) = timings[i];
       } else {
-        // fallback sequential timing
         startMs = (i == 0) ? 0 : lines.last.endMs;
         endMs = startMs + 2000;
       }
@@ -217,18 +206,14 @@ class Chapter {
     );
   }
 
-
-  /* --------------------- Utility: strip BOM ------------------------- */
   static String stripBom(String s) {
     const bom = '\uFEFF';
     return s.startsWith(bom) ? s.substring(1) : s;
   }
 
-  /* --------------------- Utility: parse times ----------------------- */
   static int? _parseTimeToMs(String raw) {
     final v = raw.trim().replaceAll('"', '').replaceAll("'", '');
 
-    // fraction form: e.g. 316316/30000s
     final frac = RegExp(r'^(\d+)\s*/\s*(\d+)\s*s?$');
     final m1 = frac.firstMatch(v);
     if (m1 != null) {
@@ -238,11 +223,9 @@ class Chapter {
       return ((num * 1000) / den).round();
     }
 
-    // simple seconds: e.g. 12s
     final secs = RegExp(r'^(\d+)\s*s$').firstMatch(v);
     if (secs != null) return int.parse(secs.group(1)!) * 1000;
 
-    // plain integer (milliseconds)
     if (RegExp(r'^\d+$').hasMatch(v)) return int.parse(v);
 
     return null;

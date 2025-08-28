@@ -2,7 +2,7 @@ name: stotra_manjari
 description: "A new Flutter project."
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-version: 1.0.0+1
+version: 1.0.0+5
 
 environment:
   sdk: ^3.9.0
@@ -11,28 +11,38 @@ dependencies:
   flutter:
     sdk: flutter
   path_provider: ^2.1.4
-
-  cupertino_icons: ^1.0.8
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  path_provider: ^2.1.4
   http: ^1.2.2
-  just_audio: ^0.9.38
-  audio_session: ^0.1.16
+
+  # Audio-related
+  just_audio: ^0.9.42
+  audio_session: ^0.1.21
+  audio_service: ^0.18.15
+  just_audio_background: ^0.0.1-beta.12
+  rxdart: ^0.27.7
+
+  # UI
   scrollable_positioned_list: ^0.3.8
   auto_size_text: ^3.0.0
+  cupertino_icons: ^1.0.8
+  flutter_launcher_icons: ^0.13.1
 
+dev_dependencies:
   flutter_lints: ^5.0.0
 
-flutter:
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/logo.png"
+  min_sdk_android: 21
 
+  # Optional but recommended:
+  adaptive_icon_background: "#FFFFFF"   # background color for Android adaptive icons
+  adaptive_icon_foreground: "assets/images/logo.png"  # reuse same logo
+
+flutter:
   uses-material-design: true
   assets:
     - assets/images/
-    - assets/metadata/
-
   fonts:
     - family: AmruthamSanskrit
       fonts:

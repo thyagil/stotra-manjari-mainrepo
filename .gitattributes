@@ -1,0 +1,43 @@
+# Ensure consistent line endings
+* text=auto eol=lf
+
+# Dart / Flutter / Code files (force LF)
+*.dart text eol=lf
+*.kt text eol=lf
+*.java text eol=lf
+*.gradle text eol=lf
+*.xml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.json text eol=lf
+*.md text eol=lf
+
+# Shell / config scripts
+*.sh text eol=lf
+*.bash text eol=lf
+*.zsh text eol=lf
+
+# Binary assets (don’t touch line endings)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.mp3 binary
+*.wav binary
+*.mp4 binary
+*.mov binary
+*.otf binary
+*.ttf binary
+
+# Xcode project files (keep them consistent but not normalized)
+*.pbxproj text eol=lf
+
+# Lockfiles (no CRLF conversion)
+pubspec.lock text eol=lf
+Podfile.lock text eol=lf
+package-lock.json text eol=lf
+
+# Git attributes file itself
+.gitattributes text eol=lf

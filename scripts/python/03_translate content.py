@@ -13,6 +13,7 @@ def translate(input_txt_folder, output_txt_folder, lang):
         translator.exception_list = ["title", "--", "detail", "##", "$"]
         translator.input_language = "sa"
         translator.output_language = lang
+        translator.skip_lines = 0
         processed_text = translator.transliterate(True, False, InputType.FILE)
 
 if __name__ == "__main__":
@@ -22,7 +23,7 @@ if __name__ == "__main__":
     # NEVER send out ta for translation
     for lang in langs:
         output_lang = lang
-        input_txt_folder = folders[volume].FLDR_CONTENT_FINAL
+        input_txt_folder = folders[volume].STAGING_FLDR_CONTENT
         if lang == "ta":
             print("CANT send tamil for translations")
             exit()
@@ -30,6 +31,6 @@ if __name__ == "__main__":
             folders[volume].lang = "sa_bt"
         else:
             folders[volume].lang = lang
-        output_txt_folder = folders[volume].FLDR_CONTENT_FINAL
+        output_txt_folder = folders[volume].STAGING_FLDR_CONTENT
         os.makedirs(output_txt_folder, mode=0o777, exist_ok=True)
         translate(input_txt_folder, output_txt_folder, output_lang)
