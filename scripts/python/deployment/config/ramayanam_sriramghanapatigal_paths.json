@@ -1,0 +1,17 @@
+{
+  "base": "/Volumes/AMRUTHAM/Sriram Ghanapatigal/Srimad Ramayanam",
+
+  "staging": {
+    "content": "Video/Mastering/Source Files/DOC/TXT/{volume_code} {volume_name}/Bounces/{lang}/",
+    "audio": "Audio/Bounces/{volume_code} {volume_name}/audio/{audio_format}/",
+    "durations": "Audio/Bounces/{volume_code} {volume_name}/durations/",
+    "meanings": "Video/Mastering/Source Files/DOC/TXT/{volume_code} {volume_name}/Meanings/{lang}/"
+  },
+
+  "source": {
+    "metadata": "Video/Mastering/Source Files/DOC/TXT/{volume_code} {volume_name}/{lang}/",
+    "ppts": "Video/Mastering/Source Files/PPT/{volume_code} {volume_name}/Without Dupes/ta/",
+    "videos": "Video/Bounces/{volume_code} {volume_name}/Published/",
+    "fcpxml": "Video/Mastering/Final Cut Pro/FCPXML/Localized/{volume_code} {volume_name}/"
+  }
+}

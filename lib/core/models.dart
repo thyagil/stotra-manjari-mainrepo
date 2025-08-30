@@ -1,25 +1,291 @@
 import 'dart:convert';
 import 'package:flutter/foundation.dart';
-import 'package:http/http.dart' as http;
+import 'config.dart';  // 👈 brings in baseProjectsRoot
 
-class VolumeInfo {
-  final int index; // 1..6
-  final String name;
-  final int chapterCount;
-  const VolumeInfo(this.index, this.name, this.chapterCount);
+import 'io_helpers.dart';
+import 'url_paths.dart';
+import 'ui_settings.dart';
+
+/// ========== PROJECT SUMMARY ==========
+class ProjectSummary {
+  final String id;
+  final String title;
+  final String subtitle;
+  final String thumbnail;
+  final String banner;     // 👈 NEW
+  final bool isPremium;
+  final bool featured;
+
+  ProjectSummary({
+    required this.id,
+    required this.title,
+    required this.subtitle,
+    required this.thumbnail,
+    required this.banner,   // 👈 NEW
+    required this.isPremium,
+    this.featured = false
+  });
+
+  factory ProjectSummary.fromJson(Map<String, dynamic> json) {
+    final projectId = json['id'] as String? ?? '';
+
+    final coverPath = resolveProjectImage(
+      projectId: projectId,
+      relativePath: json['cover'] as String?,
+    );
+
+    final thumbPath = resolveProjectImage(
+      projectId: projectId,
+      relativePath: json['thumbnail'] as String?,
+    );
+    final bannerPath = resolveProjectImage(
+      projectId: projectId,
+      relativePath: json['banner'] as String?,
+    );
+
+    return ProjectSummary(
+      id: projectId,
+      title: json['title'] as String? ?? '',
+      subtitle: json['subtitle'] as String? ?? '',
+      thumbnail: thumbPath.isNotEmpty ? thumbPath : coverPath,
+      banner: bannerPath.isNotEmpty ? bannerPath : coverPath,
+      isPremium: (json['monetization']?['isPremium'] as bool?) ?? false,
+      featured: json['featured'] as bool? ?? false,   // 👈 safe fallback
+    );
+  }
 }
 
-// ========== VERSE LINE ==========
+
+/// ========== PROJECT METADATA ==========
+class ProjectMetadata {
+  final String id;
+  final String title;
+  final String description;
+  final String type; // "volumeBased" or "single"
+  final List<VolumeSummary> volumes;
+
+  // Optional fields
+  final List<String> categories;
+  final List<String> languages;
+  final List<Contributor> contributors;
+  final List<AudioSample> audioSamples;
+  final bool isPremium;
+  final String cover;
+  final String banner;
+
+  ProjectMetadata({
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.type,
+    required this.volumes,
+    this.categories = const [],
+    this.languages = const [],
+    this.contributors = const [],
+    this.audioSamples = const [],
+    this.isPremium = false,
+    this.cover = "",
+    this.banner = "",
+  });
+
+  factory ProjectMetadata.fromJson(Map<String, dynamic> json) {
+    final projectId = json['id'] as String? ?? json['code'] as String? ?? '';
+
+    return ProjectMetadata(
+      id: projectId,
+      title: json['title'] as String? ?? '',
+      description: json['description'] as String? ?? '',
+      type: json['type'] as String? ?? 'volumeBased',
+      volumes: (json['volumes'] as List<dynamic>? ?? [])
+          .map((v) => VolumeSummary.fromJson(v as Map<String, dynamic>))
+          .toList(),
+      categories: (json['categories'] as List<dynamic>? ?? [])
+          .map((e) => e.toString())
+          .toList(),
+      languages: (json['languages'] as List<dynamic>? ?? [])
+          .map((e) => e.toString())
+          .toList(),
+      contributors: (json['contributors'] as List<dynamic>? ?? [])
+          .map((c) => Contributor.fromJson(c as Map<String, dynamic>))
+          .toList(),
+      audioSamples: (json['audioSamples'] as List<dynamic>? ?? [])
+          .map((a) => AudioSample.fromJson(a as Map<String, dynamic>))
+          .toList(),
+      isPremium: (json['monetization']?['isPremium'] as bool?) ?? false,
+
+      cover: resolveProjectImage(
+        projectId: projectId,
+        relativePath: json['cover'] as String? ?? '',
+      ),
+      banner: resolveProjectImage(
+        projectId: projectId,
+        relativePath: json['banner'] as String? ?? '',
+      ),
+    );
+  }
+}
+
+/// ========== VOLUME METADATA ==========
+class VolumeMetadata {
+  final String id;
+  final String title;
+  final int index;
+  final int chapters;
+  final int state; // 0=hidden, 1=coming soon, 2=enabled
+  final List<ChapterSummary> chaptersList;
+
+  VolumeMetadata({
+    required this.id,
+    required this.title,
+    required this.index,
+    required this.chapters,
+    required this.state,
+    required this.chaptersList,
+  });
+
+  factory VolumeMetadata.fromJson(Map<String, dynamic> json) {
+    return VolumeMetadata(
+      id: json['id'] as String? ?? '',
+      title: json['title'] as String? ?? '',
+      index: json['index'] as int? ?? 0,
+      chapters: json['chapters'] as int? ?? 0,
+      state: json['state'] as int? ?? 2,
+      chaptersList: (json['chaptersList'] as List<dynamic>? ?? [])
+          .map((c) => ChapterSummary.fromJson(c as Map<String, dynamic>))
+          .toList(),
+    );
+  }
+
+  bool get isEnabled => state == 2;
+  bool get isComingSoon => state == 1;
+  bool get isHidden => state == 0;
+}
+
+/// ========== CHAPTER METADATA ==========
+class ChapterMetadata {
+  final String id;
+  final String? volumeId; // optional
+  final String title;
+  final int index;
+  final int state;
+  final String description;
+  final int? verses; // optional placeholder
+
+  ChapterMetadata({
+    required this.id,
+    required this.volumeId,
+    required this.title,
+    required this.index,
+    required this.state,
+    required this.description,
+    this.verses,
+  });
+
+  factory ChapterMetadata.fromJson(Map<String, dynamic> json) {
+    return ChapterMetadata(
+      id: json['id'] as String? ?? '',
+      volumeId: json['volumeId'] as String?,
+      title: json['title'] as String? ?? '',
+      index: json['index'] as int? ?? 0,
+      state: json['state'] as int? ?? 2,
+      description: json['description'] as String? ?? '',
+      verses: json['verses'] as int?,
+    );
+  }
+
+  bool get isEnabled => state == 2;
+  bool get isComingSoon => state == 1;
+  bool get isHidden => state == 0;
+}
+
+/// ========== SUPPORTING SUMMARY CLASSES ==========
+class VolumeSummary {
+  final int index;
+  final String id;
+  final String name;
+  final int chapters;
+  final int state;
+
+  VolumeSummary({
+    required this.index,
+    required this.id,
+    required this.name,
+    required this.chapters,
+    required this.state,
+  });
+
+  factory VolumeSummary.fromJson(Map<String, dynamic> json) {
+    return VolumeSummary(
+      index: json['index'] as int? ?? 0,
+      id: json['id'] as String? ?? '',
+      name: json['name'] as String? ?? '',
+      chapters: json['chapters'] as int? ?? 0,
+      state: json['state'] as int? ?? 2,
+    );
+  }
+}
+
+class ChapterSummary {
+  final int index;
+  final String id;
+  final String title;
+  final int? verses;
+  final int state;
+
+  ChapterSummary({
+    required this.index,
+    required this.id,
+    required this.title,
+    this.verses,
+    required this.state,
+  });
+
+  factory ChapterSummary.fromJson(Map<String, dynamic> json) {
+    return ChapterSummary(
+      index: json['index'] as int? ?? 0,
+      id: json['id'] as String? ?? '',
+      title: json['title'] as String? ?? '',
+      verses: json['verses'] as int?,
+      state: json['state'] as int? ?? 2,
+    );
+  }
+}
+
+class Contributor {
+  final String role;
+  final String name;
+
+  Contributor({required this.role, required this.name});
+
+  factory Contributor.fromJson(Map<String, dynamic> json) {
+    return Contributor(
+      role: json['role'] as String? ?? '',
+      name: json['name'] as String? ?? '',
+    );
+  }
+}
+
+class AudioSample {
+  final String title;
+  final String url;
+
+  AudioSample({required this.title, required this.url});
+
+  factory AudioSample.fromJson(Map<String, dynamic> json) {
+    return AudioSample(
+      title: json['title'] as String? ?? '',
+      url: json['url'] as String? ?? '',
+    );
+  }
+}
+
+/// ========== VERSE LINE ==========
 class VerseLine {
   final String id;
   final int startMs;
   final int endMs;
   final String text;
-
-  /// Meanings stored per language, e.g. {"en": "Meaning in English", "ta": "அர்த்தம்"}
   final Map<String, String> meanings;
-
-  /// Track whether a meaning has been requested (per language)
   final Set<String> requestedLangs;
 
   VerseLine({
@@ -38,27 +304,9 @@ class VerseLine {
     meanings[lang] = value;
     requestedLangs.add(lang);
   }
-
-  VerseLine copyWith({
-    String? id,
-    int? startMs,
-    int? endMs,
-    String? text,
-    Map<String, String>? meanings,
-    Set<String>? requestedLangs,
-  }) {
-    return VerseLine(
-      id: id ?? this.id,
-      startMs: startMs ?? this.startMs,
-      endMs: endMs ?? this.endMs,
-      text: text ?? this.text,
-      meanings: meanings ?? Map.of(this.meanings),
-      requestedLangs: requestedLangs ?? Set.of(this.requestedLangs),
-    );
-  }
 }
 
-// ========== CHAPTER ==========
+/// ========== CHAPTER (Player-Ready) ==========
 class Chapter {
   final String id;
   final String title;
@@ -72,50 +320,51 @@ class Chapter {
     required this.lines,
   });
 
-  /* ------------------------ fromNetwork ------------------------ */
-  static Future<Chapter> fromNetwork({
-    required String id,
-    required String title,
+  static Future<Chapter> fromMetadata({
+    required String projectId,
+    required String volumeId,
+    required ChapterMetadata metadata,
     required String language,
-    required String textUrl,
-    required String meaningsUrl,
-    required String durationsUrl,
-    bool loadMeanings = true,
   }) async {
-    // --- Verses ---
-    final textRes = await http.get(Uri.parse(textUrl));
-    if (textRes.statusCode != 200) {
-      throw Exception("Failed to load verses from $textUrl");
-    }
+    final chapterId = metadata.id;
 
-    // --- Durations ---
-    final durationsRes = await http.get(Uri.parse(durationsUrl));
-    if (durationsRes.statusCode != 200) {
-      throw Exception("Failed to load durations from $durationsUrl");
-    }
+    final versesPath = buildVersesPath(
+      projectId: projectId,
+      volumeId: volumeId,
+      chapterId: chapterId,
+      lang: language,
+    );
+    final durationsPath = buildDurationsPath(
+      projectId: projectId,
+      volumeId: volumeId,
+      chapterId: chapterId,
+    );
+    final meaningsPath = buildMeaningsPath(
+      projectId: projectId,
+      volumeId: volumeId,
+      chapterId: chapterId,
+      lang: language,
+    );
 
-    // --- Meanings (only if enabled, and only English for now) ---
+    final versesText = await loadTextFile(versesPath);
+    final durationsText = await loadTextFile(durationsPath);
+
     String meaningsText = "";
-    if (loadMeanings && language == "en") {
+    if (UISettings.meaningsInVerseLang || language == "en") {
       try {
-        final meaningsRes = await http.get(Uri.parse(meaningsUrl));
-        if (meaningsRes.statusCode == 200) {
-          meaningsText = meaningsRes.body;
-        } else {
-          debugPrint("⚠️ No meanings file at $meaningsUrl, starting empty.");
-        }
+        meaningsText = await loadTextFile(meaningsPath);
       } catch (e) {
-        debugPrint("⚠️ Could not fetch meanings: $e");
+        debugPrint("⚠️ No meanings at $meaningsPath ($e)");
       }
     }
 
     return _parseFromStrings(
-      id: id,
-      title: title,
+      id: metadata.id,
+      title: metadata.title,
       language: language,
-      versesText: textRes.body,
+      versesText: versesText,
       meaningsText: meaningsText,
-      durationsText: durationsRes.body,
+      durationsText: durationsText,
     );
   }
 
@@ -127,10 +376,16 @@ class Chapter {
     required String meaningsText,
     required String durationsText,
   }) {
-    // --- Verses ---
+    print("📥 versesText length = ${versesText.length}");
+    print("📥 First 200 chars of versesText:\n${versesText.substring(0, versesText.length.clamp(0, 200))}");
+
     final allVerseLines = const LineSplitter().convert(stripBom(versesText));
-    int startIndex = allVerseLines.indexWhere((line) => line.trim() == "--END METADATA");
+    print("📥 allVerseLines count = ${allVerseLines.length}");
+
+    int startIndex =
+    allVerseLines.indexWhere((line) => line.trim() == "--END METADATA");
     if (startIndex == -1) startIndex = -1;
+    print("📥 startIndex = $startIndex");
 
     final verseLines = allVerseLines
         .skip(startIndex + 1)
@@ -138,9 +393,11 @@ class Chapter {
         .where((e) => e.isNotEmpty)
         .toList();
 
-    // --- Meanings ---
+    print("📥 verseLines count = ${verseLines.length}");
+
     final allMeaningLines = const LineSplitter().convert(stripBom(meaningsText));
-    int mStartIndex = allMeaningLines.indexWhere((line) => line.trim() == "--END METADATA");
+    int mStartIndex =
+    allMeaningLines.indexWhere((line) => line.trim() == "--END METADATA");
     if (mStartIndex == -1) mStartIndex = -1;
 
     final meaningLines = allMeaningLines
@@ -149,19 +406,16 @@ class Chapter {
         .where((e) => e.isNotEmpty)
         .toList();
 
-    // --- Durations ---
     final durationLines = const LineSplitter()
         .convert(stripBom(durationsText))
         .map((e) => e.trim())
         .where((e) => e.isNotEmpty)
         .toList();
 
-    final timings = <(int startMs, int endMs)>[];
+    final timings = <(int, int)>[];
     for (var i = 0; i < durationLines.length; i++) {
       final row = durationLines[i];
-      if (i == 0 && row.toLowerCase().startsWith("offset,duration")) {
-        continue; // skip header
-      }
+      if (i == 0 && row.toLowerCase().startsWith("offset,duration")) continue;
       final parts = row.split(',');
       if (parts.length < 2) continue;
       final start = _parseTimeToMs(parts[0]);
@@ -170,64 +424,41 @@ class Chapter {
       timings.add((start, start + dur));
     }
 
-    // --- Merge ---
     final lines = <VerseLine>[];
     for (var i = 0; i < verseLines.length; i++) {
       final verse = verseLines[i];
       final meaning = i < meaningLines.length ? meaningLines[i] : "";
+      int startMs =
+      (i < timings.length) ? timings[i].$1 : (i == 0 ? 0 : lines.last.endMs);
+      int endMs =
+      (i < timings.length) ? timings[i].$2 : startMs + 2000;
 
-      int startMs = 0;
-      int endMs = 0;
-      if (i < timings.length) {
-        (startMs, endMs) = timings[i];
-      } else {
-        startMs = (i == 0) ? 0 : lines.last.endMs;
-        endMs = startMs + 2000;
-      }
-
-      lines.add(
-        VerseLine(
-          id: '${i + 1}',
-          startMs: startMs,
-          endMs: endMs,
-          text: verse,
-          meanings: {
-            if (meaning.isNotEmpty) (language == "en" ? "en" : language): meaning,
-          },
-        ),
-      );
+      lines.add(VerseLine(
+        id: '${i + 1}',
+        startMs: startMs,
+        endMs: endMs,
+        text: verse,
+        meanings: {
+          if (meaning.isNotEmpty) (language == "en" ? "en" : language): meaning,
+        },
+      ));
     }
 
-    return Chapter(
-      id: id,
-      title: title,
-      language: language,
-      lines: lines,
-    );
-  }
-
-  static String stripBom(String s) {
-    const bom = '\uFEFF';
-    return s.startsWith(bom) ? s.substring(1) : s;
+    return Chapter(id: id, title: title, language: language, lines: lines);
   }
 
   static int? _parseTimeToMs(String raw) {
     final v = raw.trim().replaceAll('"', '').replaceAll("'", '');
-
-    final frac = RegExp(r'^(\d+)\s*/\s*(\d+)\s*s?$');
-    final m1 = frac.firstMatch(v);
-    if (m1 != null) {
-      final num = int.parse(m1.group(1)!);
-      final den = int.parse(m1.group(2)!);
+    final frac = RegExp(r'^(\d+)\s*/\s*(\d+)\s*s?$').firstMatch(v);
+    if (frac != null) {
+      final num = int.parse(frac.group(1)!);
+      final den = int.parse(frac.group(2)!);
       if (den == 0) return null;
       return ((num * 1000) / den).round();
     }
-
     final secs = RegExp(r'^(\d+)\s*s$').firstMatch(v);
     if (secs != null) return int.parse(secs.group(1)!) * 1000;
-
     if (RegExp(r'^\d+$').hasMatch(v)) return int.parse(v);
-
     return null;
   }
 }

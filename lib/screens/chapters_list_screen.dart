@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import '../core/languages.dart';
-import '../core/project_models.dart';   // now uses new VolumeInfo with chapterCount
-import '../core/volumes_data.dart';     // for loadChapterDescriptions()
+import '../core/models.dart';          // ✅ for VolumeMetadata & ChapterMetadata
+import '../core/project_repository.dart';
 import 'player_screen.dart';
 
 class ChaptersListScreen extends StatefulWidget {
   final String projectId;
-  final VolumeInfo volume;
+  final VolumeMetadata volume;
   final String lang;
 
   const ChaptersListScreen({
@@ -21,13 +21,13 @@ class ChaptersListScreen extends StatefulWidget {
 }
 
 class _ChaptersListScreenState extends State<ChaptersListScreen> {
-  List<String> _descs = [];
   String? _err;
+  late List<ChapterMetadata> _chapters;
 
   @override
   void initState() {
     super.initState();
-    _init();
+    _loadVolumeMetadata();
     currentLang.addListener(_onLangChanged);
   }
 
@@ -43,13 +43,24 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
     }
   }
 
-  Future<void> _init() async {
+  Future<void> _loadVolumeMetadata() async {
     try {
-      _descs = await loadChapterDescriptions(
-        projectId: widget.projectId,
-        volumeIndex: widget.volume.index,
-      );
-      setState(() {});
+      final repo = ProjectRepository();
+      final volumeMeta =
+      await repo.loadVolumeMetadata(widget.projectId, widget.volume.id);
+      setState(() {
+        _chapters = volumeMeta.chaptersList
+            .map((c) => ChapterMetadata(
+          id: c.id,
+          volumeId: volumeMeta.id,
+          title: c.title,
+          index: c.index,
+          state: c.state,
+          description: c.title, // fallback if no desc
+          verses: c.verses,
+        ))
+            .toList();
+      });
     } catch (e) {
       setState(() => _err = e.toString());
     }
@@ -59,7 +70,7 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
   Widget build(BuildContext context) {
     final v = widget.volume;
     return Scaffold(
-      appBar: AppBar(title: Text(v.name)),
+      appBar: AppBar(title: Text(v.title)),
       body: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
@@ -69,15 +80,13 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
         ),
         child: _err != null
             ? Center(child: Text('Failed to load: $_err'))
+            : (_chapters.isEmpty
+            ? const Center(child: CircularProgressIndicator())
             : ListView.builder(
-          itemCount: v.chapterCount,  // ✅ use chapterCount
+          itemCount: _chapters.length,
           padding: const EdgeInsets.all(12),
           itemBuilder: (_, i) {
-            final chapterNum = i + 1;
-            final title = 'Chapter $chapterNum';
-            final desc = (chapterNum - 1 < _descs.length)
-                ? _descs[chapterNum - 1]
-                : '—';
+            final chapter = _chapters[i];
 
             return Card(
               margin: const EdgeInsets.symmetric(vertical: 8),
@@ -89,7 +98,7 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
                 leading: CircleAvatar(
                   backgroundColor: Colors.brown.shade200,
                   child: Text(
-                    '$chapterNum',
+                    '${chapter.index}',
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.black,
@@ -97,7 +106,7 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
                   ),
                 ),
                 title: Text(
-                  title,
+                  chapter.title,
                   style: TextStyle(
                     fontFamily: widget.lang == 'sa'
                         ? 'AmruthamSanskrit'
@@ -110,7 +119,7 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
                   ),
                 ),
                 subtitle: Text(
-                  desc,
+                  chapter.description,
                   maxLines: 2,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
@@ -121,24 +130,25 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
                   ),
                 ),
                 trailing: const Icon(Icons.play_arrow),
-                onTap: () {
+                onTap: chapter.isEnabled
+                    ? () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
                       builder: (_) => PlayerScreen(
                         projectId: widget.projectId,
-                        volumeIndex: v.index,
-                        chapterIndex: chapterNum,
-                        title: 'Chapter $chapterNum',
+                        volumeId: v.id,
+                        chapterMeta: chapter,
                         language: widget.lang,
                       ),
                     ),
                   );
-                },
+                }
+                    : null,
               ),
             );
           },
-        ),
+        )),
       ),
     );
   }

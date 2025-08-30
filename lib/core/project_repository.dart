@@ -1,39 +1,62 @@
 import 'dart:convert';
+import 'package:flutter/services.dart' show rootBundle;
 import 'package:http/http.dart' as http;
+import 'dart:io';
 
-import 'config.dart';            // for baseUrl
-import 'project_models.dart';    // ProjectSummary, ProjectMetadata
+import 'config.dart';
+import 'models.dart';
+import 'metadata_paths.dart';
 
-/// Repository to load stotra projects & their metadata from the server
 class ProjectRepository {
-  /// Load list of available projects from stotras.json
-  Future<List<ProjectSummary>> loadProjects() async {
-    final url = "$baseUrl/stotras.json";
+
+  Future<dynamic> _loadJson(String url) async {
+    print("📥 Fetching $url");
     final response = await http.get(Uri.parse(url));
-
     if (response.statusCode != 200) {
-      throw Exception("❌ Failed to load projects list from $url");
+      throw Exception("❌ Failed to load $url (status ${response.statusCode})");
     }
-
-    final data = jsonDecode(response.body);
-
-    // support both `{ "projects": [ ... ] }` or bare list `[ ... ]`
-    final List<dynamic> rawList =
-    (data is Map<String, dynamic>) ? data["projects"] : data;
-
-    return rawList.map((e) => ProjectSummary.fromJson(e)).toList();
+    try {
+      return jsonDecode(response.body);
+    } catch (e) {
+      throw Exception("❌ Failed to parse JSON from $url: $e");
+    }
   }
 
-  /// Load full metadata for a single project from metadata.json
-  Future<ProjectMetadata> loadMetadata(String projectId) async {
-    final url = "$baseUrl/$projectId/metadata/metadata.json";
-    final response = await http.get(Uri.parse(url));
+  /// 🔹 For Marketplace – lightweight summaries
+  Future<List<ProjectSummary>> loadProjects() async {
+    final data = await _loadJson(MetadataPath.projects());
+    final rawList = (data is Map<String, dynamic>) ? data["projects"] : data;
+    return (rawList as List<dynamic>).map((e) {
+      final meta = ProjectMetadata.fromJson(e);
+      return ProjectSummary(
+        id: meta.id,
+        title: meta.title,
+        subtitle: meta.description, // or subtitle if available
+        thumbnail: meta.cover,
+        banner: meta.banner,
+        isPremium: meta.isPremium,
+        featured: (e["featured"] as bool?) ?? false, // 👈 ADD THIS
+      );
+    }).toList();
+  }
 
-    if (response.statusCode != 200) {
-      throw Exception("❌ Failed to load metadata for $projectId from $url");
-    }
-
-    final data = jsonDecode(response.body);
+  /// 🔹 Full project details (for ProjectBrowserScreen)
+  Future<ProjectMetadata> loadProjectMetadata(String projectId) async {
+    final data = await _loadJson(MetadataPath.project(projectId));
     return ProjectMetadata.fromJson(data);
+  }
+
+  /// 🔹 Volume-level metadata
+  Future<VolumeMetadata> loadVolumeMetadata(String projectId, String volumeId) async {
+    final data = await _loadJson(MetadataPath.volume(projectId, volumeId));
+    return VolumeMetadata.fromJson(data);
+  }
+
+  /// 🔹 Chapter-level metadata
+  Future<ChapterMetadata> loadChapterMetadata(
+      String projectId, String volumeId, String chapterId) async {
+    final data =
+    await _loadJson(MetadataPath.chapter(projectId, volumeId, chapterId));
+    return ChapterMetadata.fromJson(data);
   }
 }
