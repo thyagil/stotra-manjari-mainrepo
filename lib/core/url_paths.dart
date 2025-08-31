@@ -82,16 +82,18 @@ String resolveProjectImage({
   String? relativePath,
 }) {
   if (relativePath == null || relativePath.isEmpty) {
-    print("🖼️ resolveProjectImage($projectId) → empty path");
     return '';
   }
   if (relativePath.startsWith('http')) {
-    print("🖼️ resolveProjectImage($projectId) → already absolute: $relativePath");
-    return relativePath;
+    return relativePath; // already a full URL
   }
 
-  // 👇 FIX: do NOT append projectId again, since relativePath already includes it
-  final url = "$baseProjectsRoot/$relativePath";
-  print("🖼️ resolveProjectImage($projectId) → $url");
-  return url;
+  // ✅ If relativePath already has projectId, don’t add it again
+  if (relativePath.startsWith(projectId)) {
+    return "$baseProjectsRoot/$relativePath";
+  }
+
+  // ✅ Otherwise, prefix with projectId
+  return "$baseProjectsRoot/$projectId/$relativePath";
 }
+

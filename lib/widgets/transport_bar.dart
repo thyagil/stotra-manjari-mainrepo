@@ -2,6 +2,8 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 
+import '../core/ui_settings.dart'; // 👈 so we can access activeTheme.smColors
+
 class TransportBar extends StatefulWidget {
   final AudioPlayer player;
   final void Function(Duration target)? onScrubEnd;
@@ -10,12 +12,18 @@ class TransportBar extends StatefulWidget {
   final bool showMeanings;
   final void Function(bool value)? onToggleMeanings;
 
+  // 👇 new props
+  final Color textColor;
+  final Color toggleOffColor;
+
   const TransportBar({
     super.key,
     required this.player,
     this.onScrubEnd,
     this.showMeanings = true,
     this.onToggleMeanings,
+    this.textColor = Colors.black,
+    this.toggleOffColor = Colors.grey,
   });
 
   @override
@@ -49,10 +57,10 @@ class _TransportBarState extends State<TransportBar> {
 
   @override
   Widget build(BuildContext context) {
+    final smColors = activeTheme.smColors;
+
     final total = _dur.inMilliseconds.toDouble().clamp(1.0, double.infinity);
     final value = _pos.inMilliseconds.toDouble().clamp(0.0, total);
-
-    final colors = Theme.of(context).colorScheme;
 
     return Padding(
       padding: const EdgeInsets.fromLTRB(12, 4, 12, 6),
@@ -64,16 +72,22 @@ class _TransportBarState extends State<TransportBar> {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text(_fmt(_pos),
-                    style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        color: colors.onSurface)),
-                Text(_fmt(_dur),
-                    style: TextStyle(
-                        fontSize: 12,
-                        fontWeight: FontWeight.w700,
-                        color: colors.onSurface)),
+                Text(
+                  _fmt(_pos),
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: smColors.versePlayerControlTextColor, // ✅ themed
+                  ),
+                ),
+                Text(
+                  _fmt(_dur),
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w700,
+                    color: smColors.versePlayerControlTextColor, // ✅ themed
+                  ),
+                ),
               ],
             ),
           ),
@@ -83,6 +97,9 @@ class _TransportBarState extends State<TransportBar> {
             children: [
               Expanded(
                 child: Slider(
+                  activeColor: smColors.versePlayerControlTextColor, // ✅ visible thumb/track
+                  inactiveColor:
+                  smColors.versePlayerControlTextColor.withOpacity(0.3),
                   value: value,
                   min: 0,
                   max: total,
@@ -111,20 +128,16 @@ class _TransportBarState extends State<TransportBar> {
                   margin: const EdgeInsets.only(right: 8),
                   decoration: BoxDecoration(
                     color: widget.showMeanings
-                        ? colors.secondary
-                        : colors.surface,
+                        ? smColors.versePlayerActiveColor // ✅ ON = dark highlight box
+                        : smColors.versePlayerControlToggleOffColor, // ✅ OFF = brown/gold
                     shape: BoxShape.circle,
-                    border: Border.all(
-                      color: colors.secondary,
-                      width: widget.showMeanings ? 0 : 2,
-                    ),
                   ),
                   child: Icon(
                     Icons.menu_book,
                     size: 20,
                     color: widget.showMeanings
-                        ? colors.onSecondary
-                        : colors.secondary,
+                        ? smColors.versePlayerActiveTextColor // ✅ cream text
+                        : smColors.versePlayerControlTextColor, // ✅ readable off
                   ),
                 ),
               ),
@@ -144,13 +157,13 @@ class _TransportBarState extends State<TransportBar> {
                   width: 40,
                   height: 40,
                   decoration: BoxDecoration(
-                    color: colors.primary,
+                    color: smColors.versePlayerActiveColor, // ✅ consistent button color
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
                     widget.player.playing ? Icons.pause : Icons.play_arrow,
                     size: 22,
-                    color: colors.onPrimary,
+                    color: smColors.versePlayerActiveTextColor, // ✅ contrast
                   ),
                 ),
               ),

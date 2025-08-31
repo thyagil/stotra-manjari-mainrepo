@@ -97,7 +97,10 @@ class ProjectMetadata {
       description: json['description'] as String? ?? '',
       type: json['type'] as String? ?? 'volumeBased',
       volumes: (json['volumes'] as List<dynamic>? ?? [])
-          .map((v) => VolumeSummary.fromJson(v as Map<String, dynamic>))
+          .map((v) => VolumeSummary.fromJson({
+        ...v as Map<String, dynamic>,
+        'projectId': projectId, // ✅ inject parent projectId
+          }))
           .toList(),
       categories: (json['categories'] as List<dynamic>? ?? [])
           .map((e) => e.toString())
@@ -202,27 +205,36 @@ class ChapterMetadata {
 class VolumeSummary {
   final int index;
   final String id;
-  final String name;
+  final String title;   // 👈 renamed from name → title
   final int chapters;
   final int state;
+  final String cover; // ✅ add this
 
   VolumeSummary({
     required this.index,
     required this.id,
-    required this.name,
+    required this.title,
     required this.chapters,
     required this.state,
+    this.cover = "", // ✅ default empty string
   });
 
   factory VolumeSummary.fromJson(Map<String, dynamic> json) {
+    final projectId = json['projectId'] as String? ?? "";
+
     return VolumeSummary(
       index: json['index'] as int? ?? 0,
       id: json['id'] as String? ?? '',
-      name: json['name'] as String? ?? '',
+      title: json['title'] as String? ?? '',
       chapters: json['chapters'] as int? ?? 0,
       state: json['state'] as int? ?? 2,
+      cover: resolveProjectImage(              // 👈 important
+        projectId: projectId,
+        relativePath: json['cover'] as String?,
+      ),
     );
   }
+
 }
 
 class ChapterSummary {
