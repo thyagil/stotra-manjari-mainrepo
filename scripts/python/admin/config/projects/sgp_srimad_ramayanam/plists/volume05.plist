@@ -1,0 +1,838 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chapters</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>chapter001</string>
+			<key>index</key>
+			<integer>1</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman's Flight over Ocean</string>
+			<key>title</key>
+			<string>Sarga 1</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter002</string>
+			<key>index</key>
+			<integer>2</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The city of Lanka</string>
+			<key>title</key>
+			<string>Sarga 2</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter003</string>
+			<key>index</key>
+			<integer>3</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman conquers Lanka</string>
+			<key>title</key>
+			<string>Sarga 3</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter004</string>
+			<key>index</key>
+			<integer>4</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman enters the city of Lanka</string>
+			<key>title</key>
+			<string>Sarga 4</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter005</string>
+			<key>index</key>
+			<integer>5</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ravana's palace</string>
+			<key>title</key>
+			<string>Sarga 5</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter006</string>
+			<key>index</key>
+			<integer>6</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Inside the palace</string>
+			<key>title</key>
+			<string>Sarga 6</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter007</string>
+			<key>index</key>
+			<integer>7</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman sees Pushpaka in Ravana's inner city</string>
+			<key>title</key>
+			<string>Sarga 7</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter008</string>
+			<key>index</key>
+			<integer>8</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Description of the Pushpaka</string>
+			<key>title</key>
+			<string>Sarga 8</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter009</string>
+			<key>index</key>
+			<integer>9</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The inner buildings of Ravana's house</string>
+			<key>title</key>
+			<string>Sarga 9</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter010</string>
+			<key>index</key>
+			<integer>10</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman enters Ravana's house</string>
+			<key>title</key>
+			<string>Sarga 10</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter011</string>
+			<key>index</key>
+			<integer>11</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman continues search for Seetha</string>
+			<key>title</key>
+			<string>Sarga 11</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter012</string>
+			<key>index</key>
+			<integer>12</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman's depression</string>
+			<key>title</key>
+			<string>Sarga 12</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter013</string>
+			<key>index</key>
+			<integer>13</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman starts to search in Ashoka garden</string>
+			<key>title</key>
+			<string>Sarga 13</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter014</string>
+			<key>index</key>
+			<integer>14</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman enters the Ashoka garden</string>
+			<key>title</key>
+			<string>Sarga 14</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter015</string>
+			<key>index</key>
+			<integer>15</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman sees Seetha</string>
+			<key>title</key>
+			<string>Sarga 15</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter016</string>
+			<key>index</key>
+			<integer>16</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman's grief at the plight of Seetha</string>
+			<key>title</key>
+			<string>Sarga 16</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter017</string>
+			<key>index</key>
+			<integer>17</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman sees Seetha with ogresses</string>
+			<key>title</key>
+			<string>Sarga 17</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter018</string>
+			<key>index</key>
+			<integer>18</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ravana comes to Seetha</string>
+			<key>title</key>
+			<string>Sarga 18</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter019</string>
+			<key>index</key>
+			<integer>19</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha in Ashoka garden</string>
+			<key>title</key>
+			<string>Sarga 19</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter020</string>
+			<key>index</key>
+			<integer>20</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ravana talks to Seetha</string>
+			<key>title</key>
+			<string>Sarga 20</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter021</string>
+			<key>index</key>
+			<integer>21</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha's reply</string>
+			<key>title</key>
+			<string>Sarga 21</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter022</string>
+			<key>index</key>
+			<integer>22</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ravana gives deadline</string>
+			<key>title</key>
+			<string>Sarga 22</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter023</string>
+			<key>index</key>
+			<integer>23</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ogres frighten Seetha</string>
+			<key>title</key>
+			<string>Sarga 23</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter024</string>
+			<key>index</key>
+			<integer>24</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha's reply to Ogres</string>
+			<key>title</key>
+			<string>Sarga 24</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter025</string>
+			<key>index</key>
+			<integer>25</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha bursts into a wail</string>
+			<key>title</key>
+			<string>Sarga 25</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter026</string>
+			<key>index</key>
+			<integer>26</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha decides to give up life</string>
+			<key>title</key>
+			<string>Sarga 26</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter027</string>
+			<key>index</key>
+			<integer>27</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Trijata's dream</string>
+			<key>title</key>
+			<string>Sarga 27</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter028</string>
+			<key>index</key>
+			<integer>28</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha recollects the time limit</string>
+			<key>title</key>
+			<string>Sarga 28</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter029</string>
+			<key>index</key>
+			<integer>29</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha experiences some good omens</string>
+			<key>title</key>
+			<string>Sarga 29</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter030</string>
+			<key>index</key>
+			<integer>30</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman falls in dilemma</string>
+			<key>title</key>
+			<string>Sarga 30</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter031</string>
+			<key>index</key>
+			<integer>31</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman began to narrate story to Seetha</string>
+			<key>title</key>
+			<string>Sarga 31</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter032</string>
+			<key>index</key>
+			<integer>32</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha is shocked to see Hanuman</string>
+			<key>title</key>
+			<string>Sarga 32</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter033</string>
+			<key>index</key>
+			<integer>33</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha antecedents to Hanuman</string>
+			<key>title</key>
+			<string>Sarga 33</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter034</string>
+			<key>index</key>
+			<integer>34</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman reveals himself to be a messenger</string>
+			<key>title</key>
+			<string>Sarga 34</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter035</string>
+			<key>index</key>
+			<integer>35</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha asks Hanuman to describe the characteristics</string>
+			<key>title</key>
+			<string>Sarga 35</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter036</string>
+			<key>index</key>
+			<integer>36</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman gives Seetha the signet ring sent by Rama</string>
+			<key>title</key>
+			<string>Sarga 36</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter037</string>
+			<key>index</key>
+			<integer>37</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Seetha was both delighted and depressed</string>
+			<key>title</key>
+			<string>Sarga 37</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter038</string>
+			<key>index</key>
+			<integer>38</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman asks Seetha to give him a token of remembrance</string>
+			<key>title</key>
+			<string>Sarga 38</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter039</string>
+			<key>index</key>
+			<integer>39</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>To urge Rama and Lakshmana</string>
+			<key>title</key>
+			<string>Sarga 39</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter040</string>
+			<key>index</key>
+			<integer>40</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman consoles Seetha and travels northward</string>
+			<key>title</key>
+			<string>Sarga 40</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter041</string>
+			<key>index</key>
+			<integer>41</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman thinks to meet Ravana</string>
+			<key>title</key>
+			<string>Sarga 41</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter042</string>
+			<key>index</key>
+			<integer>42</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Female-demons enquire Seetha about Hanuman</string>
+			<key>title</key>
+			<string>Sarga 42</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter043</string>
+			<key>index</key>
+			<integer>43</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman thinks of destroying a sacred sanctuary of demons</string>
+			<key>title</key>
+			<string>Sarga 43</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter044</string>
+			<key>index</key>
+			<integer>44</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ravana sends Jambumali</string>
+			<key>title</key>
+			<string>Sarga 44</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter045</string>
+			<key>index</key>
+			<integer>45</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman kills Prahasta's seven sons</string>
+			<key>title</key>
+			<string>Sarga 45</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter046</string>
+			<key>index</key>
+			<integer>46</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ravana sends five army-generals</string>
+			<key>title</key>
+			<string>Sarga 46</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter047</string>
+			<key>index</key>
+			<integer>47</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ravana sends his son Aksha</string>
+			<key>title</key>
+			<string>Sarga 47</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter048</string>
+			<key>index</key>
+			<integer>48</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ravana sends his son Indrajit</string>
+			<key>title</key>
+			<string>Sarga 48</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter049</string>
+			<key>index</key>
+			<integer>49</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman sees well-adorned Ravana</string>
+			<key>title</key>
+			<string>Sarga 49</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter050</string>
+			<key>index</key>
+			<integer>50</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman declares himself to be a messenger</string>
+			<key>title</key>
+			<string>Sarga 50</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter051</string>
+			<key>index</key>
+			<integer>51</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman narrates the story</string>
+			<key>title</key>
+			<string>Sarga 51</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter052</string>
+			<key>index</key>
+			<integer>52</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ravana orders Hanuman to be killed</string>
+			<key>title</key>
+			<string>Sarga 52</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter053</string>
+			<key>index</key>
+			<integer>53</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Later Ravana orders to set fire to his tail</string>
+			<key>title</key>
+			<string>Sarga 53</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter054</string>
+			<key>index</key>
+			<integer>54</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman makes up his mind to set fire to the city of Lanka</string>
+			<key>title</key>
+			<string>Sarga 54</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter055</string>
+			<key>index</key>
+			<integer>55</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman doubts whether Seetha dies in the fire</string>
+			<key>title</key>
+			<string>Sarga 55</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter056</string>
+			<key>index</key>
+			<integer>56</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman again visits Ashoka garden and sees Seetha</string>
+			<key>title</key>
+			<string>Sarga 56</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter057</string>
+			<key>index</key>
+			<integer>57</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman leaps from Lanka and touches Mount Mainaka</string>
+			<key>title</key>
+			<string>Sarga 57</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter058</string>
+			<key>index</key>
+			<integer>58</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Jambavan requests Hanuman to narrate clearly the happenings</string>
+			<key>title</key>
+			<string>Sarga 58</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter059</string>
+			<key>index</key>
+			<integer>59</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman describes the plight of Seetha to his fellow monkeys</string>
+			<key>title</key>
+			<string>Sarga 59</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter060</string>
+			<key>index</key>
+			<integer>60</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Jambavan's wise guidelines</string>
+			<key>title</key>
+			<string>Sarga 60</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter061</string>
+			<key>index</key>
+			<integer>61</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Monkeys halt at Madhuvana</string>
+			<key>title</key>
+			<string>Sarga 61</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter062</string>
+			<key>index</key>
+			<integer>62</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dadhimukha departs to Kishkindha</string>
+			<key>title</key>
+			<string>Sarga 62</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter063</string>
+			<key>index</key>
+			<integer>63</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dadhimukha reports Madhuvana destruction to Sugreeva</string>
+			<key>title</key>
+			<string>Sarga 63</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter064</string>
+			<key>index</key>
+			<integer>64</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman apprises of the discovery of Seetha</string>
+			<key>title</key>
+			<string>Sarga 64</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter065</string>
+			<key>index</key>
+			<integer>65</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman conveys Seetha's message to Sri Rama</string>
+			<key>title</key>
+			<string>Sarga 65</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter066</string>
+			<key>index</key>
+			<integer>66</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sri Rama urges Hanuman to repeat the words spoken by Seetha</string>
+			<key>title</key>
+			<string>Sarga 66</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter067</string>
+			<key>index</key>
+			<integer>67</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman narrates an incident connected with a crow</string>
+			<key>title</key>
+			<string>Sarga 67</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter068</string>
+			<key>index</key>
+			<integer>68</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Hanuman conveys to Rama that Seetha expressed a grave doubt</string>
+			<key>title</key>
+			<string>Sarga 68</string>
+		</dict>
+	</array>
+	<key>id</key>
+	<string>volume05</string>
+	<key>images</key>
+	<dict>
+		<key>thumbnail</key>
+		<string>thumbnail.png</string>
+	</dict>
+	<key>name</key>
+	<string>Sundara Kandam</string>
+	<key>state</key>
+	<integer>2</integer>
+	<key>subtitle</key>
+	<string>68 Sargas</string>
+</dict>
+</plist>

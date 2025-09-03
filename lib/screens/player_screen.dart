@@ -37,8 +37,8 @@ TextStyle verseStyle(String lang, {bool isActive = false}) {
 
 int maxWrapLines(String lang, {bool isActive = false}) {
   final cfg = configFor(lang);
-  if (cfg.wrapAlways) return 2;
-  return isActive ? 2 : 1;
+  if (cfg.wrapAlways) return 3;
+  return isActive ? 3 : 2;
 }
 
 String renderVerseText(String raw, String lang, bool isActive) {
@@ -54,7 +54,7 @@ String renderVerseText(String raw, String lang, bool isActive) {
 class PlayerScreen extends StatefulWidget {
   final String projectId;
   final String volumeId;
-  final ChapterMetadata chapterMeta;
+  final ChapterSummary chapterMeta;
   final String language;
 
   const PlayerScreen({

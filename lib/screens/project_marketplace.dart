@@ -156,7 +156,7 @@ class _ProjectMarketplaceScreenState extends State<ProjectMarketplaceScreen> {
                       crossAxisCount: 2,
                       mainAxisSpacing: 6,
                       crossAxisSpacing: 6,
-                      mainAxisExtent: 320,
+                      mainAxisExtent: 330,
                     ),
                     itemBuilder: (context, index) {
                       final project = filteredProjects[index];
@@ -173,7 +173,7 @@ class _ProjectMarketplaceScreenState extends State<ProjectMarketplaceScreen> {
   }
 
   Widget _buildFeaturedCard(BuildContext context, ProjectSummary project, int index) {
-    final imageUrl = project.banner.isNotEmpty ? project.banner : project.thumbnail;
+    final imageUrl = project.banner.isNotEmpty ? project.banner : project.cover;
 
     return GestureDetector(
       onTap: () => _openProject(project),
@@ -247,7 +247,7 @@ class _ProjectMarketplaceScreenState extends State<ProjectMarketplaceScreen> {
                     AspectRatio(
                       aspectRatio: 3 / 4,
                       child: Image.network(
-                        project.thumbnail,
+                        project.cover,
                         fit: BoxFit.cover,
                         width: double.infinity,
                         errorBuilder: (_, __, ___) => Icon(

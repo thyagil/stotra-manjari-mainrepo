@@ -1,0 +1,68 @@
+{
+  "id": "svj_lalitha_sahasranamam",
+  "friendly_name": "Lalitha Sahasranamam",
+  "type": "audiobook",
+  "format": "standalone",
+  "description": "Rendering of Lalitha Sahasranamam by Sivananada Vijayalakshmi",
+  "artist": "Sivananda Vijayalakshmi",
+  "category": [
+    "Stotram",
+    "Lalitha Devi",
+    "Sahasranamam"
+  ],
+  "languages": [
+    "sa",
+    "ta",
+    "en"
+  ],
+  "contributors": [
+    {
+      "role": "Singing",
+      "name": "Sivananda Vijayalakshmi"
+    }
+  ],
+  "overview": "A superb rendering of Lalitha Sahasranamam",
+  "preview": "A thousand names on the Divine Mother",
+  "images": {
+    "cover": "cover.jpg",
+    "banner": "banner.png"
+  },
+  "app_status": {
+    "featured": true,
+    "published": false,
+    "monetization": {
+      "isPremium": false,
+      "currency": "USD",
+      "price": 29.99
+    }
+  },
+  "deployment": {
+    "working": {
+      "root_dir": "/Volumes/WORKBENCH/assets/projects/sgp_srimad_ramayanam/"
+    },
+    "staging": {
+      "root_dir": "/Volumes/WORKBENCH/stotra-manjari/staging/sgp_srimad_ramayanam"
+    },
+    "production": {
+      "root_dir": "/Volumes/web/stotra-manjari-assets/projects/sgp_srimad_ramayanam"
+    }
+  },
+  "structure": {
+    "volumes": [
+      {
+        "id": "volume01",
+        "name": "Lalitha Sahasranamam",
+        "subtitle": "",
+        "chapters": [
+          {
+            "id": "chapter001",
+            "index": 1,
+            "title": "Lalitha Sahasranamam",
+            "subtitle": "Opening",
+            "state": 2
+          }
+        ]
+      }
+    ]
+  }
+}

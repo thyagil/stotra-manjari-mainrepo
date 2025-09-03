@@ -1,0 +1,3916 @@
+{
+  "id": "sgp_srimad_ramayanam",
+  "friendly_name": "Srimad Ramayanam",
+  "type": "audiobook",
+  "description": "Rendering of Srimad Valmiki Ramayanam by Sriram Ghanapatigal",
+  "artist": "Brahmasri Sriram Ghanapatigal",
+  "category": [
+    "Purana",
+    "Ramayana"
+  ],
+  "languages": [
+    "sa",
+    "ta",
+    "en"
+  ],
+  "contributors": [
+    {
+      "role": "Chanting",
+      "name": "Brahmasri Sriram Ghanapatigal"
+    },
+    {
+      "role": "Scholar",
+      "name": "Brahmasri H. Sitarama Murthy"
+    }
+  ],
+  "overview": "A comprehensive chanting of Srimad Valmiki Ramayanam with multiple language support.",
+  "preview": "Selected excerpts from the Bala Kandam recitation.",
+  "images": {
+    "cover": "cover.jpg",
+    "banner": "banner.png"
+  },
+  "app_status": {
+    "featured": true,
+    "published": false,
+    "monetization": {
+      "isPremium": false,
+      "currency": "USD",
+      "price": 29.99
+    }
+  },
+  "deployment": {
+    "working": {
+      "root_dir": "/Volumes/WORKBENCH/assets/projects/sgp_srimad_ramayanam/"
+    },
+    "staging": {
+      "root_dir": "/Volumes/WORKBENCH/stotra-manjari/staging/sgp_srimad_ramayanam"
+    },
+    "production": {
+      "root_dir": "/Volumes/web/stotra-manjari-assets/projects/sgp_srimad_ramayanam"
+    }
+  },
+  "structure": {
+    "volumes": [
+      {
+        "chapters": [
+          {
+            "id": "chapter001",
+            "index": 1,
+            "state": 2,
+            "subtitle": "Sage Narada Meets Valmiki",
+            "title": "Sarga 1"
+          },
+          {
+            "id": "chapter002",
+            "index": 2,
+            "state": 2,
+            "subtitle": "Brahma Visits Valmiki",
+            "title": "Sarga 2"
+          },
+          {
+            "id": "chapter003",
+            "index": 3,
+            "state": 2,
+            "subtitle": "Valmiki Composes Ramayana",
+            "title": "Sarga 3"
+          },
+          {
+            "id": "chapter004",
+            "index": 4,
+            "state": 2,
+            "subtitle": "The Song of Ramayana",
+            "title": "Sarga 4"
+          },
+          {
+            "id": "chapter005",
+            "index": 5,
+            "state": 2,
+            "subtitle": "The City of Ayodhya",
+            "title": "Sarga 5"
+          },
+          {
+            "id": "chapter006",
+            "index": 6,
+            "state": 2,
+            "subtitle": "Splendor of Ayodhya",
+            "title": "Sarga 6"
+          },
+          {
+            "id": "chapter007",
+            "index": 7,
+            "state": 2,
+            "subtitle": "Ministers of Dasaratha",
+            "title": "Sarga 7"
+          },
+          {
+            "id": "chapter008",
+            "index": 8,
+            "state": 2,
+            "subtitle": "Vedic Rituals for Progeny",
+            "title": "Sarga 8"
+          },
+          {
+            "id": "chapter009",
+            "index": 9,
+            "state": 2,
+            "subtitle": "Legend of Sage Rishyasringa",
+            "title": "Sarga 9"
+          },
+          {
+            "id": "chapter010",
+            "index": 10,
+            "state": 2,
+            "subtitle": "Rishyasringa enticed",
+            "title": "Sarga 10"
+          },
+          {
+            "id": "chapter011",
+            "index": 11,
+            "state": 2,
+            "subtitle": "Rishyasringa arrives in Ayodhya",
+            "title": "Sarga 11"
+          },
+          {
+            "id": "chapter012",
+            "index": 12,
+            "state": 2,
+            "subtitle": "Preparations for Ashvamedha",
+            "title": "Sarga 12"
+          },
+          {
+            "id": "chapter013",
+            "index": 13,
+            "state": 2,
+            "subtitle": "The Ashwamedha Sacrifice",
+            "title": "Sarga 13"
+          },
+          {
+            "id": "chapter014",
+            "index": 14,
+            "state": 2,
+            "subtitle": "The Putrakameshti Ritual",
+            "title": "Sarga 14"
+          },
+          {
+            "id": "chapter015",
+            "index": 15,
+            "state": 2,
+            "subtitle": "Rishyasringa Presides",
+            "title": "Sarga 15"
+          },
+          {
+            "id": "chapter016",
+            "index": 16,
+            "state": 2,
+            "subtitle": "The Divine Porridge",
+            "title": "Sarga 16"
+          },
+          {
+            "id": "chapter017",
+            "index": 17,
+            "state": 2,
+            "subtitle": "Brahma’s order to the Gods",
+            "title": "Sarga 17"
+          },
+          {
+            "id": "chapter018",
+            "index": 18,
+            "state": 2,
+            "subtitle": "The birth of Dasaratha’s sons",
+            "title": "Sarga 18"
+          },
+          {
+            "id": "chapter019",
+            "index": 19,
+            "state": 2,
+            "subtitle": "Arrival of Sage Vishwamitra in Ayodhya",
+            "title": "Sarga 19"
+          },
+          {
+            "id": "chapter020",
+            "index": 20,
+            "state": 2,
+            "subtitle": "Dasaratha’s unwillingness to send Rama",
+            "title": "Sarga 20"
+          },
+          {
+            "id": "chapter021",
+            "index": 21,
+            "state": 2,
+            "subtitle": "The Anger of Vishwamitra",
+            "title": "Sarga 21"
+          },
+          {
+            "id": "chapter022",
+            "index": 22,
+            "state": 2,
+            "subtitle": "Rama & Lakshmana go with Vishwamitra",
+            "title": "Sarga 22"
+          },
+          {
+            "id": "chapter023",
+            "index": 23,
+            "state": 2,
+            "subtitle": "The sojourn alongside Ganga & Sarayu",
+            "title": "Sarga 23"
+          },
+          {
+            "id": "chapter024",
+            "index": 24,
+            "state": 2,
+            "subtitle": "The Legend of Tataka",
+            "title": "Sarga 24"
+          },
+          {
+            "id": "chapter025",
+            "index": 25,
+            "state": 2,
+            "subtitle": "The Legend of Tataka Contd.",
+            "title": "Sarga 25"
+          },
+          {
+            "id": "chapter026",
+            "index": 26,
+            "state": 2,
+            "subtitle": "The killing of Tataka",
+            "title": "Sarga 26"
+          },
+          {
+            "id": "chapter027",
+            "index": 27,
+            "state": 2,
+            "subtitle": "Vishwamitra gives Rama divine weapons",
+            "title": "Sarga 27"
+          },
+          {
+            "id": "chapter028",
+            "index": 28,
+            "state": 2,
+            "subtitle": "Vishwamitra teaches Rama use of weaponry",
+            "title": "Sarga 28"
+          },
+          {
+            "id": "chapter029",
+            "index": 29,
+            "state": 2,
+            "subtitle": "Legend of Lord Vamana",
+            "title": "Sarga 29"
+          },
+          {
+            "id": "chapter030",
+            "index": 30,
+            "state": 2,
+            "subtitle": "Rama & Lakshmana guard Vishwamitra's sacrifice altar",
+            "title": "Sarga 30"
+          },
+          {
+            "id": "chapter031",
+            "index": 31,
+            "state": 2,
+            "subtitle": "Travel to the City of Mythila",
+            "title": "Sarga 31"
+          },
+          {
+            "id": "chapter032",
+            "index": 32,
+            "state": 2,
+            "subtitle": "The Legend of Kusanabha",
+            "title": "Sarga 32"
+          },
+          {
+            "id": "chapter033",
+            "index": 33,
+            "state": 2,
+            "subtitle": "The Legend of Brahmadatta",
+            "title": "Sarga 33"
+          },
+          {
+            "id": "chapter034",
+            "index": 34,
+            "state": 2,
+            "subtitle": "The Legend of Vishwamitra's ancestry",
+            "title": "Sarga 34"
+          },
+          {
+            "id": "chapter035",
+            "index": 35,
+            "state": 2,
+            "subtitle": "The Legend of River Ganga",
+            "title": "Sarga 35"
+          },
+          {
+            "id": "chapter036",
+            "index": 36,
+            "state": 2,
+            "subtitle": "The Legend of Uma and her curse",
+            "title": "Sarga 36"
+          },
+          {
+            "id": "chapter037",
+            "index": 37,
+            "state": 2,
+            "subtitle": "The Legend of Kartikeya",
+            "title": "Sarga 37"
+          },
+          {
+            "id": "chapter038",
+            "index": 38,
+            "state": 2,
+            "subtitle": "The Legend of Emperor Sagara",
+            "title": "Sarga 38"
+          },
+          {
+            "id": "chapter039",
+            "index": 39,
+            "state": 2,
+            "subtitle": "Sagara's sons search the sacrificial horse",
+            "title": "Sarga 39"
+          },
+          {
+            "id": "chapter040",
+            "index": 40,
+            "state": 2,
+            "subtitle": "Sage Kapila burns the sons of Sagara",
+            "title": "Sarga 40"
+          },
+          {
+            "id": "chapter041",
+            "index": 41,
+            "state": 2,
+            "subtitle": "Anshuman goes in search of the horse",
+            "title": "Sarga 41"
+          },
+          {
+            "id": "chapter042",
+            "index": 42,
+            "state": 2,
+            "subtitle": "King Bhageeratha's effort to bring Ganga to Earth",
+            "title": "Sarga 42"
+          },
+          {
+            "id": "chapter043",
+            "index": 43,
+            "state": 2,
+            "subtitle": "River Ganga descent onto Earth",
+            "title": "Sarga 43"
+          },
+          {
+            "id": "chapter044",
+            "index": 44,
+            "state": 2,
+            "subtitle": "Brahma commends Bhageeratha",
+            "title": "Sarga 44"
+          },
+          {
+            "id": "chapter045",
+            "index": 45,
+            "state": 2,
+            "subtitle": "The churning of the Milky Ocean",
+            "title": "Sarga 45"
+          },
+          {
+            "id": "chapter046",
+            "index": 46,
+            "state": 2,
+            "subtitle": "Diti seeks a son to kill Indra",
+            "title": "Sarga 46"
+          },
+          {
+            "id": "chapter047",
+            "index": 47,
+            "state": 2,
+            "subtitle": "The Legend of the seven Maruts",
+            "title": "Sarga 47"
+          },
+          {
+            "id": "chapter048",
+            "index": 48,
+            "state": 2,
+            "subtitle": "The Legend of Ahalya",
+            "title": "Sarga 48"
+          },
+          {
+            "id": "chapter049",
+            "index": 49,
+            "state": 2,
+            "subtitle": "The redemption of Ahalya",
+            "title": "Sarga 49"
+          },
+          {
+            "id": "chapter050",
+            "index": 50,
+            "state": 2,
+            "subtitle": "The redemption of Ahalya Contd.",
+            "title": "Sarga 50"
+          },
+          {
+            "id": "chapter051",
+            "index": 51,
+            "state": 2,
+            "subtitle": "The Legend of Vishwamitra",
+            "title": "Sarga 51"
+          },
+          {
+            "id": "chapter052",
+            "index": 52,
+            "state": 2,
+            "subtitle": "The Legend of Vishwamitra Contd.",
+            "title": "Sarga 52"
+          },
+          {
+            "id": "chapter053",
+            "index": 53,
+            "state": 2,
+            "subtitle": "Vishwamitra wants Kamadhenu",
+            "title": "Sarga 53"
+          },
+          {
+            "id": "chapter054",
+            "index": 54,
+            "state": 2,
+            "subtitle": "Kamadhenu fights back",
+            "title": "Sarga 54"
+          },
+          {
+            "id": "chapter055",
+            "index": 55,
+            "state": 2,
+            "subtitle": "Vishwamitra ruins Vasishta's hermitage",
+            "title": "Sarga 55"
+          },
+          {
+            "id": "chapter056",
+            "index": 56,
+            "state": 2,
+            "subtitle": "Vasishta nullifies Vishwamitra's weapons",
+            "title": "Sarga 56"
+          },
+          {
+            "id": "chapter057",
+            "index": 57,
+            "state": 2,
+            "subtitle": "The Legend of Trisanku",
+            "title": "Sarga 57"
+          },
+          {
+            "id": "chapter058",
+            "index": 58,
+            "state": 2,
+            "subtitle": "Trishanku seeks protection of Vishwamitra",
+            "title": "Sarga 58"
+          },
+          {
+            "id": "chapter059",
+            "index": 59,
+            "state": 2,
+            "subtitle": "The curse on the sons of Vashishta",
+            "title": "Sarga 59"
+          },
+          {
+            "id": "chapter060",
+            "index": 60,
+            "state": 2,
+            "subtitle": "The ascension of Trishanku to heaven",
+            "title": "Sarga 60"
+          },
+          {
+            "id": "chapter061",
+            "index": 61,
+            "state": 2,
+            "subtitle": "The Legend of Shunashepa",
+            "title": "Sarga 61"
+          },
+          {
+            "id": "chapter062",
+            "index": 62,
+            "state": 2,
+            "subtitle": "The sacrifical offering of King Ambarisha",
+            "title": "Sarga 62"
+          },
+          {
+            "id": "chapter063",
+            "index": 63,
+            "state": 2,
+            "subtitle": "The banishment of Menaka",
+            "title": "Sarga 63"
+          },
+          {
+            "id": "chapter064",
+            "index": 64,
+            "state": 2,
+            "subtitle": "Vishvamitra curses Rambha",
+            "title": "Sarga 64"
+          },
+          {
+            "id": "chapter065",
+            "index": 65,
+            "state": 2,
+            "subtitle": "Vishwamita becomes Brahmarishi",
+            "title": "Sarga 65"
+          },
+          {
+            "id": "chapter066",
+            "index": 66,
+            "state": 2,
+            "subtitle": "The Legend of Shiva's bow",
+            "title": "Sarga 66"
+          },
+          {
+            "id": "chapter067",
+            "index": 67,
+            "state": 2,
+            "subtitle": "Rama breaks Shiva's bow",
+            "title": "Sarga 67"
+          },
+          {
+            "id": "chapter068",
+            "index": 68,
+            "state": 2,
+            "subtitle": "Janaka invites Dasaratha to Mythila",
+            "title": "Sarga 68"
+          },
+          {
+            "id": "chapter069",
+            "index": 69,
+            "state": 2,
+            "subtitle": "The meeting of Dasaratha and Janaka in Mythila",
+            "title": "Sarga 69"
+          },
+          {
+            "id": "chapter070",
+            "index": 70,
+            "state": 2,
+            "subtitle": "The Lineage of Ishvaaku",
+            "title": "Sarga 70"
+          },
+          {
+            "id": "chapter071",
+            "index": 71,
+            "state": 2,
+            "subtitle": "The Lineage of Janaka",
+            "title": "Sarga 71"
+          },
+          {
+            "id": "chapter072",
+            "index": 72,
+            "state": 2,
+            "subtitle": "The marriage alliances of Bharata and Shatrughna",
+            "title": "Sarga 72"
+          },
+          {
+            "id": "chapter073",
+            "index": 73,
+            "state": 2,
+            "subtitle": "The marriage of Dasaratha's sons",
+            "title": "Sarga 73"
+          },
+          {
+            "id": "chapter074",
+            "index": 74,
+            "state": 2,
+            "subtitle": "The arrival of Parasurama",
+            "title": "Sarga 74"
+          },
+          {
+            "id": "chapter075",
+            "index": 75,
+            "state": 2,
+            "subtitle": "Legends of the Shiva and Vishnu bows",
+            "title": "Sarga 75"
+          },
+          {
+            "id": "chapter076",
+            "index": 76,
+            "state": 2,
+            "subtitle": "Pride of Parashurama broken",
+            "title": "Sarga 76"
+          },
+          {
+            "id": "chapter077",
+            "index": 77,
+            "state": 2,
+            "subtitle": "The return to Ayodhya",
+            "title": "Sarga 77"
+          }
+        ],
+        "id": "volume01",
+        "images": {
+          "thumbnail": "thumbnail.png"
+        },
+        "name": "Bala Kandam",
+        "state": 2,
+        "subtitle": "77 Sargas"
+      },
+      {
+        "chapters": [
+          {
+            "id": "chapter001",
+            "index": 1,
+            "state": 2,
+            "subtitle": "Rama",
+            "title": "Sarga 1"
+          },
+          {
+            "id": "chapter002",
+            "index": 2,
+            "state": 2,
+            "subtitle": "Dasaratha's Desire",
+            "title": "Sarga 2"
+          },
+          {
+            "id": "chapter003",
+            "index": 3,
+            "state": 2,
+            "subtitle": "Preparing for the Ceremony",
+            "title": "Sarga 3"
+          },
+          {
+            "id": "chapter004",
+            "index": 4,
+            "state": 2,
+            "subtitle": "Dasaratha's Premonition",
+            "title": "Sarga 4"
+          },
+          {
+            "id": "chapter005",
+            "index": 5,
+            "state": 2,
+            "subtitle": "Festivities in Ayodhya",
+            "title": "Sarga 5"
+          },
+          {
+            "id": "chapter006",
+            "index": 6,
+            "state": 2,
+            "subtitle": "Joy of a City",
+            "title": "Sarga 6"
+          },
+          {
+            "id": "chapter007",
+            "index": 7,
+            "state": 2,
+            "subtitle": "The Wicked Manthara",
+            "title": "Sarga 7"
+          },
+          {
+            "id": "chapter008",
+            "index": 8,
+            "state": 2,
+            "subtitle": "Manthara's Sinful Words",
+            "title": "Sarga 8"
+          },
+          {
+            "id": "chapter009",
+            "index": 9,
+            "state": 2,
+            "subtitle": "Manthara's Success in Poisoning Kaikeyi's Mind",
+            "title": "Sarga 9"
+          },
+          {
+            "id": "chapter010",
+            "index": 10,
+            "state": 2,
+            "subtitle": "Kaikeyi Enters the House of Wrath",
+            "title": "Sarga 10"
+          },
+          {
+            "id": "chapter011",
+            "index": 11,
+            "state": 2,
+            "subtitle": "Kaikeyi's Evil Boons",
+            "title": "Sarga 11"
+          },
+          {
+            "id": "chapter012",
+            "index": 12,
+            "state": 2,
+            "subtitle": "Dasaratha’s Reaction and Kaikeyi’s Adamant Nature",
+            "title": "Sarga 12"
+          },
+          {
+            "id": "chapter013",
+            "index": 13,
+            "state": 2,
+            "subtitle": "Dasaratha's Grief and Anguish",
+            "title": "Sarga 13"
+          },
+          {
+            "id": "chapter014",
+            "index": 14,
+            "state": 2,
+            "subtitle": "The Night Passes",
+            "title": "Sarga 14"
+          },
+          {
+            "id": "chapter015",
+            "index": 15,
+            "state": 2,
+            "subtitle": "Sumantra Arrives at Rama's Chambers",
+            "title": "Sarga 15"
+          },
+          {
+            "id": "chapter016",
+            "index": 16,
+            "state": 2,
+            "subtitle": "Jubilant City of Ayodhya",
+            "title": "Sarga 16"
+          },
+          {
+            "id": "chapter017",
+            "index": 17,
+            "state": 2,
+            "subtitle": "Rama's Arrival at Royal Court",
+            "title": "Sarga 17"
+          },
+          {
+            "id": "chapter018",
+            "index": 18,
+            "state": 2,
+            "subtitle": "Kaikeyi's Harsh Words",
+            "title": "Sarga 18"
+          },
+          {
+            "id": "chapter019",
+            "index": 19,
+            "state": 2,
+            "subtitle": "Rama Decides to Leave for Forest",
+            "title": "Sarga 19"
+          },
+          {
+            "id": "chapter020",
+            "index": 20,
+            "state": 2,
+            "subtitle": "Kausalya's Grief",
+            "title": "Sarga 20"
+          },
+          {
+            "id": "chapter021",
+            "index": 21,
+            "state": 2,
+            "subtitle": "Rama Consoles Angry Lakshmana",
+            "title": "Sarga 21"
+          },
+          {
+            "id": "chapter022",
+            "index": 22,
+            "state": 2,
+            "subtitle": "Rama Tries to Pacify Lakshmana Further",
+            "title": "Sarga 22"
+          },
+          {
+            "id": "chapter023",
+            "index": 23,
+            "state": 2,
+            "subtitle": "Lakshmana's Angry Words",
+            "title": "Sarga 23"
+          },
+          {
+            "id": "chapter024",
+            "index": 24,
+            "state": 2,
+            "subtitle": "Rama Obtains Kausalya's Permission",
+            "title": "Sarga 24"
+          },
+          {
+            "id": "chapter025",
+            "index": 25,
+            "state": 2,
+            "subtitle": "Kausalya Bids Farewell to Rama",
+            "title": "Sarga 25"
+          },
+          {
+            "id": "chapter026",
+            "index": 26,
+            "state": 2,
+            "subtitle": "Rama Lets Sita Know of King's Wish",
+            "title": "Sarga 26"
+          },
+          {
+            "id": "chapter027",
+            "index": 27,
+            "state": 2,
+            "subtitle": "Sita's Wish to Go to Forest Along",
+            "title": "Sarga 27"
+          },
+          {
+            "id": "chapter028",
+            "index": 28,
+            "state": 2,
+            "subtitle": "Rama Warns Sita of Difficulties",
+            "title": "Sarga 28"
+          },
+          {
+            "id": "chapter029",
+            "index": 29,
+            "state": 2,
+            "subtitle": "Sita's Insistence on Going to the Forest",
+            "title": "Sarga 29"
+          },
+          {
+            "id": "chapter030",
+            "index": 30,
+            "state": 2,
+            "subtitle": "Rama Agrees to Take Sita to the Forest",
+            "title": "Sarga 30"
+          },
+          {
+            "id": "chapter031",
+            "index": 31,
+            "state": 2,
+            "subtitle": "Lakshmana Also Permitted to Go",
+            "title": "Sarga 31"
+          },
+          {
+            "id": "chapter032",
+            "index": 32,
+            "state": 2,
+            "subtitle": "Rama Distributes Wealth to Rishis",
+            "title": "Sarga 32"
+          },
+          {
+            "id": "chapter033",
+            "index": 33,
+            "state": 2,
+            "subtitle": "Rama Pays Respects to His Father",
+            "title": "Sarga 33"
+          },
+          {
+            "id": "chapter034",
+            "index": 34,
+            "state": 2,
+            "subtitle": "Rama Consoles Dasaratha",
+            "title": "Sarga 34"
+          },
+          {
+            "id": "chapter035",
+            "index": 35,
+            "state": 2,
+            "subtitle": "Sumantra Rails at Kaikeyi",
+            "title": "Sarga 35"
+          },
+          {
+            "id": "chapter036",
+            "index": 36,
+            "state": 2,
+            "subtitle": "Siddhartha Tries to Persuade Kaikeyi",
+            "title": "Sarga 36"
+          },
+          {
+            "id": "chapter037",
+            "index": 37,
+            "state": 2,
+            "subtitle": "Kaikeyi Offers Tree Bark to Sita",
+            "title": "Sarga 37"
+          },
+          {
+            "id": "chapter038",
+            "index": 38,
+            "state": 2,
+            "subtitle": "Dasaratha Is Enraged",
+            "title": "Sarga 38"
+          },
+          {
+            "id": "chapter039",
+            "index": 39,
+            "state": 2,
+            "subtitle": "Rama Seeks Blessings of His Mother",
+            "title": "Sarga 39"
+          },
+          {
+            "id": "chapter040",
+            "index": 40,
+            "state": 2,
+            "subtitle": "Rama's Departure from Ayodhya",
+            "title": "Sarga 40"
+          },
+          {
+            "id": "chapter041",
+            "index": 41,
+            "state": 2,
+            "subtitle": "The Grief",
+            "title": "Sarga 41"
+          },
+          {
+            "id": "chapter042",
+            "index": 42,
+            "state": 2,
+            "subtitle": "Dasaratha Feels Dejected",
+            "title": "Sarga 42"
+          },
+          {
+            "id": "chapter043",
+            "index": 43,
+            "state": 2,
+            "subtitle": "Lamentation of Kausalya",
+            "title": "Sarga 43"
+          },
+          {
+            "id": "chapter044",
+            "index": 44,
+            "state": 2,
+            "subtitle": "Sumitra Assuages Kausalya's Grief",
+            "title": "Sarga 44"
+          },
+          {
+            "id": "chapter045",
+            "index": 45,
+            "state": 2,
+            "subtitle": "Rama Requests Citizens to Return",
+            "title": "Sarga 45"
+          },
+          {
+            "id": "chapter046",
+            "index": 46,
+            "state": 2,
+            "subtitle": "Rama Spends Night by Tāmāśa River",
+            "title": "Sarga 46"
+          },
+          {
+            "id": "chapter047",
+            "index": 47,
+            "state": 2,
+            "subtitle": "Citizens Rebuke Themselves",
+            "title": "Sarga 47"
+          },
+          {
+            "id": "chapter048",
+            "index": 48,
+            "state": 2,
+            "subtitle": "Rama’s Departure to the Forest",
+            "title": "Sarga 48"
+          },
+          {
+            "id": "chapter049",
+            "index": 49,
+            "state": 2,
+            "subtitle": "Rama Crosses Three Rivers",
+            "title": "Sarga 49"
+          },
+          {
+            "id": "chapter050",
+            "index": 50,
+            "state": 2,
+            "subtitle": "Rama Bids Farewell to Birth-Place",
+            "title": "Sarga 50"
+          },
+          {
+            "id": "chapter051",
+            "index": 51,
+            "state": 2,
+            "subtitle": "Guha Urges Lakshmana to Rest",
+            "title": "Sarga 51"
+          },
+          {
+            "id": "chapter052",
+            "index": 52,
+            "state": 2,
+            "subtitle": "Guha Gets a Boat Ready",
+            "title": "Sarga 52"
+          },
+          {
+            "id": "chapter053",
+            "index": 53,
+            "state": 2,
+            "subtitle": "Rama Tries to Send Lakshmana Back",
+            "title": "Sarga 53"
+          },
+          {
+            "id": "chapter054",
+            "index": 54,
+            "state": 2,
+            "subtitle": "The Hermitage of Bharadwaja",
+            "title": "Sarga 54"
+          },
+          {
+            "id": "chapter055",
+            "index": 55,
+            "state": 2,
+            "subtitle": "Sage Bharadwaja Informs the Route",
+            "title": "Sarga 55"
+          },
+          {
+            "id": "chapter056",
+            "index": 56,
+            "state": 2,
+            "subtitle": "The Chitrakuta Mountain",
+            "title": "Sarga 56"
+          },
+          {
+            "id": "chapter057",
+            "index": 57,
+            "state": 2,
+            "subtitle": "Sumantra Drives Back to Ayodhya",
+            "title": "Sarga 57"
+          },
+          {
+            "id": "chapter058",
+            "index": 58,
+            "state": 2,
+            "subtitle": "Sumantra Delivers Rama’s Messages",
+            "title": "Sarga 58"
+          },
+          {
+            "id": "chapter059",
+            "index": 59,
+            "state": 2,
+            "subtitle": "Dasaratha Falls Unconscious",
+            "title": "Sarga 59"
+          },
+          {
+            "id": "chapter060",
+            "index": 60,
+            "state": 2,
+            "subtitle": "Sumantra Unable to Console Kausalya",
+            "title": "Sarga 60"
+          },
+          {
+            "id": "chapter061",
+            "index": 61,
+            "state": 2,
+            "subtitle": "Kausalya Rebukes Dasaratha",
+            "title": "Sarga 61"
+          },
+          {
+            "id": "chapter062",
+            "index": 62,
+            "state": 2,
+            "subtitle": "King Dasaratha Loses Consciousness",
+            "title": "Sarga 62"
+          },
+          {
+            "id": "chapter063",
+            "index": 63,
+            "state": 2,
+            "subtitle": "Dasaratha Narrates His Sin",
+            "title": "Sarga 63"
+          },
+          {
+            "id": "chapter064",
+            "index": 64,
+            "state": 2,
+            "subtitle": "Dasaratha Continues to Narrate",
+            "title": "Sarga 64"
+          },
+          {
+            "id": "chapter065",
+            "index": 65,
+            "state": 2,
+            "subtitle": "Dasaratha Passes Away",
+            "title": "Sarga 65"
+          },
+          {
+            "id": "chapter066",
+            "index": 66,
+            "state": 2,
+            "subtitle": "Kausalya Reproaches Kaikeyi",
+            "title": "Sarga 66"
+          },
+          {
+            "id": "chapter067",
+            "index": 67,
+            "state": 2,
+            "subtitle": "Brahmins Urge Vasishta to Select King",
+            "title": "Sarga 67"
+          },
+          {
+            "id": "chapter068",
+            "index": 68,
+            "state": 2,
+            "subtitle": "Vasishta Sends Messengers to Call Bharata",
+            "title": "Sarga 68"
+          },
+          {
+            "id": "chapter069",
+            "index": 69,
+            "state": 2,
+            "subtitle": "Bharata Experiences a Bad Dream",
+            "title": "Sarga 69"
+          },
+          {
+            "id": "chapter070",
+            "index": 70,
+            "state": 2,
+            "subtitle": "Messengers Enter Rajagriha",
+            "title": "Sarga 70"
+          },
+          {
+            "id": "chapter071",
+            "index": 71,
+            "state": 2,
+            "subtitle": "Bharata Reaches Ayodhya",
+            "title": "Sarga 71"
+          },
+          {
+            "id": "chapter072",
+            "index": 72,
+            "state": 2,
+            "subtitle": "Kaikeyi Informs Bharata of Death",
+            "title": "Sarga 72"
+          },
+          {
+            "id": "chapter073",
+            "index": 73,
+            "state": 2,
+            "subtitle": "Bharata Reproaches Kaikeyi",
+            "title": "Sarga 73"
+          },
+          {
+            "id": "chapter074",
+            "index": 74,
+            "state": 2,
+            "subtitle": "Bharata Promises to Bring Rama Back",
+            "title": "Sarga 74"
+          },
+          {
+            "id": "chapter075",
+            "index": 75,
+            "state": 2,
+            "subtitle": "Bharata and Shatrughna Go to Kausalya",
+            "title": "Sarga 75"
+          },
+          {
+            "id": "chapter076",
+            "index": 76,
+            "state": 2,
+            "subtitle": "Vasishta Advises Bharata",
+            "title": "Sarga 76"
+          },
+          {
+            "id": "chapter077",
+            "index": 77,
+            "state": 2,
+            "subtitle": "They Grieve at Cremation Ground",
+            "title": "Sarga 77"
+          },
+          {
+            "id": "chapter078",
+            "index": 78,
+            "state": 2,
+            "subtitle": "Shatrughna Seizes Manthara",
+            "title": "Sarga 78"
+          },
+          {
+            "id": "chapter079",
+            "index": 79,
+            "state": 2,
+            "subtitle": "King-Makers Request Bharata to Take Throne",
+            "title": "Sarga 79"
+          },
+          {
+            "id": "chapter080",
+            "index": 80,
+            "state": 2,
+            "subtitle": "Construction of Highway to Ganga",
+            "title": "Sarga 80"
+          },
+          {
+            "id": "chapter081",
+            "index": 81,
+            "state": 2,
+            "subtitle": "Bharata and Shatrughna Enter Assembly",
+            "title": "Sarga 81"
+          },
+          {
+            "id": "chapter082",
+            "index": 82,
+            "state": 2,
+            "subtitle": "Bharata Refuses the Throne",
+            "title": "Sarga 82"
+          },
+          {
+            "id": "chapter083",
+            "index": 83,
+            "state": 2,
+            "subtitle": "Bharata Goes to See Rama",
+            "title": "Sarga 83"
+          },
+          {
+            "id": "chapter084",
+            "index": 84,
+            "state": 2,
+            "subtitle": "Guha Welcomes Bharata with Drink",
+            "title": "Sarga 84"
+          },
+          {
+            "id": "chapter085",
+            "index": 85,
+            "state": 2,
+            "subtitle": "Bharata Thanks Guha",
+            "title": "Sarga 85"
+          },
+          {
+            "id": "chapter086",
+            "index": 86,
+            "state": 2,
+            "subtitle": "Guha Narrates Rama’s Stay",
+            "title": "Sarga 86"
+          },
+          {
+            "id": "chapter087",
+            "index": 87,
+            "state": 2,
+            "subtitle": "Guha Reports Further Details",
+            "title": "Sarga 87"
+          },
+          {
+            "id": "chapter088",
+            "index": 88,
+            "state": 2,
+            "subtitle": "Bharata Approaches Angudi Tree",
+            "title": "Sarga 88"
+          },
+          {
+            "id": "chapter089",
+            "index": 89,
+            "state": 2,
+            "subtitle": "Bharata Asks for Ferry Across River",
+            "title": "Sarga 89"
+          },
+          {
+            "id": "chapter090",
+            "index": 90,
+            "state": 2,
+            "subtitle": "Bharata Goes to Bharadwaja",
+            "title": "Sarga 90"
+          },
+          {
+            "id": "chapter091",
+            "index": 91,
+            "state": 2,
+            "subtitle": "Bharadwaja Gives Hospitality",
+            "title": "Sarga 91"
+          },
+          {
+            "id": "chapter092",
+            "index": 92,
+            "state": 2,
+            "subtitle": "Bharata Approaches Bharadwaja",
+            "title": "Sarga 92"
+          },
+          {
+            "id": "chapter093",
+            "index": 93,
+            "state": 2,
+            "subtitle": "Reaching Chitrakuta Mountain",
+            "title": "Sarga 93"
+          },
+          {
+            "id": "chapter094",
+            "index": 94,
+            "state": 2,
+            "subtitle": "Rama Shows Scenic Beauty",
+            "title": "Sarga 94"
+          },
+          {
+            "id": "chapter095",
+            "index": 95,
+            "state": 2,
+            "subtitle": "Rama and Sita at Mandakini River",
+            "title": "Sarga 95"
+          },
+          {
+            "id": "chapter096",
+            "index": 96,
+            "state": 2,
+            "subtitle": "Rama Hears Clamour of an Army",
+            "title": "Sarga 96"
+          },
+          {
+            "id": "chapter097",
+            "index": 97,
+            "state": 2,
+            "subtitle": "Rama Pacifies Angry Lakshmana",
+            "title": "Sarga 97"
+          },
+          {
+            "id": "chapter098",
+            "index": 98,
+            "state": 2,
+            "subtitle": "Bharata Continues Search for Hermitage",
+            "title": "Sarga 98"
+          },
+          {
+            "id": "chapter099",
+            "index": 99,
+            "state": 2,
+            "subtitle": "Bharata Beholds Rama’s Hermitage",
+            "title": "Sarga 99"
+          },
+          {
+            "id": "chapter100",
+            "index": 100,
+            "state": 2,
+            "subtitle": "Rama Enquires Welfare of Father",
+            "title": "Sarga 100"
+          },
+          {
+            "id": "chapter101",
+            "index": 101,
+            "state": 2,
+            "subtitle": "Bharata Informs of Dasaratha’s Death",
+            "title": "Sarga 101"
+          },
+          {
+            "id": "chapter102",
+            "index": 102,
+            "state": 2,
+            "subtitle": "Bharata Requests Rama to Return",
+            "title": "Sarga 102"
+          },
+          {
+            "id": "chapter103",
+            "index": 103,
+            "state": 2,
+            "subtitle": "Rama Faints on Hearing the News",
+            "title": "Sarga 103"
+          },
+          {
+            "id": "chapter104",
+            "index": 104,
+            "state": 2,
+            "subtitle": "Vasishta Comes to Hermitage",
+            "title": "Sarga 104"
+          },
+          {
+            "id": "chapter105",
+            "index": 105,
+            "state": 2,
+            "subtitle": "Bharata Requests Rama to Accept Throne",
+            "title": "Sarga 105"
+          },
+          {
+            "id": "chapter106",
+            "index": 106,
+            "state": 2,
+            "subtitle": "Bharata Reasons for Taking Throne",
+            "title": "Sarga 106"
+          },
+          {
+            "id": "chapter107",
+            "index": 107,
+            "state": 2,
+            "subtitle": "Rama Reminds of Promise",
+            "title": "Sarga 107"
+          },
+          {
+            "id": "chapter108",
+            "index": 108,
+            "state": 2,
+            "subtitle": "Jabali Tries to Persuade Rama",
+            "title": "Sarga 108"
+          },
+          {
+            "id": "chapter109",
+            "index": 109,
+            "state": 2,
+            "subtitle": "Rama Refutes Atheistic Arguments",
+            "title": "Sarga 109"
+          },
+          {
+            "id": "chapter110",
+            "index": 110,
+            "state": 2,
+            "subtitle": "Vasishta Describes Creation of World",
+            "title": "Sarga 110"
+          },
+          {
+            "id": "chapter111",
+            "index": 111,
+            "state": 2,
+            "subtitle": "Vasishta Urges Granting Bharata's Prayer",
+            "title": "Sarga 111"
+          },
+          {
+            "id": "chapter112",
+            "index": 112,
+            "state": 2,
+            "subtitle": "Sages Urge Bharata to Accept Rama’s Words",
+            "title": "Sarga 112"
+          },
+          {
+            "id": "chapter113",
+            "index": 113,
+            "state": 2,
+            "subtitle": "Bharata Carries Rama’s Sandals on His Chariot",
+            "title": "Sarga 113"
+          },
+          {
+            "id": "chapter114",
+            "index": 114,
+            "state": 2,
+            "subtitle": "Bharata Enters Ayodhya",
+            "title": "Sarga 114"
+          },
+          {
+            "id": "chapter115",
+            "index": 115,
+            "state": 2,
+            "subtitle": "Bharata Wishes to Go to Nandigrama",
+            "title": "Sarga 115"
+          },
+          {
+            "id": "chapter116",
+            "index": 116,
+            "state": 2,
+            "subtitle": "Rama Notices Anxiety of Sages",
+            "title": "Sarga 116"
+          },
+          {
+            "id": "chapter117",
+            "index": 117,
+            "state": 2,
+            "subtitle": "Rama Decides to Leave Chitrakuta",
+            "title": "Sarga 117"
+          },
+          {
+            "id": "chapter118",
+            "index": 118,
+            "state": 2,
+            "subtitle": "Anasuya Instructs Sita on Devotion",
+            "title": "Sarga 118"
+          },
+          {
+            "id": "chapter119",
+            "index": 119,
+            "state": 2,
+            "subtitle": "Sita Shows Anasuya’s Gifts to Rama",
+            "title": "Sarga 119"
+          }
+        ],
+        "id": "volume02",
+        "images": {
+          "thumbnail": "thumbnail.png"
+        },
+        "name": "Ayodhya Kandam",
+        "state": 2,
+        "subtitle": "119 Sargas"
+      },
+      {
+        "chapters": [
+          {
+            "id": "chapter001",
+            "index": 1,
+            "state": 2,
+            "subtitle": "Entering Dandaka Forest",
+            "title": "Sarga 1"
+          },
+          {
+            "id": "chapter002",
+            "index": 2,
+            "state": 2,
+            "subtitle": "Confrontation with Virādha",
+            "title": "Sarga 2"
+          },
+          {
+            "id": "chapter003",
+            "index": 3,
+            "state": 2,
+            "subtitle": "Virādha Attacks Sri Rama and Lakshmana",
+            "title": "Sarga 3"
+          },
+          {
+            "id": "chapter004",
+            "index": 4,
+            "state": 2,
+            "subtitle": "Curse of Virādha",
+            "title": "Sarga 4"
+          },
+          {
+            "id": "chapter005",
+            "index": 5,
+            "state": 2,
+            "subtitle": "Hermitage of Sage Śarabhanga",
+            "title": "Sarga 5"
+          },
+          {
+            "id": "chapter006",
+            "index": 6,
+            "state": 2,
+            "subtitle": "Approach of Sages and Hermits",
+            "title": "Sarga 6"
+          },
+          {
+            "id": "chapter007",
+            "index": 7,
+            "state": 2,
+            "subtitle": "Hermitage of Sage Sūṭīkṣṇa",
+            "title": "Sarga 7"
+          },
+          {
+            "id": "chapter008",
+            "index": 8,
+            "state": 2,
+            "subtitle": "Dialogue with Sage Sūṭīkṣṇa",
+            "title": "Sarga 8"
+          },
+          {
+            "id": "chapter009",
+            "index": 9,
+            "state": 2,
+            "subtitle": "Sītā Concerned About Rama’s Vow",
+            "title": "Sarga 9"
+          },
+          {
+            "id": "chapter010",
+            "index": 10,
+            "state": 2,
+            "subtitle": "Rama's Reply to Sītā",
+            "title": "Sarga 10"
+          },
+          {
+            "id": "chapter011",
+            "index": 11,
+            "state": 2,
+            "subtitle": "Stories of Sages Māṇḍakarṇi & Agastya",
+            "title": "Sarga 11"
+          },
+          {
+            "id": "chapter012",
+            "index": 12,
+            "state": 2,
+            "subtitle": "Entering Sage Agastya’s Hermitage",
+            "title": "Sarga 12"
+          },
+          {
+            "id": "chapter013",
+            "index": 13,
+            "state": 2,
+            "subtitle": "Agastya Directs Rama to Pañcāvatī",
+            "title": "Sarga 13"
+          },
+          {
+            "id": "chapter014",
+            "index": 14,
+            "state": 2,
+            "subtitle": "Rama’s Contact with Jatayu",
+            "title": "Sarga 14"
+          },
+          {
+            "id": "chapter015",
+            "index": 15,
+            "state": 2,
+            "subtitle": "The Pañcāvatī",
+            "title": "Sarga 15"
+          },
+          {
+            "id": "chapter016",
+            "index": 16,
+            "state": 2,
+            "subtitle": "Lakshmana Describes Spring (Vasanta)",
+            "title": "Sarga 16"
+          },
+          {
+            "id": "chapter017",
+            "index": 17,
+            "state": 2,
+            "subtitle": "Surpanakha’s Entry",
+            "title": "Sarga 17"
+          },
+          {
+            "id": "chapter018",
+            "index": 18,
+            "state": 2,
+            "subtitle": "Lakshmana Punishes Surpanakha",
+            "title": "Sarga 18"
+          },
+          {
+            "id": "chapter019",
+            "index": 19,
+            "state": 2,
+            "subtitle": "Surpanakha Reports to Khara",
+            "title": "Sarga 19"
+          },
+          {
+            "id": "chapter020",
+            "index": 20,
+            "state": 2,
+            "subtitle": "Rama Eliminates Khara’s Demons",
+            "title": "Sarga 20"
+          },
+          {
+            "id": "chapter021",
+            "index": 21,
+            "state": 2,
+            "subtitle": "Surpanakha Reports to Khara Again",
+            "title": "Sarga 21"
+          },
+          {
+            "id": "chapter022",
+            "index": 22,
+            "state": 2,
+            "subtitle": "Khara’s Army Marches",
+            "title": "Sarga 22"
+          },
+          {
+            "id": "chapter023",
+            "index": 23,
+            "state": 2,
+            "subtitle": "Khara’s Army Faces Bad Omens",
+            "title": "Sarga 23"
+          },
+          {
+            "id": "chapter024",
+            "index": 24,
+            "state": 2,
+            "subtitle": "Rama Prepares for War with Khara",
+            "title": "Sarga 24"
+          },
+          {
+            "id": "chapter025",
+            "index": 25,
+            "state": 2,
+            "subtitle": "Rama’s War with Khara’s Demons",
+            "title": "Sarga 25"
+          },
+          {
+            "id": "chapter026",
+            "index": 26,
+            "state": 2,
+            "subtitle": "Rama Eliminates Dūṣṇa and His Army",
+            "title": "Sarga 26"
+          },
+          {
+            "id": "chapter027",
+            "index": 27,
+            "state": 2,
+            "subtitle": "Elimination of Tṛśīra",
+            "title": "Sarga 27"
+          },
+          {
+            "id": "chapter028",
+            "index": 28,
+            "state": 2,
+            "subtitle": "Khara’s Fight with Rama",
+            "title": "Sarga 28"
+          },
+          {
+            "id": "chapter029",
+            "index": 29,
+            "state": 2,
+            "subtitle": "Khara’s Final Confrontation",
+            "title": "Sarga 29"
+          },
+          {
+            "id": "chapter030",
+            "index": 30,
+            "state": 2,
+            "subtitle": "Elimination of Khara",
+            "title": "Sarga 30"
+          },
+          {
+            "id": "chapter031",
+            "index": 31,
+            "state": 2,
+            "subtitle": "Akampana’s Report to Rāvaṇa",
+            "title": "Sarga 31"
+          },
+          {
+            "id": "chapter032",
+            "index": 32,
+            "state": 2,
+            "subtitle": "Rāvaṇa’s Pomp and Pride",
+            "title": "Sarga 32"
+          },
+          {
+            "id": "chapter033",
+            "index": 33,
+            "state": 2,
+            "subtitle": "Surpanakha Accuses Rāvaṇa",
+            "title": "Sarga 33"
+          },
+          {
+            "id": "chapter034",
+            "index": 34,
+            "state": 2,
+            "subtitle": "Surpanakha Allures Rāvaṇa to Marry Sītā",
+            "title": "Sarga 34"
+          },
+          {
+            "id": "chapter035",
+            "index": 35,
+            "state": 2,
+            "subtitle": "Rāvaṇa Proceeds to Marīca",
+            "title": "Sarga 35"
+          },
+          {
+            "id": "chapter036",
+            "index": 36,
+            "state": 2,
+            "subtitle": "Rāvaṇa Seeks Marīca’s Help",
+            "title": "Sarga 36"
+          },
+          {
+            "id": "chapter037",
+            "index": 37,
+            "state": 2,
+            "subtitle": "Marīca Advises Rāvaṇa",
+            "title": "Sarga 37"
+          },
+          {
+            "id": "chapter038",
+            "index": 38,
+            "state": 2,
+            "subtitle": "Marīca Recommends Golden Deer Ruse",
+            "title": "Sarga 38"
+          },
+          {
+            "id": "chapter039",
+            "index": 39,
+            "state": 2,
+            "subtitle": "Further Advice by Marīca",
+            "title": "Sarga 39"
+          },
+          {
+            "id": "chapter040",
+            "index": 40,
+            "state": 2,
+            "subtitle": "Rāvaṇa Rebuts Marīca",
+            "title": "Sarga 40"
+          },
+          {
+            "id": "chapter041",
+            "index": 41,
+            "state": 2,
+            "subtitle": "Marīca Tries to Dissuade Rāvaṇa",
+            "title": "Sarga 41"
+          },
+          {
+            "id": "chapter042",
+            "index": 42,
+            "state": 2,
+            "subtitle": "Marīca Becomes a Golden Deer",
+            "title": "Sarga 42"
+          },
+          {
+            "id": "chapter043",
+            "index": 43,
+            "state": 2,
+            "subtitle": "Lure of the Golden Deer",
+            "title": "Sarga 43"
+          },
+          {
+            "id": "chapter044",
+            "index": 44,
+            "state": 2,
+            "subtitle": "Rama Slays Marīca",
+            "title": "Sarga 44"
+          },
+          {
+            "id": "chapter045",
+            "index": 45,
+            "state": 2,
+            "subtitle": "Sītā Rebukes Lakshmana",
+            "title": "Sarga 45"
+          },
+          {
+            "id": "chapter046",
+            "index": 46,
+            "state": 2,
+            "subtitle": "Rāvaṇa Praises Sītā’s Beauty",
+            "title": "Sarga 46"
+          },
+          {
+            "id": "chapter047",
+            "index": 47,
+            "state": 2,
+            "subtitle": "Debate Between Sītā and Rāvaṇa Begins",
+            "title": "Sarga 47"
+          },
+          {
+            "id": "chapter048",
+            "index": 48,
+            "state": 2,
+            "subtitle": "Rāvaṇa Tempts Sītā",
+            "title": "Sarga 48"
+          },
+          {
+            "id": "chapter049",
+            "index": 49,
+            "state": 2,
+            "subtitle": "Sītā's Abduction",
+            "title": "Sarga 49"
+          },
+          {
+            "id": "chapter050",
+            "index": 50,
+            "state": 2,
+            "subtitle": "Jatayu Confronts Rāvaṇa",
+            "title": "Sarga 50"
+          },
+          {
+            "id": "chapter051",
+            "index": 51,
+            "state": 2,
+            "subtitle": "Combat of Jatayu and Rāvaṇa Begins",
+            "title": "Sarga 51"
+          },
+          {
+            "id": "chapter052",
+            "index": 52,
+            "state": 2,
+            "subtitle": "Combat of Jatayu and Rāvaṇa Continues",
+            "title": "Sarga 52"
+          },
+          {
+            "id": "chapter053",
+            "index": 53,
+            "state": 2,
+            "subtitle": "Sītā Denounces Rāvaṇa",
+            "title": "Sarga 53"
+          },
+          {
+            "id": "chapter054",
+            "index": 54,
+            "state": 2,
+            "subtitle": "Sītā Drops Jewellery for Sugrīva",
+            "title": "Sarga 54"
+          },
+          {
+            "id": "chapter055",
+            "index": 55,
+            "state": 2,
+            "subtitle": "Rāvaṇa Entices Sītā to Marry Him",
+            "title": "Sarga 55"
+          },
+          {
+            "id": "chapter056",
+            "index": 56,
+            "state": 2,
+            "subtitle": "Sītā Reprimands Rāvaṇa",
+            "title": "Sarga 56"
+          },
+          {
+            "id": "chapter057",
+            "index": 57,
+            "state": 2,
+            "subtitle": "Rama Meets Lakshmana",
+            "title": "Sarga 57"
+          },
+          {
+            "id": "chapter058",
+            "index": 58,
+            "state": 2,
+            "subtitle": "Rama Mourns Sītā’s Absence",
+            "title": "Sarga 58"
+          },
+          {
+            "id": "chapter059",
+            "index": 59,
+            "state": 2,
+            "subtitle": "Rama Reprimands Lakshmana",
+            "title": "Sarga 59"
+          },
+          {
+            "id": "chapter060",
+            "index": 60,
+            "state": 2,
+            "subtitle": "Rama Laments Sītā’s Separation",
+            "title": "Sarga 60"
+          },
+          {
+            "id": "chapter061",
+            "index": 61,
+            "state": 2,
+            "subtitle": "Rama Laments (Continued)",
+            "title": "Sarga 61"
+          },
+          {
+            "id": "chapter062",
+            "index": 62,
+            "state": 2,
+            "subtitle": "Rama Laments (Continued)",
+            "title": "Sarga 62"
+          },
+          {
+            "id": "chapter063",
+            "index": 63,
+            "state": 2,
+            "subtitle": "Rama Laments (Continued)",
+            "title": "Sarga 63"
+          },
+          {
+            "id": "chapter064",
+            "index": 64,
+            "state": 2,
+            "subtitle": "Rama Finds Sītā’s Flowers and Jewelry",
+            "title": "Sarga 64"
+          },
+          {
+            "id": "chapter065",
+            "index": 65,
+            "state": 2,
+            "subtitle": "Lakshmana Pacifies Rama’s Fury",
+            "title": "Sarga 65"
+          },
+          {
+            "id": "chapter066",
+            "index": 66,
+            "state": 2,
+            "subtitle": "Lakshmana Advises Rama",
+            "title": "Sarga 66"
+          },
+          {
+            "id": "chapter067",
+            "index": 67,
+            "state": 2,
+            "subtitle": "Rama Spots Clipped-wing Jatayu",
+            "title": "Sarga 67"
+          },
+          {
+            "id": "chapter068",
+            "index": 68,
+            "state": 2,
+            "subtitle": "Jatayu Identifies Ravana and Dies",
+            "title": "Sarga 68"
+          },
+          {
+            "id": "chapter069",
+            "index": 69,
+            "state": 2,
+            "subtitle": "Kābandha Captures Rama & Lakshmana",
+            "title": "Sarga 69"
+          },
+          {
+            "id": "chapter070",
+            "index": 70,
+            "state": 2,
+            "subtitle": "Rama Cuts off Kābandha's Long Arms",
+            "title": "Sarga 70"
+          },
+          {
+            "id": "chapter071",
+            "index": 71,
+            "state": 2,
+            "subtitle": "Kābandha Requests Incineration",
+            "title": "Sarga 71"
+          },
+          {
+            "id": "chapter072",
+            "index": 72,
+            "state": 2,
+            "subtitle": "Kābandha Advises Rama to Meet Sugrīva",
+            "title": "Sarga 72"
+          },
+          {
+            "id": "chapter073",
+            "index": 73,
+            "state": 2,
+            "subtitle": "Kābandha Extols Paṃpā Lake",
+            "title": "Sarga 73"
+          },
+          {
+            "id": "chapter074",
+            "index": 74,
+            "state": 2,
+            "subtitle": "Śabarī Attains Salvation",
+            "title": "Sarga 74"
+          },
+          {
+            "id": "chapter075",
+            "index": 75,
+            "state": 2,
+            "subtitle": "Rama and Lakshmana Arrive at Paṃpā Lake",
+            "title": "Sarga 75"
+          }
+        ],
+        "id": "volume03",
+        "images": {
+          "thumbnail": "thumbnail.png"
+        },
+        "name": "Āraṇya Kandam",
+        "state": 2,
+        "subtitle": "75 Sargas"
+      },
+      {
+        "chapters": [
+          {
+            "id": "chapter001",
+            "index": 1,
+            "state": 2,
+            "subtitle": "Entering Dandaka Forest",
+            "title": "Sarga 1"
+          },
+          {
+            "id": "chapter002",
+            "index": 2,
+            "state": 2,
+            "subtitle": "Confrontation with Virādha",
+            "title": "Sarga 2"
+          },
+          {
+            "id": "chapter003",
+            "index": 3,
+            "state": 2,
+            "subtitle": "Virādha Attacks Sri Rama and Lakshmana",
+            "title": "Sarga 3"
+          },
+          {
+            "id": "chapter004",
+            "index": 4,
+            "state": 2,
+            "subtitle": "Curse of Virādha",
+            "title": "Sarga 4"
+          },
+          {
+            "id": "chapter005",
+            "index": 5,
+            "state": 2,
+            "subtitle": "Hermitage of Sage Śarabhanga",
+            "title": "Sarga 5"
+          },
+          {
+            "id": "chapter006",
+            "index": 6,
+            "state": 2,
+            "subtitle": "Approach of Sages and Hermits",
+            "title": "Sarga 6"
+          },
+          {
+            "id": "chapter007",
+            "index": 7,
+            "state": 2,
+            "subtitle": "Hermitage of Sage Sūṭīkṣṇa",
+            "title": "Sarga 7"
+          },
+          {
+            "id": "chapter008",
+            "index": 8,
+            "state": 2,
+            "subtitle": "Dialogue with Sage Sūṭīkṣṇa",
+            "title": "Sarga 8"
+          },
+          {
+            "id": "chapter009",
+            "index": 9,
+            "state": 2,
+            "subtitle": "Sītā Concerned About Rama’s Vow",
+            "title": "Sarga 9"
+          },
+          {
+            "id": "chapter010",
+            "index": 10,
+            "state": 2,
+            "subtitle": "Rama's Reply to Sītā",
+            "title": "Sarga 10"
+          },
+          {
+            "id": "chapter011",
+            "index": 11,
+            "state": 2,
+            "subtitle": "Stories of Sages Māṇḍakarṇi & Agastya",
+            "title": "Sarga 11"
+          },
+          {
+            "id": "chapter012",
+            "index": 12,
+            "state": 2,
+            "subtitle": "Entering Sage Agastya’s Hermitage",
+            "title": "Sarga 12"
+          },
+          {
+            "id": "chapter013",
+            "index": 13,
+            "state": 2,
+            "subtitle": "Agastya Directs Rama to Pañcāvatī",
+            "title": "Sarga 13"
+          },
+          {
+            "id": "chapter014",
+            "index": 14,
+            "state": 2,
+            "subtitle": "Rama’s Contact with Jatayu",
+            "title": "Sarga 14"
+          },
+          {
+            "id": "chapter015",
+            "index": 15,
+            "state": 2,
+            "subtitle": "The Pañcāvatī",
+            "title": "Sarga 15"
+          },
+          {
+            "id": "chapter016",
+            "index": 16,
+            "state": 2,
+            "subtitle": "Lakshmana Describes Spring (Vasanta)",
+            "title": "Sarga 16"
+          },
+          {
+            "id": "chapter017",
+            "index": 17,
+            "state": 2,
+            "subtitle": "Surpanakha’s Entry",
+            "title": "Sarga 17"
+          },
+          {
+            "id": "chapter018",
+            "index": 18,
+            "state": 2,
+            "subtitle": "Lakshmana Punishes Surpanakha",
+            "title": "Sarga 18"
+          },
+          {
+            "id": "chapter019",
+            "index": 19,
+            "state": 2,
+            "subtitle": "Surpanakha Reports to Khara",
+            "title": "Sarga 19"
+          },
+          {
+            "id": "chapter020",
+            "index": 20,
+            "state": 2,
+            "subtitle": "Rama Eliminates Khara’s Demons",
+            "title": "Sarga 20"
+          },
+          {
+            "id": "chapter021",
+            "index": 21,
+            "state": 2,
+            "subtitle": "Surpanakha Reports to Khara Again",
+            "title": "Sarga 21"
+          },
+          {
+            "id": "chapter022",
+            "index": 22,
+            "state": 2,
+            "subtitle": "Khara’s Army Marches",
+            "title": "Sarga 22"
+          },
+          {
+            "id": "chapter023",
+            "index": 23,
+            "state": 2,
+            "subtitle": "Khara’s Army Faces Bad Omens",
+            "title": "Sarga 23"
+          },
+          {
+            "id": "chapter024",
+            "index": 24,
+            "state": 2,
+            "subtitle": "Rama Prepares for War with Khara",
+            "title": "Sarga 24"
+          },
+          {
+            "id": "chapter025",
+            "index": 25,
+            "state": 2,
+            "subtitle": "Rama’s War with Khara’s Demons",
+            "title": "Sarga 25"
+          },
+          {
+            "id": "chapter026",
+            "index": 26,
+            "state": 2,
+            "subtitle": "Rama Eliminates Dūṣṇa and His Army",
+            "title": "Sarga 26"
+          },
+          {
+            "id": "chapter027",
+            "index": 27,
+            "state": 2,
+            "subtitle": "Elimination of Tṛśīra",
+            "title": "Sarga 27"
+          },
+          {
+            "id": "chapter028",
+            "index": 28,
+            "state": 2,
+            "subtitle": "Khara’s Fight with Rama",
+            "title": "Sarga 28"
+          },
+          {
+            "id": "chapter029",
+            "index": 29,
+            "state": 2,
+            "subtitle": "Khara’s Final Confrontation",
+            "title": "Sarga 29"
+          },
+          {
+            "id": "chapter030",
+            "index": 30,
+            "state": 2,
+            "subtitle": "Elimination of Khara",
+            "title": "Sarga 30"
+          },
+          {
+            "id": "chapter031",
+            "index": 31,
+            "state": 2,
+            "subtitle": "Akampana’s Report to Rāvaṇa",
+            "title": "Sarga 31"
+          },
+          {
+            "id": "chapter032",
+            "index": 32,
+            "state": 2,
+            "subtitle": "Rāvaṇa’s Pomp and Pride",
+            "title": "Sarga 32"
+          },
+          {
+            "id": "chapter033",
+            "index": 33,
+            "state": 2,
+            "subtitle": "Surpanakha Accuses Rāvaṇa",
+            "title": "Sarga 33"
+          },
+          {
+            "id": "chapter034",
+            "index": 34,
+            "state": 2,
+            "subtitle": "Surpanakha Allures Rāvaṇa to Marry Sītā",
+            "title": "Sarga 34"
+          },
+          {
+            "id": "chapter035",
+            "index": 35,
+            "state": 2,
+            "subtitle": "Rāvaṇa Proceeds to Marīca",
+            "title": "Sarga 35"
+          },
+          {
+            "id": "chapter036",
+            "index": 36,
+            "state": 2,
+            "subtitle": "Rāvaṇa Seeks Marīca’s Help",
+            "title": "Sarga 36"
+          },
+          {
+            "id": "chapter037",
+            "index": 37,
+            "state": 2,
+            "subtitle": "Marīca Advises Rāvaṇa",
+            "title": "Sarga 37"
+          },
+          {
+            "id": "chapter038",
+            "index": 38,
+            "state": 2,
+            "subtitle": "Marīca Recommends Golden Deer Ruse",
+            "title": "Sarga 38"
+          },
+          {
+            "id": "chapter039",
+            "index": 39,
+            "state": 2,
+            "subtitle": "Further Advice by Marīca",
+            "title": "Sarga 39"
+          },
+          {
+            "id": "chapter040",
+            "index": 40,
+            "state": 2,
+            "subtitle": "Rāvaṇa Rebuts Marīca",
+            "title": "Sarga 40"
+          },
+          {
+            "id": "chapter041",
+            "index": 41,
+            "state": 2,
+            "subtitle": "Marīca Tries to Dissuade Rāvaṇa",
+            "title": "Sarga 41"
+          },
+          {
+            "id": "chapter042",
+            "index": 42,
+            "state": 2,
+            "subtitle": "Marīca Becomes a Golden Deer",
+            "title": "Sarga 42"
+          },
+          {
+            "id": "chapter043",
+            "index": 43,
+            "state": 2,
+            "subtitle": "Lure of the Golden Deer",
+            "title": "Sarga 43"
+          },
+          {
+            "id": "chapter044",
+            "index": 44,
+            "state": 2,
+            "subtitle": "Rama Slays Marīca",
+            "title": "Sarga 44"
+          },
+          {
+            "id": "chapter045",
+            "index": 45,
+            "state": 2,
+            "subtitle": "Sītā Rebukes Lakshmana",
+            "title": "Sarga 45"
+          },
+          {
+            "id": "chapter046",
+            "index": 46,
+            "state": 2,
+            "subtitle": "Rāvaṇa Praises Sītā’s Beauty",
+            "title": "Sarga 46"
+          },
+          {
+            "id": "chapter047",
+            "index": 47,
+            "state": 2,
+            "subtitle": "Debate Between Sītā and Rāvaṇa Begins",
+            "title": "Sarga 47"
+          },
+          {
+            "id": "chapter048",
+            "index": 48,
+            "state": 2,
+            "subtitle": "Rāvaṇa Tempts Sītā",
+            "title": "Sarga 48"
+          },
+          {
+            "id": "chapter049",
+            "index": 49,
+            "state": 2,
+            "subtitle": "Sītā's Abduction",
+            "title": "Sarga 49"
+          },
+          {
+            "id": "chapter050",
+            "index": 50,
+            "state": 2,
+            "subtitle": "Jatayu Confronts Rāvaṇa",
+            "title": "Sarga 50"
+          },
+          {
+            "id": "chapter051",
+            "index": 51,
+            "state": 2,
+            "subtitle": "Combat of Jatayu and Rāvaṇa Begins",
+            "title": "Sarga 51"
+          },
+          {
+            "id": "chapter052",
+            "index": 52,
+            "state": 2,
+            "subtitle": "Combat of Jatayu and Rāvaṇa Continues",
+            "title": "Sarga 52"
+          },
+          {
+            "id": "chapter053",
+            "index": 53,
+            "state": 2,
+            "subtitle": "Sītā Denounces Rāvaṇa",
+            "title": "Sarga 53"
+          },
+          {
+            "id": "chapter054",
+            "index": 54,
+            "state": 2,
+            "subtitle": "Sītā Drops Jewellery for Sugrīva",
+            "title": "Sarga 54"
+          },
+          {
+            "id": "chapter055",
+            "index": 55,
+            "state": 2,
+            "subtitle": "Rāvaṇa Entices Sītā to Marry Him",
+            "title": "Sarga 55"
+          },
+          {
+            "id": "chapter056",
+            "index": 56,
+            "state": 2,
+            "subtitle": "Sītā Reprimands Rāvaṇa",
+            "title": "Sarga 56"
+          },
+          {
+            "id": "chapter057",
+            "index": 57,
+            "state": 2,
+            "subtitle": "Rama Meets Lakshmana",
+            "title": "Sarga 57"
+          },
+          {
+            "id": "chapter058",
+            "index": 58,
+            "state": 2,
+            "subtitle": "Rama Mourns Sītā’s Absence",
+            "title": "Sarga 58"
+          },
+          {
+            "id": "chapter059",
+            "index": 59,
+            "state": 2,
+            "subtitle": "Rama Reprimands Lakshmana",
+            "title": "Sarga 59"
+          },
+          {
+            "id": "chapter060",
+            "index": 60,
+            "state": 2,
+            "subtitle": "Rama Laments Sītā’s Separation",
+            "title": "Sarga 60"
+          },
+          {
+            "id": "chapter061",
+            "index": 61,
+            "state": 2,
+            "subtitle": "Rama Laments (Continued)",
+            "title": "Sarga 61"
+          },
+          {
+            "id": "chapter062",
+            "index": 62,
+            "state": 2,
+            "subtitle": "Rama Laments (Continued)",
+            "title": "Sarga 62"
+          },
+          {
+            "id": "chapter063",
+            "index": 63,
+            "state": 2,
+            "subtitle": "Rama Laments (Continued)",
+            "title": "Sarga 63"
+          },
+          {
+            "id": "chapter064",
+            "index": 64,
+            "state": 2,
+            "subtitle": "Rama Finds Sītā’s Flowers and Jewelry",
+            "title": "Sarga 64"
+          },
+          {
+            "id": "chapter065",
+            "index": 65,
+            "state": 2,
+            "subtitle": "Lakshmana Pacifies Rama’s Fury",
+            "title": "Sarga 65"
+          },
+          {
+            "id": "chapter066",
+            "index": 66,
+            "state": 2,
+            "subtitle": "Lakshmana Advises Rama",
+            "title": "Sarga 66"
+          },
+          {
+            "id": "chapter067",
+            "index": 67,
+            "state": 2,
+            "subtitle": "Rama Spots Clipped-wing Jatayu",
+            "title": "Sarga 67"
+          },
+          {
+            "id": "chapter068",
+            "index": 68,
+            "state": 2,
+            "subtitle": "Jatayu Identifies Ravana and Dies",
+            "title": "Sarga 68"
+          },
+          {
+            "id": "chapter069",
+            "index": 69,
+            "state": 2,
+            "subtitle": "Kābandha Captures Rama & Lakshmana",
+            "title": "Sarga 69"
+          },
+          {
+            "id": "chapter070",
+            "index": 70,
+            "state": 2,
+            "subtitle": "Rama Cuts off Kābandha's Long Arms",
+            "title": "Sarga 70"
+          },
+          {
+            "id": "chapter071",
+            "index": 71,
+            "state": 2,
+            "subtitle": "Kābandha Requests Incineration",
+            "title": "Sarga 71"
+          },
+          {
+            "id": "chapter072",
+            "index": 72,
+            "state": 2,
+            "subtitle": "Kābandha Advises Rama to Meet Sugrīva",
+            "title": "Sarga 72"
+          },
+          {
+            "id": "chapter073",
+            "index": 73,
+            "state": 2,
+            "subtitle": "Kābandha Extols Paṃpā Lake",
+            "title": "Sarga 73"
+          },
+          {
+            "id": "chapter074",
+            "index": 74,
+            "state": 2,
+            "subtitle": "Śabarī Attains Salvation",
+            "title": "Sarga 74"
+          },
+          {
+            "id": "chapter075",
+            "index": 75,
+            "state": 2,
+            "subtitle": "Rama and Lakshmana Arrive at Paṃpā Lake",
+            "title": "Sarga 75"
+          }
+        ],
+        "id": "volume04",
+        "images": {
+          "thumbnail": "thumbnail.png"
+        },
+        "name": "Kishkindā Kāṇḍam",
+        "state": 2,
+        "subtitle": "67 Sargas"
+      },
+      {
+        "chapters": [
+          {
+            "id": "chapter001",
+            "index": 1,
+            "state": 2,
+            "subtitle": "Hanuman's Flight over Ocean",
+            "title": "Sarga 1"
+          },
+          {
+            "id": "chapter002",
+            "index": 2,
+            "state": 2,
+            "subtitle": "The city of Lanka",
+            "title": "Sarga 2"
+          },
+          {
+            "id": "chapter003",
+            "index": 3,
+            "state": 2,
+            "subtitle": "Hanuman conquers Lanka",
+            "title": "Sarga 3"
+          },
+          {
+            "id": "chapter004",
+            "index": 4,
+            "state": 2,
+            "subtitle": "Hanuman enters the city of Lanka",
+            "title": "Sarga 4"
+          },
+          {
+            "id": "chapter005",
+            "index": 5,
+            "state": 2,
+            "subtitle": "Ravana's palace",
+            "title": "Sarga 5"
+          },
+          {
+            "id": "chapter006",
+            "index": 6,
+            "state": 2,
+            "subtitle": "Inside the palace",
+            "title": "Sarga 6"
+          },
+          {
+            "id": "chapter007",
+            "index": 7,
+            "state": 2,
+            "subtitle": "Hanuman sees Pushpaka in Ravana's inner city",
+            "title": "Sarga 7"
+          },
+          {
+            "id": "chapter008",
+            "index": 8,
+            "state": 2,
+            "subtitle": "Description of the Pushpaka",
+            "title": "Sarga 8"
+          },
+          {
+            "id": "chapter009",
+            "index": 9,
+            "state": 2,
+            "subtitle": "The inner buildings of Ravana's house",
+            "title": "Sarga 9"
+          },
+          {
+            "id": "chapter010",
+            "index": 10,
+            "state": 2,
+            "subtitle": "Hanuman enters Ravana's house",
+            "title": "Sarga 10"
+          },
+          {
+            "id": "chapter011",
+            "index": 11,
+            "state": 2,
+            "subtitle": "Hanuman continues search for Seetha",
+            "title": "Sarga 11"
+          },
+          {
+            "id": "chapter012",
+            "index": 12,
+            "state": 2,
+            "subtitle": "Hanuman's depression",
+            "title": "Sarga 12"
+          },
+          {
+            "id": "chapter013",
+            "index": 13,
+            "state": 2,
+            "subtitle": "Hanuman starts to search in Ashoka garden",
+            "title": "Sarga 13"
+          },
+          {
+            "id": "chapter014",
+            "index": 14,
+            "state": 2,
+            "subtitle": "Hanuman enters the Ashoka garden",
+            "title": "Sarga 14"
+          },
+          {
+            "id": "chapter015",
+            "index": 15,
+            "state": 2,
+            "subtitle": "Hanuman sees Seetha",
+            "title": "Sarga 15"
+          },
+          {
+            "id": "chapter016",
+            "index": 16,
+            "state": 2,
+            "subtitle": "Hanuman's grief at the plight of Seetha",
+            "title": "Sarga 16"
+          },
+          {
+            "id": "chapter017",
+            "index": 17,
+            "state": 2,
+            "subtitle": "Hanuman sees Seetha with ogresses",
+            "title": "Sarga 17"
+          },
+          {
+            "id": "chapter018",
+            "index": 18,
+            "state": 2,
+            "subtitle": "Ravana comes to Seetha",
+            "title": "Sarga 18"
+          },
+          {
+            "id": "chapter019",
+            "index": 19,
+            "state": 2,
+            "subtitle": "Seetha in Ashoka garden",
+            "title": "Sarga 19"
+          },
+          {
+            "id": "chapter020",
+            "index": 20,
+            "state": 2,
+            "subtitle": "Ravana talks to Seetha",
+            "title": "Sarga 20"
+          },
+          {
+            "id": "chapter021",
+            "index": 21,
+            "state": 2,
+            "subtitle": "Seetha's reply",
+            "title": "Sarga 21"
+          },
+          {
+            "id": "chapter022",
+            "index": 22,
+            "state": 2,
+            "subtitle": "Ravana gives deadline",
+            "title": "Sarga 22"
+          },
+          {
+            "id": "chapter023",
+            "index": 23,
+            "state": 2,
+            "subtitle": "Ogres frighten Seetha",
+            "title": "Sarga 23"
+          },
+          {
+            "id": "chapter024",
+            "index": 24,
+            "state": 2,
+            "subtitle": "Seetha's reply to Ogres",
+            "title": "Sarga 24"
+          },
+          {
+            "id": "chapter025",
+            "index": 25,
+            "state": 2,
+            "subtitle": "Seetha bursts into a wail",
+            "title": "Sarga 25"
+          },
+          {
+            "id": "chapter026",
+            "index": 26,
+            "state": 2,
+            "subtitle": "Seetha decides to give up life",
+            "title": "Sarga 26"
+          },
+          {
+            "id": "chapter027",
+            "index": 27,
+            "state": 2,
+            "subtitle": "Trijata's dream",
+            "title": "Sarga 27"
+          },
+          {
+            "id": "chapter028",
+            "index": 28,
+            "state": 2,
+            "subtitle": "Seetha recollects the time limit",
+            "title": "Sarga 28"
+          },
+          {
+            "id": "chapter029",
+            "index": 29,
+            "state": 2,
+            "subtitle": "Seetha experiences some good omens",
+            "title": "Sarga 29"
+          },
+          {
+            "id": "chapter030",
+            "index": 30,
+            "state": 2,
+            "subtitle": "Hanuman falls in dilemma",
+            "title": "Sarga 30"
+          },
+          {
+            "id": "chapter031",
+            "index": 31,
+            "state": 2,
+            "subtitle": "Hanuman began to narrate story to Seetha",
+            "title": "Sarga 31"
+          },
+          {
+            "id": "chapter032",
+            "index": 32,
+            "state": 2,
+            "subtitle": "Seetha is shocked to see Hanuman",
+            "title": "Sarga 32"
+          },
+          {
+            "id": "chapter033",
+            "index": 33,
+            "state": 2,
+            "subtitle": "Seetha antecedents to Hanuman",
+            "title": "Sarga 33"
+          },
+          {
+            "id": "chapter034",
+            "index": 34,
+            "state": 2,
+            "subtitle": "Hanuman reveals himself to be a messenger",
+            "title": "Sarga 34"
+          },
+          {
+            "id": "chapter035",
+            "index": 35,
+            "state": 2,
+            "subtitle": "Seetha asks Hanuman to describe the characteristics",
+            "title": "Sarga 35"
+          },
+          {
+            "id": "chapter036",
+            "index": 36,
+            "state": 2,
+            "subtitle": "Hanuman gives Seetha the signet ring sent by Rama",
+            "title": "Sarga 36"
+          },
+          {
+            "id": "chapter037",
+            "index": 37,
+            "state": 2,
+            "subtitle": "Seetha was both delighted and depressed",
+            "title": "Sarga 37"
+          },
+          {
+            "id": "chapter038",
+            "index": 38,
+            "state": 2,
+            "subtitle": "Hanuman asks Seetha to give him a token of remembrance",
+            "title": "Sarga 38"
+          },
+          {
+            "id": "chapter039",
+            "index": 39,
+            "state": 2,
+            "subtitle": "To urge Rama and Lakshmana",
+            "title": "Sarga 39"
+          },
+          {
+            "id": "chapter040",
+            "index": 40,
+            "state": 2,
+            "subtitle": "Hanuman consoles Seetha and travels northward",
+            "title": "Sarga 40"
+          },
+          {
+            "id": "chapter041",
+            "index": 41,
+            "state": 2,
+            "subtitle": "Hanuman thinks to meet Ravana",
+            "title": "Sarga 41"
+          },
+          {
+            "id": "chapter042",
+            "index": 42,
+            "state": 2,
+            "subtitle": "Female-demons enquire Seetha about Hanuman",
+            "title": "Sarga 42"
+          },
+          {
+            "id": "chapter043",
+            "index": 43,
+            "state": 2,
+            "subtitle": "Hanuman thinks of destroying a sacred sanctuary of demons",
+            "title": "Sarga 43"
+          },
+          {
+            "id": "chapter044",
+            "index": 44,
+            "state": 2,
+            "subtitle": "Ravana sends Jambumali",
+            "title": "Sarga 44"
+          },
+          {
+            "id": "chapter045",
+            "index": 45,
+            "state": 2,
+            "subtitle": "Hanuman kills Prahasta's seven sons",
+            "title": "Sarga 45"
+          },
+          {
+            "id": "chapter046",
+            "index": 46,
+            "state": 2,
+            "subtitle": "Ravana sends five army-generals",
+            "title": "Sarga 46"
+          },
+          {
+            "id": "chapter047",
+            "index": 47,
+            "state": 2,
+            "subtitle": "Ravana sends his son Aksha",
+            "title": "Sarga 47"
+          },
+          {
+            "id": "chapter048",
+            "index": 48,
+            "state": 2,
+            "subtitle": "Ravana sends his son Indrajit",
+            "title": "Sarga 48"
+          },
+          {
+            "id": "chapter049",
+            "index": 49,
+            "state": 2,
+            "subtitle": "Hanuman sees well-adorned Ravana",
+            "title": "Sarga 49"
+          },
+          {
+            "id": "chapter050",
+            "index": 50,
+            "state": 2,
+            "subtitle": "Hanuman declares himself to be a messenger",
+            "title": "Sarga 50"
+          },
+          {
+            "id": "chapter051",
+            "index": 51,
+            "state": 2,
+            "subtitle": "Hanuman narrates the story",
+            "title": "Sarga 51"
+          },
+          {
+            "id": "chapter052",
+            "index": 52,
+            "state": 2,
+            "subtitle": "Ravana orders Hanuman to be killed",
+            "title": "Sarga 52"
+          },
+          {
+            "id": "chapter053",
+            "index": 53,
+            "state": 2,
+            "subtitle": "Later Ravana orders to set fire to his tail",
+            "title": "Sarga 53"
+          },
+          {
+            "id": "chapter054",
+            "index": 54,
+            "state": 2,
+            "subtitle": "Hanuman makes up his mind to set fire to the city of Lanka",
+            "title": "Sarga 54"
+          },
+          {
+            "id": "chapter055",
+            "index": 55,
+            "state": 2,
+            "subtitle": "Hanuman doubts whether Seetha dies in the fire",
+            "title": "Sarga 55"
+          },
+          {
+            "id": "chapter056",
+            "index": 56,
+            "state": 2,
+            "subtitle": "Hanuman again visits Ashoka garden and sees Seetha",
+            "title": "Sarga 56"
+          },
+          {
+            "id": "chapter057",
+            "index": 57,
+            "state": 2,
+            "subtitle": "Hanuman leaps from Lanka and touches Mount Mainaka",
+            "title": "Sarga 57"
+          },
+          {
+            "id": "chapter058",
+            "index": 58,
+            "state": 2,
+            "subtitle": "Jambavan requests Hanuman to narrate clearly the happenings",
+            "title": "Sarga 58"
+          },
+          {
+            "id": "chapter059",
+            "index": 59,
+            "state": 2,
+            "subtitle": "Hanuman describes the plight of Seetha to his fellow monkeys",
+            "title": "Sarga 59"
+          },
+          {
+            "id": "chapter060",
+            "index": 60,
+            "state": 2,
+            "subtitle": "Jambavan's wise guidelines",
+            "title": "Sarga 60"
+          },
+          {
+            "id": "chapter061",
+            "index": 61,
+            "state": 2,
+            "subtitle": "Monkeys halt at Madhuvana",
+            "title": "Sarga 61"
+          },
+          {
+            "id": "chapter062",
+            "index": 62,
+            "state": 2,
+            "subtitle": "Dadhimukha departs to Kishkindha",
+            "title": "Sarga 62"
+          },
+          {
+            "id": "chapter063",
+            "index": 63,
+            "state": 2,
+            "subtitle": "Dadhimukha reports Madhuvana destruction to Sugreeva",
+            "title": "Sarga 63"
+          },
+          {
+            "id": "chapter064",
+            "index": 64,
+            "state": 2,
+            "subtitle": "Hanuman apprises of the discovery of Seetha",
+            "title": "Sarga 64"
+          },
+          {
+            "id": "chapter065",
+            "index": 65,
+            "state": 2,
+            "subtitle": "Hanuman conveys Seetha's message to Sri Rama",
+            "title": "Sarga 65"
+          },
+          {
+            "id": "chapter066",
+            "index": 66,
+            "state": 2,
+            "subtitle": "Sri Rama urges Hanuman to repeat the words spoken by Seetha",
+            "title": "Sarga 66"
+          },
+          {
+            "id": "chapter067",
+            "index": 67,
+            "state": 2,
+            "subtitle": "Hanuman narrates an incident connected with a crow",
+            "title": "Sarga 67"
+          },
+          {
+            "id": "chapter068",
+            "index": 68,
+            "state": 2,
+            "subtitle": "Hanuman conveys to Rama that Seetha expressed a grave doubt",
+            "title": "Sarga 68"
+          }
+        ],
+        "id": "volume05",
+        "images": {
+          "thumbnail": "thumbnail.png"
+        },
+        "name": "Sundara Kandam",
+        "state": 2,
+        "subtitle": "68 Sargas"
+      },
+      {
+        "chapters": [
+          {
+            "id": "chapter001",
+            "index": 1,
+            "state": 2,
+            "subtitle": "Rama appreciates Hanuma and embraces him",
+            "title": "Sarga 1"
+          },
+          {
+            "id": "chapter002",
+            "index": 2,
+            "state": 2,
+            "subtitle": "Sugreeva comforts Rama",
+            "title": "Sarga 2"
+          },
+          {
+            "id": "chapter003",
+            "index": 3,
+            "state": 2,
+            "subtitle": "Rama requests Hanuma to describe Lanka in detail",
+            "title": "Sarga 3"
+          },
+          {
+            "id": "chapter004",
+            "index": 4,
+            "state": 2,
+            "subtitle": "Rama fixes an auspicious hour for the departure",
+            "title": "Sarga 4"
+          },
+          {
+            "id": "chapter005",
+            "index": 5,
+            "state": 2,
+            "subtitle": "Sri Rama recollects the lotus-eyed Seetha",
+            "title": "Sarga 5"
+          },
+          {
+            "id": "chapter006",
+            "index": 6,
+            "state": 2,
+            "subtitle": "Ravana calls a meeting of his ministers",
+            "title": "Sarga 6"
+          },
+          {
+            "id": "chapter007",
+            "index": 7,
+            "state": 2,
+            "subtitle": "The demons inspire Ravana",
+            "title": "Sarga 7"
+          },
+          {
+            "id": "chapter008",
+            "index": 8,
+            "state": 2,
+            "subtitle": "All demons eulogising their strengths",
+            "title": "Sarga 8"
+          },
+          {
+            "id": "chapter009",
+            "index": 9,
+            "state": 2,
+            "subtitle": "Vibhishana speaks words of morality",
+            "title": "Sarga 9"
+          },
+          {
+            "id": "chapter010",
+            "index": 10,
+            "state": 2,
+            "subtitle": "Vibhishana advises Ravana to restore Seetha",
+            "title": "Sarga 10"
+          },
+          {
+            "id": "chapter011",
+            "index": 11,
+            "state": 2,
+            "subtitle": "Ravana goes again to the assembly hall",
+            "title": "Sarga 11"
+          },
+          {
+            "id": "chapter012",
+            "index": 12,
+            "state": 2,
+            "subtitle": "Ravana instructs Prahasta to defend Lanka",
+            "title": "Sarga 12"
+          },
+          {
+            "id": "chapter013",
+            "index": 13,
+            "state": 2,
+            "subtitle": "Mahaparsva's advice to Ravana",
+            "title": "Sarga 13"
+          },
+          {
+            "id": "chapter014",
+            "index": 14,
+            "state": 2,
+            "subtitle": "Vibhishana informs about the power of Rama's arrow",
+            "title": "Sarga 14"
+          },
+          {
+            "id": "chapter015",
+            "index": 15,
+            "state": 2,
+            "subtitle": "Indrajit criticizes Vibhishana",
+            "title": "Sarga 15"
+          },
+          {
+            "id": "chapter016",
+            "index": 16,
+            "state": 2,
+            "subtitle": "Ravana refuses to hear the words of Vibhishana",
+            "title": "Sarga 16"
+          },
+          {
+            "id": "chapter017",
+            "index": 17,
+            "state": 2,
+            "subtitle": "Vibhishana reaches Rama's place",
+            "title": "Sarga 17"
+          },
+          {
+            "id": "chapter018",
+            "index": 18,
+            "state": 2,
+            "subtitle": "Vibhishana joins Rama’s side",
+            "title": "Sarga 18"
+          },
+          {
+            "id": "chapter019",
+            "index": 19,
+            "state": 2,
+            "subtitle": "Vibhishana seeks refuge at Rama's feet",
+            "title": "Sarga 19"
+          },
+          {
+            "id": "chapter020",
+            "index": 20,
+            "state": 2,
+            "subtitle": "Ravana sends Shuka to Sugrīva as ambassador",
+            "title": "Sarga 20"
+          },
+          {
+            "id": "chapter021",
+            "index": 21,
+            "state": 2,
+            "subtitle": "Rama becomes angry at the ocean",
+            "title": "Sarga 21"
+          },
+          {
+            "id": "chapter022",
+            "index": 22,
+            "state": 2,
+            "subtitle": "Sea-god advises Rama to build a bridge",
+            "title": "Sarga 22"
+          },
+          {
+            "id": "chapter023",
+            "index": 23,
+            "state": 2,
+            "subtitle": "Rama explains the various portents to Lakshmana",
+            "title": "Sarga 23"
+          },
+          {
+            "id": "chapter024",
+            "index": 24,
+            "state": 2,
+            "subtitle": "Rama orders the release of Shuka",
+            "title": "Sarga 24"
+          },
+          {
+            "id": "chapter025",
+            "index": 25,
+            "state": 2,
+            "subtitle": "Shuka explains the enemy’s army strength to Ravana",
+            "title": "Sarga 25"
+          },
+          {
+            "id": "chapter026",
+            "index": 26,
+            "state": 2,
+            "subtitle": "Ravana enquires about the various monkey leaders",
+            "title": "Sarga 26"
+          },
+          {
+            "id": "chapter027",
+            "index": 27,
+            "state": 2,
+            "subtitle": "Sharana describes the strength of the commanders",
+            "title": "Sarga 27"
+          },
+          {
+            "id": "chapter028",
+            "index": 28,
+            "state": 2,
+            "subtitle": "Shuka enumerates the enemies",
+            "title": "Sarga 28"
+          },
+          {
+            "id": "chapter029",
+            "index": 29,
+            "state": 2,
+            "subtitle": "Ravana reprimands Shuka and Sarana",
+            "title": "Sarga 29"
+          },
+          {
+            "id": "chapter030",
+            "index": 30,
+            "state": 2,
+            "subtitle": "Ravana dispatches Sardula the demon-spy",
+            "title": "Sarga 30"
+          },
+          {
+            "id": "chapter031",
+            "index": 31,
+            "state": 2,
+            "subtitle": "Rama enters Lanka from Suvela Mountain",
+            "title": "Sarga 31"
+          },
+          {
+            "id": "chapter032",
+            "index": 32,
+            "state": 2,
+            "subtitle": "Seetha sees illusory head and bow",
+            "title": "Sarga 32"
+          },
+          {
+            "id": "chapter033",
+            "index": 33,
+            "state": 2,
+            "subtitle": "Sarama restores confidence to Seetha",
+            "title": "Sarga 33"
+          },
+          {
+            "id": "chapter034",
+            "index": 34,
+            "state": 2,
+            "subtitle": "Sarama consoles Seetha",
+            "title": "Sarga 34"
+          },
+          {
+            "id": "chapter035",
+            "index": 35,
+            "state": 2,
+            "subtitle": "Seetha asks Sarama about Ravana’s decision",
+            "title": "Sarga 35"
+          },
+          {
+            "id": "chapter036",
+            "index": 36,
+            "state": 2,
+            "subtitle": "Ravana abuses Malyavan",
+            "title": "Sarga 36"
+          },
+          {
+            "id": "chapter037",
+            "index": 37,
+            "state": 2,
+            "subtitle": "Vibhishana sends spies into Lanka",
+            "title": "Sarga 37"
+          },
+          {
+            "id": "chapter038",
+            "index": 38,
+            "state": 2,
+            "subtitle": "Rama decides to stay on Suvela Mountain",
+            "title": "Sarga 38"
+          },
+          {
+            "id": "chapter039",
+            "index": 39,
+            "state": 2,
+            "subtitle": "Rama and others see charming garden on Suvela",
+            "title": "Sarga 39"
+          },
+          {
+            "id": "chapter040",
+            "index": 40,
+            "state": 2,
+            "subtitle": "Sugreeva leaps at Ravana on sighting him",
+            "title": "Sarga 40"
+          },
+          {
+            "id": "chapter041",
+            "index": 41,
+            "state": 2,
+            "subtitle": "Rama sends Angada to Ravana",
+            "title": "Sarga 41"
+          },
+          {
+            "id": "chapter042",
+            "index": 42,
+            "state": 2,
+            "subtitle": "Ravana commands his army to commence combat",
+            "title": "Sarga 42"
+          },
+          {
+            "id": "chapter043",
+            "index": 43,
+            "state": 2,
+            "subtitle": "Duels begin between monkeys and demons",
+            "title": "Sarga 43"
+          },
+          {
+            "id": "chapter044",
+            "index": 44,
+            "state": 2,
+            "subtitle": "Indrajit returns in invisible form",
+            "title": "Sarga 44"
+          },
+          {
+            "id": "chapter045",
+            "index": 45,
+            "state": 2,
+            "subtitle": "Two scions of Raghu dynasty fall",
+            "title": "Sarga 45"
+          },
+          {
+            "id": "chapter046",
+            "index": 46,
+            "state": 2,
+            "subtitle": "Ravana applauds his son’s daring act",
+            "title": "Sarga 46"
+          },
+          {
+            "id": "chapter047",
+            "index": 47,
+            "state": 2,
+            "subtitle": "Seetha's anguish about Rama and Lakshmana",
+            "title": "Sarga 47"
+          },
+          {
+            "id": "chapter048",
+            "index": 48,
+            "state": 2,
+            "subtitle": "Trijata reassures Seetha",
+            "title": "Sarga 48"
+          },
+          {
+            "id": "chapter049",
+            "index": 49,
+            "state": 2,
+            "subtitle": "Vibhishana approaches Rama",
+            "title": "Sarga 49"
+          },
+          {
+            "id": "chapter050",
+            "index": 50,
+            "state": 2,
+            "subtitle": "Garuda, the king of birds, appears",
+            "title": "Sarga 50"
+          },
+          {
+            "id": "chapter051",
+            "index": 51,
+            "state": 2,
+            "subtitle": "Dhumraksha enters the battlefield",
+            "title": "Sarga 51"
+          },
+          {
+            "id": "chapter052",
+            "index": 52,
+            "state": 2,
+            "subtitle": "Dhumraksha and his army attack monkeys",
+            "title": "Sarga 52"
+          },
+          {
+            "id": "chapter053",
+            "index": 53,
+            "state": 2,
+            "subtitle": "Ravana sends Vajradamstra",
+            "title": "Sarga 53"
+          },
+          {
+            "id": "chapter054",
+            "index": 54,
+            "state": 2,
+            "subtitle": "Vajradamstra terrifies the monkeys",
+            "title": "Sarga 54"
+          },
+          {
+            "id": "chapter055",
+            "index": 55,
+            "state": 2,
+            "subtitle": "Ravana sends Akampana",
+            "title": "Sarga 55"
+          },
+          {
+            "id": "chapter056",
+            "index": 56,
+            "state": 2,
+            "subtitle": "Akampana enters the battlefield",
+            "title": "Sarga 56"
+          },
+          {
+            "id": "chapter057",
+            "index": 57,
+            "state": 2,
+            "subtitle": "Ravana asks Prahasta to go to battle",
+            "title": "Sarga 57"
+          },
+          {
+            "id": "chapter058",
+            "index": 58,
+            "state": 2,
+            "subtitle": "Vibhishana explains Prahasta’s prowess",
+            "title": "Sarga 58"
+          },
+          {
+            "id": "chapter059",
+            "index": 59,
+            "state": 2,
+            "subtitle": "Ravana himself appears on the battlefield",
+            "title": "Sarga 59"
+          },
+          {
+            "id": "chapter060",
+            "index": 60,
+            "state": 2,
+            "subtitle": "Ravana sends demons to wake Kumbhakarna",
+            "title": "Sarga 60"
+          },
+          {
+            "id": "chapter061",
+            "index": 61,
+            "state": 2,
+            "subtitle": "Rama enquires about Kumbhakarna",
+            "title": "Sarga 61"
+          },
+          {
+            "id": "chapter062",
+            "index": 62,
+            "state": 2,
+            "subtitle": "Kumbhakarna enters Ravana’s abode",
+            "title": "Sarga 62"
+          },
+          {
+            "id": "chapter063",
+            "index": 63,
+            "state": 2,
+            "subtitle": "Kumbhakarna reassures Ravana",
+            "title": "Sarga 63"
+          },
+          {
+            "id": "chapter064",
+            "index": 64,
+            "state": 2,
+            "subtitle": "Counsel given to Kumbhakarna",
+            "title": "Sarga 64"
+          },
+          {
+            "id": "chapter065",
+            "index": 65,
+            "state": 2,
+            "subtitle": "Kumbhakarna rebukes Mahodara",
+            "title": "Sarga 65"
+          },
+          {
+            "id": "chapter066",
+            "index": 66,
+            "state": 2,
+            "subtitle": "Angada reassures the monkeys to return to battle",
+            "title": "Sarga 66"
+          },
+          {
+            "id": "chapter067",
+            "index": 67,
+            "state": 2,
+            "subtitle": "Kumbhakarna slain in battle",
+            "title": "Sarga 67"
+          },
+          {
+            "id": "chapter068",
+            "index": 68,
+            "state": 2,
+            "subtitle": "Ravana's grief over his brother’s death",
+            "title": "Sarga 68"
+          },
+          {
+            "id": "chapter069",
+            "index": 69,
+            "state": 2,
+            "subtitle": "Death of Narantaka",
+            "title": "Sarga 69"
+          },
+          {
+            "id": "chapter070",
+            "index": 70,
+            "state": 2,
+            "subtitle": "Hanuma kills Trishira",
+            "title": "Sarga 70"
+          },
+          {
+            "id": "chapter071",
+            "index": 71,
+            "state": 2,
+            "subtitle": "Lakshmana kills Atikaya",
+            "title": "Sarga 71"
+          },
+          {
+            "id": "chapter072",
+            "index": 72,
+            "state": 2,
+            "subtitle": "Ravana's grief over Atikaya's death",
+            "title": "Sarga 72"
+          },
+          {
+            "id": "chapter073",
+            "index": 73,
+            "state": 2,
+            "subtitle": "Rama and Lakshmana fall unconscious",
+            "title": "Sarga 73"
+          },
+          {
+            "id": "chapter074",
+            "index": 74,
+            "state": 2,
+            "subtitle": "Hanuma’s journey to Himalayas",
+            "title": "Sarga 74"
+          },
+          {
+            "id": "chapter075",
+            "index": 75,
+            "state": 2,
+            "subtitle": "The battle resumes",
+            "title": "Sarga 75"
+          },
+          {
+            "id": "chapter076",
+            "index": 76,
+            "state": 2,
+            "subtitle": "Sugreeva kills Kumbha",
+            "title": "Sarga 76"
+          },
+          {
+            "id": "chapter077",
+            "index": 77,
+            "state": 2,
+            "subtitle": "Kumbha's brother, Nikumbha, faces the battle",
+            "title": "Sarga 77"
+          },
+          {
+            "id": "chapter078",
+            "index": 78,
+            "state": 2,
+            "subtitle": "Ravana orders Makaraksha",
+            "title": "Sarga 78"
+          },
+          {
+            "id": "chapter079",
+            "index": 79,
+            "state": 2,
+            "subtitle": "Makaraksha challenges Rama",
+            "title": "Sarga 79"
+          },
+          {
+            "id": "chapter080",
+            "index": 80,
+            "state": 2,
+            "subtitle": "Ravana instructs Indrajit to enter battlefield",
+            "title": "Sarga 80"
+          },
+          {
+            "id": "chapter081",
+            "index": 81,
+            "state": 2,
+            "subtitle": "Indrajit places illusory image of Seetha",
+            "title": "Sarga 81"
+          },
+          {
+            "id": "chapter082",
+            "index": 82,
+            "state": 2,
+            "subtitle": "Hanuma leads the monkey army",
+            "title": "Sarga 82"
+          },
+          {
+            "id": "chapter083",
+            "index": 83,
+            "state": 2,
+            "subtitle": "Seetha has been killed by Indrajit (illusory)",
+            "title": "Sarga 83"
+          },
+          {
+            "id": "chapter084",
+            "index": 84,
+            "state": 2,
+            "subtitle": "Vibhishana reveals the conjuring trick",
+            "title": "Sarga 84"
+          },
+          {
+            "id": "chapter085",
+            "index": 85,
+            "state": 2,
+            "subtitle": "Rama sends Lakshmana to kill Indrajit",
+            "title": "Sarga 85"
+          },
+          {
+            "id": "chapter086",
+            "index": 86,
+            "state": 2,
+            "subtitle": "Indrajit returns to battlefield",
+            "title": "Sarga 86"
+          },
+          {
+            "id": "chapter087",
+            "index": 87,
+            "state": 2,
+            "subtitle": "Indrajit’s harsh words to Vibhishana",
+            "title": "Sarga 87"
+          },
+          {
+            "id": "chapter088",
+            "index": 88,
+            "state": 2,
+            "subtitle": "Fierce battle between Lakshmana and Indrajit",
+            "title": "Sarga 88"
+          },
+          {
+            "id": "chapter089",
+            "index": 89,
+            "state": 2,
+            "subtitle": "Vibhishana destroys many demons",
+            "title": "Sarga 89"
+          },
+          {
+            "id": "chapter090",
+            "index": 90,
+            "state": 2,
+            "subtitle": "Indrajit’s horse is killed",
+            "title": "Sarga 90"
+          },
+          {
+            "id": "chapter091",
+            "index": 91,
+            "state": 2,
+            "subtitle": "Lakshmana and others treated by Sushena",
+            "title": "Sarga 91"
+          },
+          {
+            "id": "chapter092",
+            "index": 92,
+            "state": 2,
+            "subtitle": "Ravana distressed over his son’s death",
+            "title": "Sarga 92"
+          },
+          {
+            "id": "chapter093",
+            "index": 93,
+            "state": 2,
+            "subtitle": "Rama destroys demon troops",
+            "title": "Sarga 93"
+          },
+          {
+            "id": "chapter094",
+            "index": 94,
+            "state": 2,
+            "subtitle": "Female-demons lament war losses",
+            "title": "Sarga 94"
+          },
+          {
+            "id": "chapter095",
+            "index": 95,
+            "state": 2,
+            "subtitle": "Ravana fights fiercely with monkeys",
+            "title": "Sarga 95"
+          },
+          {
+            "id": "chapter096",
+            "index": 96,
+            "state": 2,
+            "subtitle": "Sugreeva kills Virupaksha",
+            "title": "Sarga 96"
+          },
+          {
+            "id": "chapter097",
+            "index": 97,
+            "state": 2,
+            "subtitle": "Sugreeva kills Mahodara",
+            "title": "Sarga 97"
+          },
+          {
+            "id": "chapter098",
+            "index": 98,
+            "state": 2,
+            "subtitle": "Angada kills Mahaparsva",
+            "title": "Sarga 98"
+          },
+          {
+            "id": "chapter099",
+            "index": 99,
+            "state": 2,
+            "subtitle": "Battle between Rama and Ravana",
+            "title": "Sarga 99"
+          },
+          {
+            "id": "chapter100",
+            "index": 100,
+            "state": 2,
+            "subtitle": "Ravana flees battlefield",
+            "title": "Sarga 100"
+          },
+          {
+            "id": "chapter101",
+            "index": 101,
+            "state": 2,
+            "subtitle": "Hanuma brings life-giving herbs mountain",
+            "title": "Sarga 101"
+          },
+          {
+            "id": "chapter102",
+            "index": 102,
+            "state": 2,
+            "subtitle": "Ravana severely hurt",
+            "title": "Sarga 102"
+          },
+          {
+            "id": "chapter103",
+            "index": 103,
+            "state": 2,
+            "subtitle": "Ravana’s charioteer carries him away",
+            "title": "Sarga 103"
+          },
+          {
+            "id": "chapter104",
+            "index": 104,
+            "state": 2,
+            "subtitle": "Ravana re-approaches battlefield",
+            "title": "Sarga 104"
+          },
+          {
+            "id": "chapter105",
+            "index": 105,
+            "state": 2,
+            "subtitle": "Sage Agastya’s advice",
+            "title": "Sarga 105"
+          },
+          {
+            "id": "chapter106",
+            "index": 106,
+            "state": 2,
+            "subtitle": "Rama speaks to Matali",
+            "title": "Sarga 106"
+          },
+          {
+            "id": "chapter107",
+            "index": 107,
+            "state": 2,
+            "subtitle": "Rama and Ravana’s fierce battle",
+            "title": "Sarga 107"
+          },
+          {
+            "id": "chapter108",
+            "index": 108,
+            "state": 2,
+            "subtitle": "Rama kills Ravana",
+            "title": "Sarga 108"
+          },
+          {
+            "id": "chapter109",
+            "index": 109,
+            "state": 2,
+            "subtitle": "Rama directs Vibhishana to conduct obsequies for Ravana",
+            "title": "Sarga 109"
+          },
+          {
+            "id": "chapter110",
+            "index": 110,
+            "state": 2,
+            "subtitle": "Ravana’s consorts lament",
+            "title": "Sarga 110"
+          },
+          {
+            "id": "chapter111",
+            "index": 111,
+            "state": 2,
+            "subtitle": "Mandodari laments Ravana's death",
+            "title": "Sarga 111"
+          },
+          {
+            "id": "chapter112",
+            "index": 112,
+            "state": 2,
+            "subtitle": "Vibhishana's installation as king",
+            "title": "Sarga 112"
+          },
+          {
+            "id": "chapter113",
+            "index": 113,
+            "state": 2,
+            "subtitle": "Hanuma informs Seetha about Rama's victory",
+            "title": "Sarga 113"
+          },
+          {
+            "id": "chapter114",
+            "index": 114,
+            "state": 2,
+            "subtitle": "Vibhishana brings Seetha to Rama",
+            "title": "Sarga 114"
+          },
+          {
+            "id": "chapter115",
+            "index": 115,
+            "state": 2,
+            "subtitle": "Rama disowns her and asks her to seek shelter",
+            "title": "Sarga 115"
+          },
+          {
+            "id": "chapter116",
+            "index": 116,
+            "state": 2,
+            "subtitle": "Seetha's taunting reply to Rama",
+            "title": "Sarga 116"
+          },
+          {
+            "id": "chapter117",
+            "index": 117,
+            "state": 2,
+            "subtitle": "Gods reach Lanka and approach Rama",
+            "title": "Sarga 117"
+          },
+          {
+            "id": "chapter118",
+            "index": 118,
+            "state": 2,
+            "subtitle": "The fire-god appears from the burning pyre",
+            "title": "Sarga 118"
+          },
+          {
+            "id": "chapter119",
+            "index": 119,
+            "state": 2,
+            "subtitle": "Lord Shiva informs Rama about his father",
+            "title": "Sarga 119"
+          },
+          {
+            "id": "chapter120",
+            "index": 120,
+            "state": 2,
+            "subtitle": "Indra’s boon to Rama",
+            "title": "Sarga 120"
+          },
+          {
+            "id": "chapter121",
+            "index": 121,
+            "state": 2,
+            "subtitle": "Rama prepares to leave for Ayodhya",
+            "title": "Sarga 121"
+          },
+          {
+            "id": "chapter122",
+            "index": 122,
+            "state": 2,
+            "subtitle": "Rama",
+            "title": "Sarga 122"
+          },
+          {
+            "id": "chapter123",
+            "index": 123,
+            "state": 2,
+            "subtitle": "Rama shows Seetha the places",
+            "title": "Sarga 123"
+          },
+          {
+            "id": "chapter124",
+            "index": 124,
+            "state": 2,
+            "subtitle": "Rama lands at Sage Bharadwaja’s hermitage",
+            "title": "Sarga 124"
+          },
+          {
+            "id": "chapter125",
+            "index": 125,
+            "state": 2,
+            "subtitle": "Hanuma informs Bharata about Rama’s return",
+            "title": "Sarga 125"
+          },
+          {
+            "id": "chapter126",
+            "index": 126,
+            "state": 2,
+            "subtitle": "Hanuma recounts to Bharata about Rama in forest",
+            "title": "Sarga 126"
+          },
+          {
+            "id": "chapter127",
+            "index": 127,
+            "state": 2,
+            "subtitle": "Bharata commands reception of Rama in Ayodhya",
+            "title": "Sarga 127"
+          },
+          {
+            "id": "chapter128",
+            "index": 128,
+            "state": 2,
+            "subtitle": "Sri Rama’s Pattabhishekam (coronation)",
+            "title": "Sarga 128"
+          }
+        ],
+        "id": "volume06",
+        "images": {
+          "thumbnail": "thumbnail.png"
+        },
+        "name": "Yuddha Kandam",
+        "state": 2,
+        "subtitle": "128 Sargas"
+      }
+    ]
+  }
+}

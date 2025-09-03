@@ -12,7 +12,7 @@ String buildVersesPath({
   required String chapterId,
   required String lang,
 }) {
-  return "$baseProjectsRoot/$projectId/volumes/$volumeId/chapters/$chapterId/lang/$lang/verses.txt";
+  return "$baseProjectsRoot/$projectId/volumes/$volumeId/chapters/$chapterId/$lang/verses.txt";
 }
 
 String buildMeaningsPath({
@@ -21,7 +21,7 @@ String buildMeaningsPath({
   required String chapterId,
   required String lang,
 }) {
-  return "$baseProjectsRoot/$projectId/volumes/$volumeId/chapters/$chapterId/lang/$lang/meanings.txt";
+  return "$baseProjectsRoot/$projectId/volumes/$volumeId/chapters/$chapterId/$lang/meanings.txt";
 }
 
 String buildDurationsPath({
@@ -77,23 +77,23 @@ String resolveRelativePath({
   return url;
 }
 
+
 String resolveProjectImage({
   required String projectId,
-  String? relativePath,
+  String? path,
+  String? subfolder, // e.g. "volumes/volume01/images"
 }) {
-  if (relativePath == null || relativePath.isEmpty) {
-    return '';
-  }
-  if (relativePath.startsWith('http')) {
-    return relativePath; // already a full URL
-  }
+  if (path == null || path.isEmpty) return '';
+  if (path.startsWith('http')) return path;
 
-  // ✅ If relativePath already has projectId, don’t add it again
-  if (relativePath.startsWith(projectId)) {
-    return "$baseProjectsRoot/$relativePath";
-  }
+  // Default = project/images
+  final folder = subfolder ?? "images";
+  final imagePath = "$baseProjectsRoot/$projectId/$folder/$path";
 
-  // ✅ Otherwise, prefix with projectId
-  return "$baseProjectsRoot/$projectId/$relativePath";
+  print("🖼️ Resolved → $imagePath");
+  return imagePath;
 }
+
+
+
 

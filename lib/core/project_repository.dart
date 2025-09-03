@@ -8,7 +8,6 @@ import 'models.dart';
 import 'metadata_paths.dart';
 
 class ProjectRepository {
-
   Future<dynamic> _loadJson(String url) async {
     print("📥 Fetching $url");
     final response = await http.get(Uri.parse(url));
@@ -25,38 +24,40 @@ class ProjectRepository {
   /// 🔹 For Marketplace – lightweight summaries
   Future<List<ProjectSummary>> loadProjects() async {
     final data = await _loadJson(MetadataPath.projects());
-    final rawList = (data is Map<String, dynamic>) ? data["projects"] : data;
-    return (rawList as List<dynamic>).map((e) {
-      final meta = ProjectMetadata.fromJson(e);
-      return ProjectSummary(
-        id: meta.id,
-        title: meta.title,
-        subtitle: meta.description, // or subtitle if available
-        thumbnail: meta.cover,
-        banner: meta.banner,
-        isPremium: meta.isPremium,
-        featured: (e["featured"] as bool?) ?? false, // 👈 ADD THIS
-      );
-    }).toList();
+    if (data is! List) throw FormatException("❌ Expected list for marketplace.json");
+
+    return data
+        .map((projJson) => ProjectSummary.fromJson(projJson as Map<String, dynamic>))
+        .toList();
   }
 
-  /// 🔹 Full project details (for ProjectBrowserScreen)
+  /// 🔹 Full project details
   Future<ProjectMetadata> loadProjectMetadata(String projectId) async {
     final data = await _loadJson(MetadataPath.project(projectId));
     return ProjectMetadata.fromJson(data);
   }
 
-  /// 🔹 Volume-level metadata
-  Future<VolumeMetadata> loadVolumeMetadata(String projectId, String volumeId) async {
-    final data = await _loadJson(MetadataPath.volume(projectId, volumeId));
-    return VolumeMetadata.fromJson(data);
+  /// 🔹 Get a specific volume directly from project metadata
+  VolumeSummary? loadVolumeMetadata(ProjectMetadata project, String volumeId) {
+    try {
+      return project.volumes.firstWhere((v) => v.id == volumeId);
+    } catch (_) {
+      return null;
+    }
   }
 
-  /// 🔹 Chapter-level metadata
-  Future<ChapterMetadata> loadChapterMetadata(
-      String projectId, String volumeId, String chapterId) async {
-    final data =
-    await _loadJson(MetadataPath.chapter(projectId, volumeId, chapterId));
-    return ChapterMetadata.fromJson(data);
+  /// 🔹 Get a specific chapter directly from project metadata
+  ChapterSummary? loadChapterMetadata(
+      ProjectMetadata project, String volumeId, String chapterId) {
+    final volume = loadVolumeMetadata(project, volumeId);
+    if (volume == null) return null;
+
+    try {
+      return volume.chaptersList.firstWhere((c) => c.id == chapterId);
+    } catch (_) {
+      return null;
+    }
   }
 }
+
+

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>pre_staging</key>
+    <dict>
+        <key>pre_staging_root</key>
+        <string></string>
+    </dict>
+    <key>staging</key>
+    <dict>
+        <key>staging_root</key>
+        <string></string>
+    </dict>
+    <key>prodcution</key>
+    <dict>
+        <key>prodiction_root</key>
+        <string></string>
+    </dict>
+    <key>deployment</key>
+    <dict>
+        <key>backup</key>
+        <false/>
+        <key>volumes</key>
+        <dict>
+            <key>volume01</key>
+            <dict>
+                <key>langs</key>
+                <dict>
+                    <key>sa_bt</key>
+                    <true />
+                    <key>ta</key>
+                    <true />
+                    <key>be</key>
+                    <true />
+                    <key>gu</key>
+                    <true />
+                    <key>te</key>
+                    <true />
+                    <key>ka</key>
+                    <true />
+                    <key>en</key>
+                    <true />
+                    <key>ma</key>
+                    <true />
+                </dict>
+                <key>orchestrate</key>
+                <false/>
+            </dict>
+        </dict>
+    </dict>
+</dict>
+</plist>

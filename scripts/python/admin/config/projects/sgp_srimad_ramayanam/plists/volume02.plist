@@ -1,0 +1,1450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chapters</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>chapter001</string>
+			<key>index</key>
+			<integer>1</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama</string>
+			<key>title</key>
+			<string>Sarga 1</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter002</string>
+			<key>index</key>
+			<integer>2</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha's Desire</string>
+			<key>title</key>
+			<string>Sarga 2</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter003</string>
+			<key>index</key>
+			<integer>3</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Preparing for the Ceremony</string>
+			<key>title</key>
+			<string>Sarga 3</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter004</string>
+			<key>index</key>
+			<integer>4</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha's Premonition</string>
+			<key>title</key>
+			<string>Sarga 4</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter005</string>
+			<key>index</key>
+			<integer>5</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Festivities in Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 5</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter006</string>
+			<key>index</key>
+			<integer>6</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Joy of a City</string>
+			<key>title</key>
+			<string>Sarga 6</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter007</string>
+			<key>index</key>
+			<integer>7</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Wicked Manthara</string>
+			<key>title</key>
+			<string>Sarga 7</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter008</string>
+			<key>index</key>
+			<integer>8</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Manthara's Sinful Words</string>
+			<key>title</key>
+			<string>Sarga 8</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter009</string>
+			<key>index</key>
+			<integer>9</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Manthara's Success in Poisoning Kaikeyi's Mind</string>
+			<key>title</key>
+			<string>Sarga 9</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter010</string>
+			<key>index</key>
+			<integer>10</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kaikeyi Enters the House of Wrath</string>
+			<key>title</key>
+			<string>Sarga 10</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter011</string>
+			<key>index</key>
+			<integer>11</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kaikeyi's Evil Boons</string>
+			<key>title</key>
+			<string>Sarga 11</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter012</string>
+			<key>index</key>
+			<integer>12</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha’s Reaction and Kaikeyi’s Adamant Nature</string>
+			<key>title</key>
+			<string>Sarga 12</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter013</string>
+			<key>index</key>
+			<integer>13</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha's Grief and Anguish</string>
+			<key>title</key>
+			<string>Sarga 13</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter014</string>
+			<key>index</key>
+			<integer>14</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Night Passes</string>
+			<key>title</key>
+			<string>Sarga 14</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter015</string>
+			<key>index</key>
+			<integer>15</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sumantra Arrives at Rama's Chambers</string>
+			<key>title</key>
+			<string>Sarga 15</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter016</string>
+			<key>index</key>
+			<integer>16</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Jubilant City of Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 16</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter017</string>
+			<key>index</key>
+			<integer>17</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama's Arrival at Royal Court</string>
+			<key>title</key>
+			<string>Sarga 17</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter018</string>
+			<key>index</key>
+			<integer>18</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kaikeyi's Harsh Words</string>
+			<key>title</key>
+			<string>Sarga 18</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter019</string>
+			<key>index</key>
+			<integer>19</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Decides to Leave for Forest</string>
+			<key>title</key>
+			<string>Sarga 19</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter020</string>
+			<key>index</key>
+			<integer>20</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kausalya's Grief</string>
+			<key>title</key>
+			<string>Sarga 20</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter021</string>
+			<key>index</key>
+			<integer>21</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Consoles Angry Lakshmana</string>
+			<key>title</key>
+			<string>Sarga 21</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter022</string>
+			<key>index</key>
+			<integer>22</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Tries to Pacify Lakshmana Further</string>
+			<key>title</key>
+			<string>Sarga 22</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter023</string>
+			<key>index</key>
+			<integer>23</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Lakshmana's Angry Words</string>
+			<key>title</key>
+			<string>Sarga 23</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter024</string>
+			<key>index</key>
+			<integer>24</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Obtains Kausalya's Permission</string>
+			<key>title</key>
+			<string>Sarga 24</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter025</string>
+			<key>index</key>
+			<integer>25</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kausalya Bids Farewell to Rama</string>
+			<key>title</key>
+			<string>Sarga 25</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter026</string>
+			<key>index</key>
+			<integer>26</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Lets Sita Know of King's Wish</string>
+			<key>title</key>
+			<string>Sarga 26</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter027</string>
+			<key>index</key>
+			<integer>27</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sita's Wish to Go to Forest Along</string>
+			<key>title</key>
+			<string>Sarga 27</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter028</string>
+			<key>index</key>
+			<integer>28</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Warns Sita of Difficulties</string>
+			<key>title</key>
+			<string>Sarga 28</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter029</string>
+			<key>index</key>
+			<integer>29</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sita's Insistence on Going to the Forest</string>
+			<key>title</key>
+			<string>Sarga 29</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter030</string>
+			<key>index</key>
+			<integer>30</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Agrees to Take Sita to the Forest</string>
+			<key>title</key>
+			<string>Sarga 30</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter031</string>
+			<key>index</key>
+			<integer>31</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Lakshmana Also Permitted to Go</string>
+			<key>title</key>
+			<string>Sarga 31</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter032</string>
+			<key>index</key>
+			<integer>32</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Distributes Wealth to Rishis</string>
+			<key>title</key>
+			<string>Sarga 32</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter033</string>
+			<key>index</key>
+			<integer>33</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Pays Respects to His Father</string>
+			<key>title</key>
+			<string>Sarga 33</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter034</string>
+			<key>index</key>
+			<integer>34</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Consoles Dasaratha</string>
+			<key>title</key>
+			<string>Sarga 34</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter035</string>
+			<key>index</key>
+			<integer>35</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sumantra Rails at Kaikeyi</string>
+			<key>title</key>
+			<string>Sarga 35</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter036</string>
+			<key>index</key>
+			<integer>36</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Siddhartha Tries to Persuade Kaikeyi</string>
+			<key>title</key>
+			<string>Sarga 36</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter037</string>
+			<key>index</key>
+			<integer>37</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kaikeyi Offers Tree Bark to Sita</string>
+			<key>title</key>
+			<string>Sarga 37</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter038</string>
+			<key>index</key>
+			<integer>38</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha Is Enraged</string>
+			<key>title</key>
+			<string>Sarga 38</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter039</string>
+			<key>index</key>
+			<integer>39</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Seeks Blessings of His Mother</string>
+			<key>title</key>
+			<string>Sarga 39</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter040</string>
+			<key>index</key>
+			<integer>40</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama's Departure from Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 40</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter041</string>
+			<key>index</key>
+			<integer>41</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Grief</string>
+			<key>title</key>
+			<string>Sarga 41</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter042</string>
+			<key>index</key>
+			<integer>42</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha Feels Dejected</string>
+			<key>title</key>
+			<string>Sarga 42</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter043</string>
+			<key>index</key>
+			<integer>43</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Lamentation of Kausalya</string>
+			<key>title</key>
+			<string>Sarga 43</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter044</string>
+			<key>index</key>
+			<integer>44</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sumitra Assuages Kausalya's Grief</string>
+			<key>title</key>
+			<string>Sarga 44</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter045</string>
+			<key>index</key>
+			<integer>45</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Requests Citizens to Return</string>
+			<key>title</key>
+			<string>Sarga 45</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter046</string>
+			<key>index</key>
+			<integer>46</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Spends Night by Tāmāśa River</string>
+			<key>title</key>
+			<string>Sarga 46</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter047</string>
+			<key>index</key>
+			<integer>47</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Citizens Rebuke Themselves</string>
+			<key>title</key>
+			<string>Sarga 47</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter048</string>
+			<key>index</key>
+			<integer>48</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama’s Departure to the Forest</string>
+			<key>title</key>
+			<string>Sarga 48</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter049</string>
+			<key>index</key>
+			<integer>49</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Crosses Three Rivers</string>
+			<key>title</key>
+			<string>Sarga 49</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter050</string>
+			<key>index</key>
+			<integer>50</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Bids Farewell to Birth-Place</string>
+			<key>title</key>
+			<string>Sarga 50</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter051</string>
+			<key>index</key>
+			<integer>51</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Guha Urges Lakshmana to Rest</string>
+			<key>title</key>
+			<string>Sarga 51</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter052</string>
+			<key>index</key>
+			<integer>52</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Guha Gets a Boat Ready</string>
+			<key>title</key>
+			<string>Sarga 52</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter053</string>
+			<key>index</key>
+			<integer>53</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Tries to Send Lakshmana Back</string>
+			<key>title</key>
+			<string>Sarga 53</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter054</string>
+			<key>index</key>
+			<integer>54</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Hermitage of Bharadwaja</string>
+			<key>title</key>
+			<string>Sarga 54</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter055</string>
+			<key>index</key>
+			<integer>55</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sage Bharadwaja Informs the Route</string>
+			<key>title</key>
+			<string>Sarga 55</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter056</string>
+			<key>index</key>
+			<integer>56</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Chitrakuta Mountain</string>
+			<key>title</key>
+			<string>Sarga 56</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter057</string>
+			<key>index</key>
+			<integer>57</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sumantra Drives Back to Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 57</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter058</string>
+			<key>index</key>
+			<integer>58</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sumantra Delivers Rama’s Messages</string>
+			<key>title</key>
+			<string>Sarga 58</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter059</string>
+			<key>index</key>
+			<integer>59</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha Falls Unconscious</string>
+			<key>title</key>
+			<string>Sarga 59</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter060</string>
+			<key>index</key>
+			<integer>60</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sumantra Unable to Console Kausalya</string>
+			<key>title</key>
+			<string>Sarga 60</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter061</string>
+			<key>index</key>
+			<integer>61</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kausalya Rebukes Dasaratha</string>
+			<key>title</key>
+			<string>Sarga 61</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter062</string>
+			<key>index</key>
+			<integer>62</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>King Dasaratha Loses Consciousness</string>
+			<key>title</key>
+			<string>Sarga 62</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter063</string>
+			<key>index</key>
+			<integer>63</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha Narrates His Sin</string>
+			<key>title</key>
+			<string>Sarga 63</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter064</string>
+			<key>index</key>
+			<integer>64</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha Continues to Narrate</string>
+			<key>title</key>
+			<string>Sarga 64</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter065</string>
+			<key>index</key>
+			<integer>65</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha Passes Away</string>
+			<key>title</key>
+			<string>Sarga 65</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter066</string>
+			<key>index</key>
+			<integer>66</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kausalya Reproaches Kaikeyi</string>
+			<key>title</key>
+			<string>Sarga 66</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter067</string>
+			<key>index</key>
+			<integer>67</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Brahmins Urge Vasishta to Select King</string>
+			<key>title</key>
+			<string>Sarga 67</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter068</string>
+			<key>index</key>
+			<integer>68</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vasishta Sends Messengers to Call Bharata</string>
+			<key>title</key>
+			<string>Sarga 68</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter069</string>
+			<key>index</key>
+			<integer>69</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Experiences a Bad Dream</string>
+			<key>title</key>
+			<string>Sarga 69</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter070</string>
+			<key>index</key>
+			<integer>70</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Messengers Enter Rajagriha</string>
+			<key>title</key>
+			<string>Sarga 70</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter071</string>
+			<key>index</key>
+			<integer>71</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Reaches Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 71</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter072</string>
+			<key>index</key>
+			<integer>72</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kaikeyi Informs Bharata of Death</string>
+			<key>title</key>
+			<string>Sarga 72</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter073</string>
+			<key>index</key>
+			<integer>73</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Reproaches Kaikeyi</string>
+			<key>title</key>
+			<string>Sarga 73</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter074</string>
+			<key>index</key>
+			<integer>74</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Promises to Bring Rama Back</string>
+			<key>title</key>
+			<string>Sarga 74</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter075</string>
+			<key>index</key>
+			<integer>75</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata and Shatrughna Go to Kausalya</string>
+			<key>title</key>
+			<string>Sarga 75</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter076</string>
+			<key>index</key>
+			<integer>76</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vasishta Advises Bharata</string>
+			<key>title</key>
+			<string>Sarga 76</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter077</string>
+			<key>index</key>
+			<integer>77</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>They Grieve at Cremation Ground</string>
+			<key>title</key>
+			<string>Sarga 77</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter078</string>
+			<key>index</key>
+			<integer>78</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Shatrughna Seizes Manthara</string>
+			<key>title</key>
+			<string>Sarga 78</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter079</string>
+			<key>index</key>
+			<integer>79</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>King-Makers Request Bharata to Take Throne</string>
+			<key>title</key>
+			<string>Sarga 79</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter080</string>
+			<key>index</key>
+			<integer>80</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Construction of Highway to Ganga</string>
+			<key>title</key>
+			<string>Sarga 80</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter081</string>
+			<key>index</key>
+			<integer>81</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata and Shatrughna Enter Assembly</string>
+			<key>title</key>
+			<string>Sarga 81</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter082</string>
+			<key>index</key>
+			<integer>82</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Refuses the Throne</string>
+			<key>title</key>
+			<string>Sarga 82</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter083</string>
+			<key>index</key>
+			<integer>83</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Goes to See Rama</string>
+			<key>title</key>
+			<string>Sarga 83</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter084</string>
+			<key>index</key>
+			<integer>84</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Guha Welcomes Bharata with Drink</string>
+			<key>title</key>
+			<string>Sarga 84</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter085</string>
+			<key>index</key>
+			<integer>85</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Thanks Guha</string>
+			<key>title</key>
+			<string>Sarga 85</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter086</string>
+			<key>index</key>
+			<integer>86</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Guha Narrates Rama’s Stay</string>
+			<key>title</key>
+			<string>Sarga 86</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter087</string>
+			<key>index</key>
+			<integer>87</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Guha Reports Further Details</string>
+			<key>title</key>
+			<string>Sarga 87</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter088</string>
+			<key>index</key>
+			<integer>88</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Approaches Angudi Tree</string>
+			<key>title</key>
+			<string>Sarga 88</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter089</string>
+			<key>index</key>
+			<integer>89</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Asks for Ferry Across River</string>
+			<key>title</key>
+			<string>Sarga 89</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter090</string>
+			<key>index</key>
+			<integer>90</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Goes to Bharadwaja</string>
+			<key>title</key>
+			<string>Sarga 90</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter091</string>
+			<key>index</key>
+			<integer>91</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharadwaja Gives Hospitality</string>
+			<key>title</key>
+			<string>Sarga 91</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter092</string>
+			<key>index</key>
+			<integer>92</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Approaches Bharadwaja</string>
+			<key>title</key>
+			<string>Sarga 92</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter093</string>
+			<key>index</key>
+			<integer>93</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Reaching Chitrakuta Mountain</string>
+			<key>title</key>
+			<string>Sarga 93</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter094</string>
+			<key>index</key>
+			<integer>94</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Shows Scenic Beauty</string>
+			<key>title</key>
+			<string>Sarga 94</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter095</string>
+			<key>index</key>
+			<integer>95</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama and Sita at Mandakini River</string>
+			<key>title</key>
+			<string>Sarga 95</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter096</string>
+			<key>index</key>
+			<integer>96</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Hears Clamour of an Army</string>
+			<key>title</key>
+			<string>Sarga 96</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter097</string>
+			<key>index</key>
+			<integer>97</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Pacifies Angry Lakshmana</string>
+			<key>title</key>
+			<string>Sarga 97</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter098</string>
+			<key>index</key>
+			<integer>98</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Continues Search for Hermitage</string>
+			<key>title</key>
+			<string>Sarga 98</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter099</string>
+			<key>index</key>
+			<integer>99</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Beholds Rama’s Hermitage</string>
+			<key>title</key>
+			<string>Sarga 99</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter100</string>
+			<key>index</key>
+			<integer>100</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Enquires Welfare of Father</string>
+			<key>title</key>
+			<string>Sarga 100</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter101</string>
+			<key>index</key>
+			<integer>101</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Informs of Dasaratha’s Death</string>
+			<key>title</key>
+			<string>Sarga 101</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter102</string>
+			<key>index</key>
+			<integer>102</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Requests Rama to Return</string>
+			<key>title</key>
+			<string>Sarga 102</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter103</string>
+			<key>index</key>
+			<integer>103</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Faints on Hearing the News</string>
+			<key>title</key>
+			<string>Sarga 103</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter104</string>
+			<key>index</key>
+			<integer>104</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vasishta Comes to Hermitage</string>
+			<key>title</key>
+			<string>Sarga 104</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter105</string>
+			<key>index</key>
+			<integer>105</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Requests Rama to Accept Throne</string>
+			<key>title</key>
+			<string>Sarga 105</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter106</string>
+			<key>index</key>
+			<integer>106</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Reasons for Taking Throne</string>
+			<key>title</key>
+			<string>Sarga 106</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter107</string>
+			<key>index</key>
+			<integer>107</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Reminds of Promise</string>
+			<key>title</key>
+			<string>Sarga 107</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter108</string>
+			<key>index</key>
+			<integer>108</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Jabali Tries to Persuade Rama</string>
+			<key>title</key>
+			<string>Sarga 108</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter109</string>
+			<key>index</key>
+			<integer>109</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Refutes Atheistic Arguments</string>
+			<key>title</key>
+			<string>Sarga 109</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter110</string>
+			<key>index</key>
+			<integer>110</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vasishta Describes Creation of World</string>
+			<key>title</key>
+			<string>Sarga 110</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter111</string>
+			<key>index</key>
+			<integer>111</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vasishta Urges Granting Bharata's Prayer</string>
+			<key>title</key>
+			<string>Sarga 111</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter112</string>
+			<key>index</key>
+			<integer>112</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sages Urge Bharata to Accept Rama’s Words</string>
+			<key>title</key>
+			<string>Sarga 112</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter113</string>
+			<key>index</key>
+			<integer>113</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Carries Rama’s Sandals on His Chariot</string>
+			<key>title</key>
+			<string>Sarga 113</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter114</string>
+			<key>index</key>
+			<integer>114</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Enters Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 114</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter115</string>
+			<key>index</key>
+			<integer>115</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Bharata Wishes to Go to Nandigrama</string>
+			<key>title</key>
+			<string>Sarga 115</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter116</string>
+			<key>index</key>
+			<integer>116</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Notices Anxiety of Sages</string>
+			<key>title</key>
+			<string>Sarga 116</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter117</string>
+			<key>index</key>
+			<integer>117</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama Decides to Leave Chitrakuta</string>
+			<key>title</key>
+			<string>Sarga 117</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter118</string>
+			<key>index</key>
+			<integer>118</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Anasuya Instructs Sita on Devotion</string>
+			<key>title</key>
+			<string>Sarga 118</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter119</string>
+			<key>index</key>
+			<integer>119</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sita Shows Anasuya’s Gifts to Rama</string>
+			<key>title</key>
+			<string>Sarga 119</string>
+		</dict>
+	</array>
+	<key>id</key>
+	<string>volume02</string>
+	<key>images</key>
+	<dict>
+		<key>thumbnail</key>
+		<string>thumbnail.png</string>
+	</dict>
+	<key>name</key>
+	<string>Ayodhya Kandam</string>
+	<key>state</key>
+	<integer>2</integer>
+	<key>subtitle</key>
+	<string>119 Sargas</string>
+</dict>
+</plist>

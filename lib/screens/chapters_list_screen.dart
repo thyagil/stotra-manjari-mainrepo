@@ -1,15 +1,12 @@
-import 'dart:convert';
+// lib/screens/chapters_list_screen.dart
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart' show rootBundle;
-import 'package:stotra_manjari/core/ui_settings.dart';
-import '../core/languages.dart';
 import '../core/models.dart';
-import 'player_screen.dart';
 import '../core/ui_settings.dart';
+import 'player_screen.dart';
 
-class ChaptersListScreen extends StatefulWidget {
+class ChaptersListScreen extends StatelessWidget {
   final String projectId;
-  final VolumeMetadata volume;
+  final VolumeSummary volume;
   final String lang;
 
   const ChaptersListScreen({
@@ -20,83 +17,40 @@ class ChaptersListScreen extends StatefulWidget {
   });
 
   @override
-  State<ChaptersListScreen> createState() => _ChaptersListScreenState();
-}
-
-class _ChaptersListScreenState extends State<ChaptersListScreen> {
-  String? _err;
-  late List<ChapterSummary> _chapters;
-  Map<String, Map<String, dynamic>> _chapterDetails = {};
-
-  @override
-  void initState() {
-    super.initState();
-    _chapters = widget.volume.chaptersList;
-    _loadChapterMetadata();
-    currentLang.addListener(_onLangChanged);
-  }
-
-  @override
-  void dispose() {
-    currentLang.removeListener(_onLangChanged);
-    super.dispose();
-  }
-
-  void _onLangChanged() {
-    if (currentLang.value != widget.lang) {
-      Navigator.of(context).pop();
-    }
-  }
-
-  Future<void> _loadChapterMetadata() async {
-    final details = <String, Map<String, dynamic>>{};
-    for (final c in _chapters) {
-      try {
-        final path =
-            "assets/projects/${widget.projectId}/${widget.volume.id}/${c.id}/metadata.json";
-        final raw = await rootBundle.loadString(path);
-        details[c.id] = jsonDecode(raw);
-      } catch (_) {
-        // fallback: leave entry empty
-      }
-    }
-    setState(() => _chapterDetails = details);
-  }
-
-  @override
   Widget build(BuildContext context) {
-    final theme = Theme.of(context);         // 👈 here
     final smColors = activeTheme.smColors;
-    final v = widget.volume;
+    final chapters = volume.chaptersList;
 
     return Scaffold(
-      backgroundColor: smColors.versePlayerBackColor, // ✅ same bg as volume list
+      backgroundColor: smColors.versePlayerBackColor,
       appBar: AppBar(
         title: Text(
-          v.title,
+          volume.title,
           style: TextStyle(
             color: smColors.projectBrowserTitle,
             fontWeight: FontWeight.w700,
             fontSize: 20,
           ),
         ),
-        backgroundColor: smColors.versePlayerControlColor, // ✅ same top bar as volume list
+        backgroundColor: smColors.versePlayerControlColor,
         centerTitle: true,
         elevation: 2,
       ),
-      body: _err != null
-          ? Center(child: Text('Failed to load: $_err'))
-          : (_chapters.isEmpty
-          ? const Center(child: CircularProgressIndicator())
+      body: chapters.isEmpty
+          ? const Center(child: Text("No chapters available"))
           : ListView.builder(
-        itemCount: _chapters.length,
+        itemCount: chapters.length,
         padding: const EdgeInsets.all(12),
         itemBuilder: (_, i) {
-          final chapter = _chapters[i];
-          final meta = _chapterDetails[chapter.id];
+          final chapter = chapters[i];
 
-          final title = meta?["title"] ?? chapter.title;
-          final desc = meta?["description"] ?? chapter.title;
+          // ✅ Use subtitle if present, otherwise fall back gracefully
+          String subtitle = chapter.subtitle.isNotEmpty
+              ? chapter.subtitle
+              : "";
+
+          if (chapter.state == 1) subtitle += " (coming soon)";
+          else if (chapter.state == 0) subtitle = "hidden";
 
           return Card(
             elevation: 10,
@@ -116,21 +70,21 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
                 width: 40,
                 height: 40,
                 decoration: BoxDecoration(
-                  color: smColors.marketplaceCardBkColor, // ✅ same as project card background
+                  color: smColors.marketplaceCardBkColor,
                   shape: BoxShape.circle,
                 ),
                 alignment: Alignment.center,
                 child: Text(
-                  '${chapter.index}',
+                  '${chapter.index}',   // ✅ pulled directly from JSON
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 14,
-                    color: smColors.marketplaceCardTitleColor, // ✅ gold text like project card
+                    color: smColors.marketplaceCardTitleColor,
                   ),
                 ),
               ),
               title: Text(
-                title,
+                chapter.title,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
@@ -140,7 +94,7 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
                 ),
               ),
               subtitle: Text(
-                desc,
+                subtitle,
                 maxLines: 2,
                 overflow: TextOverflow.ellipsis,
                 style: TextStyle(
@@ -158,23 +112,14 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
               ),
               onTap: chapter.state == 2
                   ? () {
-                final cm = ChapterMetadata(
-                  id: chapter.id,
-                  volumeId: v.id,
-                  title: title,
-                  index: chapter.index,
-                  state: chapter.state,
-                  description: desc,
-                  verses: chapter.verses,
-                );
                 Navigator.push(
                   context,
                   MaterialPageRoute(
                     builder: (_) => PlayerScreen(
-                      projectId: widget.projectId,
-                      volumeId: v.id,
-                      chapterMeta: cm,
-                      language: widget.lang,
+                      projectId: projectId,
+                      volumeId: volume.id,
+                      chapterMeta: chapter,   // ✅ pass ChapterSummary
+                      language: lang,
                     ),
                   ),
                 );
@@ -182,9 +127,8 @@ class _ChaptersListScreenState extends State<ChaptersListScreen> {
                   : null,
             ),
           );
-
         },
-      )),
+      ),
     );
   }
 }

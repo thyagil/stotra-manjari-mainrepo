@@ -1,0 +1,12 @@
+{
+  "1": "orchestrator.tasks.step1_extract_audio",
+  "2": "orchestrator.tasks.step2_extract_text",
+  "3": "orchestrator.tasks.step3_translate",
+  "4": "orchestrator.tasks.step4_content_tweaks",
+  "5": "orchestrator.tasks.step5_generate_meanings",
+  "6": "orchestrator.tasks.step6_generate_durations",
+  "7": "orchestrator.tasks.step7_metadata",
+  "8": "orchestrator.tasks.step8_images",
+  "9": "orchestrator.tasks.step9_sync_staging",
+  "10": "orchestrator.tasks.step10_deploy_prod"
+}

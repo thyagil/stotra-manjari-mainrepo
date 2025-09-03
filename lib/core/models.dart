@@ -11,8 +11,8 @@ class ProjectSummary {
   final String id;
   final String title;
   final String subtitle;
-  final String thumbnail;
-  final String banner;     // 👈 NEW
+  final String cover;
+  final String banner;
   final bool isPremium;
   final bool featured;
 
@@ -20,64 +20,57 @@ class ProjectSummary {
     required this.id,
     required this.title,
     required this.subtitle,
-    required this.thumbnail,
-    required this.banner,   // 👈 NEW
+    required this.cover,
+    required this.banner,
     required this.isPremium,
-    this.featured = false
+    this.featured = false,
   });
 
   factory ProjectSummary.fromJson(Map<String, dynamic> json) {
     final projectId = json['id'] as String? ?? '';
 
-    final coverPath = resolveProjectImage(
-      projectId: projectId,
-      relativePath: json['cover'] as String?,
-    );
-
-    final thumbPath = resolveProjectImage(
-      projectId: projectId,
-      relativePath: json['thumbnail'] as String?,
-    );
-    final bannerPath = resolveProjectImage(
-      projectId: projectId,
-      relativePath: json['banner'] as String?,
-    );
-
     return ProjectSummary(
       id: projectId,
       title: json['title'] as String? ?? '',
       subtitle: json['subtitle'] as String? ?? '',
-      thumbnail: thumbPath.isNotEmpty ? thumbPath : coverPath,
-      banner: bannerPath.isNotEmpty ? bannerPath : coverPath,
-      isPremium: (json['monetization']?['isPremium'] as bool?) ?? false,
-      featured: json['featured'] as bool? ?? false,   // 👈 safe fallback
+      cover: resolveProjectImage(
+        projectId: projectId,
+        path: json['cover'] as String?,
+      ),
+      banner: resolveProjectImage(
+        projectId: projectId,
+        path: json['banner'] as String?,
+      ),
+      isPremium: json['isPremium'] as bool? ?? false,
+      featured: json['featured'] as bool? ?? false,
     );
   }
 }
-
 
 /// ========== PROJECT METADATA ==========
 class ProjectMetadata {
   final String id;
   final String title;
   final String description;
-  final String type; // "volumeBased" or "single"
+  final String type;
+  final String format;
   final List<VolumeSummary> volumes;
-
-  // Optional fields
   final List<String> categories;
   final List<String> languages;
   final List<Contributor> contributors;
   final List<AudioSample> audioSamples;
   final bool isPremium;
+  //Images
   final String cover;
   final String banner;
+  final String thumbnail;
 
   ProjectMetadata({
     required this.id,
     required this.title,
     required this.description,
     required this.type,
+    required this.format,
     required this.volumes,
     this.categories = const [],
     this.languages = const [],
@@ -86,23 +79,26 @@ class ProjectMetadata {
     this.isPremium = false,
     this.cover = "",
     this.banner = "",
+    this.thumbnail = "",
   });
 
   factory ProjectMetadata.fromJson(Map<String, dynamic> json) {
-    final projectId = json['id'] as String? ?? json['code'] as String? ?? '';
+    final projectId = json['id'] as String? ?? '';
+    final images = json['images'] as Map<String, dynamic>? ?? {};
 
     return ProjectMetadata(
       id: projectId,
-      title: json['title'] as String? ?? '',
+      title: json['friendly_name'] as String? ?? '',
       description: json['description'] as String? ?? '',
-      type: json['type'] as String? ?? 'volumeBased',
-      volumes: (json['volumes'] as List<dynamic>? ?? [])
+      type: json['type'] as String? ?? 'audiobook',
+      format: json['format'] as String? ?? 'standalone',
+      volumes: (json['structure']?['volumes'] as List<dynamic>? ?? [])
           .map((v) => VolumeSummary.fromJson({
         ...v as Map<String, dynamic>,
-        'projectId': projectId, // ✅ inject parent projectId
-          }))
+        'projectId': projectId,
+      }))
           .toList(),
-      categories: (json['categories'] as List<dynamic>? ?? [])
+      categories: (json['category'] as List<dynamic>? ?? [])
           .map((e) => e.toString())
           .toList(),
       languages: (json['languages'] as List<dynamic>? ?? [])
@@ -111,144 +107,99 @@ class ProjectMetadata {
       contributors: (json['contributors'] as List<dynamic>? ?? [])
           .map((c) => Contributor.fromJson(c as Map<String, dynamic>))
           .toList(),
-      audioSamples: (json['audioSamples'] as List<dynamic>? ?? [])
-          .map((a) => AudioSample.fromJson(a as Map<String, dynamic>))
-          .toList(),
-      isPremium: (json['monetization']?['isPremium'] as bool?) ?? false,
+      isPremium: (json['app_status']?['monetization']?['isPremium'] as bool?) ?? false,
 
       cover: resolveProjectImage(
         projectId: projectId,
-        relativePath: json['cover'] as String? ?? '',
+        path: images['cover'] as String?,
       ),
       banner: resolveProjectImage(
         projectId: projectId,
-        relativePath: json['banner'] as String? ?? '',
+        path: images['banner'] as String?,
+      ),
+      thumbnail: resolveProjectImage(
+        projectId: projectId,
+        path: images['thumbnail'] as String?,
       ),
     );
   }
 }
 
-/// ========== VOLUME METADATA ==========
-class VolumeMetadata {
-  final String id;
-  final String title;
-  final int index;
-  final int chapters;
-  final int state; // 0=hidden, 1=coming soon, 2=enabled
-  final List<ChapterSummary> chaptersList;
 
-  VolumeMetadata({
-    required this.id,
-    required this.title,
-    required this.index,
-    required this.chapters,
-    required this.state,
-    required this.chaptersList,
-  });
-
-  factory VolumeMetadata.fromJson(Map<String, dynamic> json) {
-    return VolumeMetadata(
-      id: json['id'] as String? ?? '',
-      title: json['title'] as String? ?? '',
-      index: json['index'] as int? ?? 0,
-      chapters: json['chapters'] as int? ?? 0,
-      state: json['state'] as int? ?? 2,
-      chaptersList: (json['chaptersList'] as List<dynamic>? ?? [])
-          .map((c) => ChapterSummary.fromJson(c as Map<String, dynamic>))
-          .toList(),
-    );
-  }
-
-  bool get isEnabled => state == 2;
-  bool get isComingSoon => state == 1;
-  bool get isHidden => state == 0;
-}
-
-/// ========== CHAPTER METADATA ==========
-class ChapterMetadata {
-  final String id;
-  final String? volumeId; // optional
-  final String title;
-  final int index;
-  final int state;
-  final String description;
-  final int? verses; // optional placeholder
-
-  ChapterMetadata({
-    required this.id,
-    required this.volumeId,
-    required this.title,
-    required this.index,
-    required this.state,
-    required this.description,
-    this.verses,
-  });
-
-  factory ChapterMetadata.fromJson(Map<String, dynamic> json) {
-    return ChapterMetadata(
-      id: json['id'] as String? ?? '',
-      volumeId: json['volumeId'] as String?,
-      title: json['title'] as String? ?? '',
-      index: json['index'] as int? ?? 0,
-      state: json['state'] as int? ?? 2,
-      description: json['description'] as String? ?? '',
-      verses: json['verses'] as int?,
-    );
-  }
-
-  bool get isEnabled => state == 2;
-  bool get isComingSoon => state == 1;
-  bool get isHidden => state == 0;
-}
-
-/// ========== SUPPORTING SUMMARY CLASSES ==========
 class VolumeSummary {
   final int index;
   final String id;
-  final String title;   // 👈 renamed from name → title
-  final int chapters;
+  final String title;
+  final String subtitle;
   final int state;
-  final String cover; // ✅ add this
+
+  // ✅ Chapters inside this volume
+  final List<ChapterSummary> chaptersList;
+
+  // ✅ Images
+  final String cover;
+  final String banner;
+  final String thumbnail;
 
   VolumeSummary({
     required this.index,
     required this.id,
     required this.title,
-    required this.chapters,
+    required this.subtitle,
     required this.state,
-    this.cover = "", // ✅ default empty string
+    required this.chaptersList,
+    this.cover = "",
+    this.banner = "",
+    this.thumbnail = "",
   });
 
   factory VolumeSummary.fromJson(Map<String, dynamic> json) {
     final projectId = json['projectId'] as String? ?? "";
+    final volumeId = json['id'] as String? ?? "";
+    final images = json['images'] as Map<String, dynamic>? ?? {};
 
     return VolumeSummary(
       index: json['index'] as int? ?? 0,
-      id: json['id'] as String? ?? '',
-      title: json['title'] as String? ?? '',
-      chapters: json['chapters'] as int? ?? 0,
+      id: volumeId,
+      title: json['name'] as String? ?? '',
+      subtitle: json['subtitle'] as String? ?? '',
       state: json['state'] as int? ?? 2,
-      cover: resolveProjectImage(              // 👈 important
+      chaptersList: (json['chapters'] as List<dynamic>? ?? [])
+          .map((c) => ChapterSummary.fromJson(c as Map<String, dynamic>))
+          .toList(),
+
+      cover: resolveProjectImage(
         projectId: projectId,
-        relativePath: json['cover'] as String?,
+        subfolder: "volumes/$volumeId/images",
+        path: images['cover'] as String?,
+      ),
+      banner: resolveProjectImage(
+        projectId: projectId,
+        subfolder: "volumes/$volumeId/images",
+        path: images['banner'] as String?,
+      ),
+      thumbnail: resolveProjectImage(
+        projectId: projectId,
+        subfolder: "volumes/$volumeId/images",
+        path: images['thumbnail'] as String?,
       ),
     );
   }
-
 }
+
 
 class ChapterSummary {
   final int index;
   final String id;
   final String title;
-  final int? verses;
+  final String subtitle;
   final int state;
 
   ChapterSummary({
     required this.index,
     required this.id,
     required this.title,
-    this.verses,
+    required this.subtitle,
     required this.state,
   });
 
@@ -257,11 +208,13 @@ class ChapterSummary {
       index: json['index'] as int? ?? 0,
       id: json['id'] as String? ?? '',
       title: json['title'] as String? ?? '',
-      verses: json['verses'] as int?,
+      subtitle: json['subtitle'] as String? ?? '',
       state: json['state'] as int? ?? 2,
     );
   }
 }
+
+
 
 class Contributor {
   final String role;
@@ -335,7 +288,7 @@ class Chapter {
   static Future<Chapter> fromMetadata({
     required String projectId,
     required String volumeId,
-    required ChapterMetadata metadata,
+    required ChapterSummary metadata,
     required String language,
   }) async {
     final chapterId = metadata.id;

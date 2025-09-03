@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>id</key>
+	<string>skp_srimad_bhagavatam</string>
+	<key>friendly_name</key>
+	<string>Srimad Bhagavatam</string>
+	<key>type</key>
+	<string>audiobook</string>
+    <key>format</key>
+    <string>volume</string>
+	<key>description</key>
+	<string>Rendering of Srimad Bhagavatam by Paranur Mahatma Sri Sri Krishna Premi Swamigal</string>
+	<key>artist</key>
+	<string>Sri Sri Krishna Premi Swamigal</string>
+	<key>category</key>
+	<array>
+		<string>Purana</string>
+		<string>Bhagavatam</string>
+	</array>
+	<key>languages</key>
+	<array>
+		<string>sa</string>
+		<string>ta</string>
+		<string>en</string>
+	</array>
+	<key>contributors</key>
+	<array>
+		<dict>
+			<key>role</key>
+			<string>Chanting</string>
+			<key>name</key>
+			<string>Sri Sri Krishna Premi Swamigal</string>
+		</dict>
+	</array>
+	<key>overview</key>
+	<string>A comprehensive chanting of Srimad Bhagavatam with multiple language support.</string>
+	<key>preview</key>
+	<string>Complete Bhagavatam recitation.</string>
+	<key>images</key>
+	<dict>
+		<key>cover</key>
+		<string>cover.jpg</string>
+		<key>banner</key>
+		<string>banner.png</string>
+	</dict>
+	<key>app_status</key>
+	<dict>
+		<key>featured</key>
+		<true/>
+		<key>published</key>
+		<false/>
+		<key>monetization</key>
+		<dict>
+			<key>isPremium</key>
+			<false/>
+			<key>currency</key>
+			<string>USD</string>
+			<key>price</key>
+			<real>29.99</real>
+		</dict>
+	</dict>
+	<key>deployment</key>
+	<dict>
+		<key>working</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/WORKBENCH/assets/projects/sgp_srimad_ramayanam/</string>
+		</dict>
+		<key>staging</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/WORKBENCH/stotra-manjari/staging/sgp_srimad_ramayanam</string>
+		</dict>
+		<key>production</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/web/stotra-manjari-assets/projects/sgp_srimad_ramayanam</string>
+		</dict>
+	</dict>
+	<key>volumes</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>volume01</string>
+			<key>name</key>
+			<string>Skandam 01</string>
+			<key>subtitle</key>
+			<string>19 Adhyayas</string>
+			<key>csv_file</key>
+			<string>volume01.csv</string>
+		</dict>
+	</array>
+</dict>
+</plist>

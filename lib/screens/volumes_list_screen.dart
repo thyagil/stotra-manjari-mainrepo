@@ -30,14 +30,17 @@ class VolumesListScreen extends StatelessWidget {
       itemBuilder: (_, i) {
         final v = metadata.volumes[i];
 
-        String subtitle = '${v.chapters} chapters';
+        String subtitle = v.subtitle.isNotEmpty
+            ? v.subtitle
+            : '${v.chaptersList.length} ${v.chaptersList.length == 1 ? 'chapter' : 'chapters'}';
+
         if (v.state == 1) subtitle += " (coming soon)";
         else if (v.state == 0) subtitle = "hidden";
 
         return Card(
           elevation: 10,
           margin: const EdgeInsets.symmetric(vertical: 10, horizontal: 2),
-          color: Colors.white, // 👈 makes it pop against cream background
+          color: Colors.white,
           shadowColor: Colors.black.withOpacity(0.35),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(14),
@@ -48,13 +51,13 @@ class VolumesListScreen extends StatelessWidget {
           ),
           child: ListTile(
             contentPadding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
-            leading: v.cover.isNotEmpty
+            leading: v.thumbnail.isNotEmpty
                 ? SizedBox(
               width: 56,
               height: 56,
               child: ClipOval(
                 child: Image.network(
-                  v.cover,
+                  v.thumbnail,
                   fit: BoxFit.cover,
                   errorBuilder: (_, __, ___) => Container(
                     color: Colors.grey.shade300,
@@ -64,12 +67,10 @@ class VolumesListScreen extends StatelessWidget {
               ),
             )
                 : const CircleAvatar(
-              radius: 35, // 70/2
+              radius: 35,
               backgroundColor: Colors.grey,
               child: Icon(Icons.book, color: Colors.black54),
             ),
-
-
             title: Text(
               v.title,
               style: TextStyle(
@@ -91,46 +92,32 @@ class VolumesListScreen extends StatelessWidget {
                 color: smColors.chapterCardNextArrowColor, size: 24)
                 : const Icon(Icons.lock, color: Colors.grey),
             onTap: v.state == 2
-                ? () async {
-              final repo = ProjectRepository();
-              try {
-                final volumeMeta = await repo.loadVolumeMetadata(
-                  projectId,
-                  v.id,
-                );
-
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (_) => ChaptersListScreen(
-                      projectId: projectId,
-                      volume: volumeMeta,
-                      lang: lang,
-                    ),
+                ? () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (_) => ChaptersListScreen(
+                    projectId: projectId,
+                    volume: v,   // ✅ pass VolumeSummary directly
+                    lang: lang,
                   ),
-                );
-              } catch (e) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text("❌ Failed to load volume: $e")),
-                );
-              }
+                ),
+              );
             }
                 : null,
           ),
         );
-
-
       },
     );
 
     return standalone
         ? Scaffold(
       appBar: AppBar(
-        backgroundColor: smColors.versePlayerControlColor, // gold
+        backgroundColor: smColors.versePlayerControlColor,
         elevation: 2,
         centerTitle: true,
-        iconTheme: const IconThemeData(color: Colors.black), // ✅ back button/icons
-        titleTextStyle: const TextStyle( // ✅ enforce black title
+        iconTheme: const IconThemeData(color: Colors.black),
+        titleTextStyle: const TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.w700,
           fontSize: 20,
@@ -140,6 +127,6 @@ class VolumesListScreen extends StatelessWidget {
       body: content,
     )
         : content;
-
   }
 }
+

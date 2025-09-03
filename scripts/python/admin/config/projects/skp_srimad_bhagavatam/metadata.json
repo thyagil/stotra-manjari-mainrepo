@@ -1,0 +1,196 @@
+{
+  "id": "skp_srimad_bhagavatam",
+  "friendly_name": "Srimad Bhagavatam",
+  "type": "audiobook",
+  "format": "volume",
+  "description": "Rendering of Srimad Bhagavatam by Paranur Mahatma Sri Sri Krishna Premi Swamigal",
+  "artist": "Sri Sri Krishna Premi Swamigal",
+  "category": [
+    "Purana",
+    "Bhagavatam"
+  ],
+  "languages": [
+    "sa",
+    "ta",
+    "en"
+  ],
+  "contributors": [
+    {
+      "role": "Chanting",
+      "name": "Sri Sri Krishna Premi Swamigal"
+    }
+  ],
+  "overview": "A comprehensive chanting of Srimad Bhagavatam with multiple language support.",
+  "preview": "Complete Bhagavatam recitation.",
+  "images": {
+    "cover": "cover.jpg",
+    "banner": "banner.png"
+  },
+  "app_status": {
+    "featured": true,
+    "published": false,
+    "monetization": {
+      "isPremium": false,
+      "currency": "USD",
+      "price": 29.99
+    }
+  },
+  "deployment": {
+    "working": {
+      "root_dir": "/Volumes/WORKBENCH/assets/projects/sgp_srimad_ramayanam/"
+    },
+    "staging": {
+      "root_dir": "/Volumes/WORKBENCH/stotra-manjari/staging/sgp_srimad_ramayanam"
+    },
+    "production": {
+      "root_dir": "/Volumes/web/stotra-manjari-assets/projects/sgp_srimad_ramayanam"
+    }
+  },
+  "structure": {
+    "volumes": [
+      {
+        "id": "volume01",
+        "name": "Skandam 01",
+        "subtitle": "19 Adhyayas",
+        "chapters": [
+          {
+            "id": "chapter001",
+            "index": 1,
+            "state": 2,
+            "subtitle": "Questions by the Sages",
+            "title": "Sarga 1"
+          },
+          {
+            "id": "chapter002",
+            "index": 2,
+            "state": 2,
+            "subtitle": "Divinity and Divine Service",
+            "title": "Sarga 2"
+          },
+          {
+            "id": "chapter003",
+            "index": 3,
+            "state": 2,
+            "subtitle": "Krishna Is the Source of All Incarnations",
+            "title": "Sarga 3"
+          },
+          {
+            "id": "chapter004",
+            "index": 4,
+            "state": 2,
+            "subtitle": "The Appearance of Śrī Nārada",
+            "title": "Sarga 4"
+          },
+          {
+            "id": "chapter005",
+            "index": 5,
+            "state": 2,
+            "subtitle": "Nārada's Instructions on Śrīmad-Bhāgavatam for Vyāsadeva",
+            "title": "Sarga 5"
+          },
+          {
+            "id": "chapter006",
+            "index": 6,
+            "state": 2,
+            "subtitle": "Conversation Between Nārada and Vyāsadeva",
+            "title": "Sarga 6"
+          },
+          {
+            "id": "chapter007",
+            "index": 7,
+            "state": 2,
+            "subtitle": "The Son of Droṇa Punished",
+            "title": "Sarga 7"
+          },
+          {
+            "id": "chapter008",
+            "index": 8,
+            "state": 2,
+            "subtitle": "Prayers by Queen Kuntī and Parīkshit Saved",
+            "title": "Sarga 8"
+          },
+          {
+            "id": "chapter009",
+            "index": 9,
+            "state": 2,
+            "subtitle": "The Passing Away of Bhīshmadeva in the Presence of Lord Krishna",
+            "title": "Sarga 9"
+          },
+          {
+            "id": "chapter010",
+            "index": 10,
+            "state": 2,
+            "subtitle": "Departure of Lord Krishna for Dvārakā",
+            "title": "Sarga 10"
+          },
+          {
+            "id": "chapter011",
+            "index": 11,
+            "state": 2,
+            "subtitle": "Lord Krishna's Entrance into Dvārakā",
+            "title": "Sarga 11"
+          },
+          {
+            "id": "chapter012",
+            "index": 12,
+            "state": 2,
+            "subtitle": "Birth of Emperor Parīkshit",
+            "title": "Sarga 12"
+          },
+          {
+            "id": "chapter013",
+            "index": 13,
+            "state": 2,
+            "subtitle": "Dhrtarāshtra Quits Home",
+            "title": "Sarga 13"
+          },
+          {
+            "id": "chapter014",
+            "index": 14,
+            "state": 2,
+            "subtitle": "The Disappearance of Lord Krishna",
+            "title": "Sarga 14"
+          },
+          {
+            "id": "chapter015",
+            "index": 15,
+            "state": 2,
+            "subtitle": "The Pāndavas Retire Timely",
+            "title": "Sarga 15"
+          },
+          {
+            "id": "chapter016",
+            "index": 16,
+            "state": 2,
+            "subtitle": "How Parīkshit Received the Age of Kali",
+            "title": "Sarga 16"
+          },
+          {
+            "id": "chapter017",
+            "index": 17,
+            "state": 2,
+            "subtitle": "Punishment and Reward of Kali",
+            "title": "Sarga 17"
+          },
+          {
+            "id": "chapter018",
+            "index": 18,
+            "state": 2,
+            "subtitle": "Mahārāja Parīkshit Cursed by a Brāhmaṇa Boy",
+            "title": "Sarga 18"
+          },
+          {
+            "id": "chapter019",
+            "index": 19,
+            "state": 2,
+            "subtitle": "The Appearance of Sri Śuka",
+            "title": "Sarga 19"
+          }
+        ],
+        "images": {
+          "thumbnail": "thumbnail.png"
+        }
+      }
+    ]
+  }
+}

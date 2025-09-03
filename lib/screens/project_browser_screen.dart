@@ -5,6 +5,8 @@ import '../core/project_repository.dart';
 import '../core/models.dart';
 import '../core/ui_settings.dart';
 import 'volumes_list_screen.dart';
+import 'chapters_list_screen.dart';
+import 'player_screen.dart';
 
 class ProjectBrowserScreen extends StatefulWidget {
   final ProjectSummary project;
@@ -84,7 +86,7 @@ class _ProjectBrowserScreenState extends State<ProjectBrowserScreen> {
                     child: Image.network(
                       project.banner.isNotEmpty
                           ? project.banner
-                          : project.thumbnail,
+                          : project.cover,
                       fit: BoxFit.cover,
                       errorBuilder: (_, __, ___) => const Icon(
                         Icons.book,
@@ -116,17 +118,56 @@ class _ProjectBrowserScreenState extends State<ProjectBrowserScreen> {
                       onPressed: _metadata!.isPremium
                           ? null
                           : () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (_) => VolumesListScreen(
-                              projectId: project.id,
-                              metadata: _metadata!,
-                              lang: currentLang.value,
-                            ),
-                          ),
-                        );
+                        final metadata = _metadata!;
+                        switch (metadata.format) {
+                          case "volume":
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => VolumesListScreen(
+                                  projectId: project.id,
+                                  metadata: metadata,
+                                  lang: currentLang.value,
+                                ),
+                              ),
+                            );
+                            break;
+
+                          case "chapter":
+                            final volume = metadata.volumes.first;
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => ChaptersListScreen(
+                                  projectId: project.id,
+                                  volume: volume,
+                                  lang: currentLang.value,
+                                ),
+                              ),
+                            );
+                            break;
+
+                          case "standalone":
+                            final volume = metadata.volumes.first;
+                            final chapter = volume.chaptersList.first;
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (_) => PlayerScreen(
+                                  projectId: project.id,
+                                  volumeId: volume.id,
+                                  chapterMeta: chapter,
+                                  language: currentLang.value,
+                                ),
+                              ),
+                            );
+                            break;
+
+                          default:
+                            debugPrint("⚠️ Unknown format: ${metadata.format}");
+                        }
                       },
+
                       child: Icon(
                         _metadata!.isPremium
                             ? Icons.lock
