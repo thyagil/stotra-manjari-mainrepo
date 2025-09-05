@@ -1,1 +1,0 @@
-const String openAiApiKey = "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";
