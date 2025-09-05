@@ -1,0 +1,18 @@
+{
+  "project_id": "kanakadharastotram_bhavadhaarini",
+  "artist": "Bhavadhaarini",
+  "amrutham_project_name": "Sri Sankara Devi Stotrams",
+  "project_name": "636",
+  "project_type": "standalone",
+  "shape_id": {
+    "sa": 1,
+    "ta": 0
+  },
+  "langs": ["sa", "ta", "en", "be", "te", "gu", "ka", "ma"],
+  "include_metadata_text": false,
+  "audio_format": "aac",
+  "steps": [3],
+  "base_dir": "/Volumes/AMRUTHAVANI",
+  "staging_root": "/Volumes/web/stotra-manjari-assets/projects",
+  "prod_bucket": "gs://stotra-manjari-assets/projects"
+}

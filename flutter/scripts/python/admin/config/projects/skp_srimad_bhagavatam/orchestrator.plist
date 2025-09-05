@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>format</key>
+	<string>volume</string>
+	<key>staging_root</key>
+	<string>/Volumes/WORKBENCH/assets/projects/skp_srimad_bhagavatam</string>
+	<key>audio_extraction</key>
+	<dict>
+		<key>audio_format</key>
+		<string>aac</string>
+		<key>chapter_regex</key>
+		<string>(?:^.*[_ ])(\d+)$|^\d+\.(\d+)</string>
+		<key>volumes</key>
+		<dict>
+			<key>volume01</key>
+			<dict>
+				<key>input_dir</key>
+				<string>/Volumes/AMRUTHAM/Sri Sri Anna/Srimad Bhagavatam/Video/Bounces/ta/SKANDHA 01/</string>
+				<key>orchestrate</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>text_extraction</key>
+	<dict>
+		<key>has_metadata</key>
+		<true/>
+		<key>chapter_regex</key>
+		<string>(?:^.*[_ ])(\d+)$|^\d+\.(\d+)</string>
+		<key>volumes</key>
+		<dict>
+			<key>volume01</key>
+			<dict>
+				<key>meta_prefix</key>
+				<string>sb_01_</string>
+				<key>meta_dir_sa</key>
+				<string>/Volumes/AMRUTHAM/Sri Sri Anna/Srimad Bhagavatam/Video/Mastering/Source Files/DOC/TXT/sa/SKANDHA 01/</string>
+				<key>meta_dir_ta</key>
+				<string>/Volumes/AMRUTHAM/Sri Sri Anna/Srimad Bhagavatam/Video/Mastering/Source Files/DOC/TXT/ta/SKANDHA 01/</string>
+				<key>ppts_dir</key>
+				<string>/Volumes/AMRUTHAM/Sri Sri Anna/Srimad Bhagavatam/Video/Mastering/Source Files/PPT/ta/Without Dupes/SKANDHA 01/</string>
+				<key>orchestrate</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>translation</key>
+	<dict>
+		<key>langs</key>
+		<array>
+			<string>sa_bt</string>
+			<string>be</string>
+			<string>gu</string>
+			<string>te</string>
+			<string>ka</string>
+			<string>en</string>
+			<string>ma</string>
+		</array>
+		<key>chapter_regex</key>
+		<string>(?:^.*[_ ])(\d+)$|^\d+\.(\d+)</string>
+		<key>volumes</key>
+		<dict>
+			<key>volume01</key>
+			<dict>
+				<key>input_lang</key>
+				<string>sa</string>
+				<key>orchestrate</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>content_tweaks</key>
+	<dict>
+		<key>add_header</key>
+		<true/>
+		<key>collapse_couplets</key>
+		<true/>
+		<key>langs</key>
+		<array>
+			<string>sa_bt</string>
+			<string>ta</string>
+			<string>be</string>
+			<string>gu</string>
+			<string>te</string>
+			<string>ka</string>
+			<string>en</string>
+			<string>ma</string>
+		</array>
+		<key>volumes</key>
+		<dict>
+			<key>volume01</key>
+			<dict>
+				<key>orchestrate</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+	<key>durations</key>
+	<dict>
+		<key>chapter_regex</key>
+		<string>(?:^.*[_ ])(\d+)$|^\d+\.(\d+)</string>
+		<key>volumes</key>
+		<dict>
+			<key>volume01</key>
+			<dict>
+				<key>input_dir</key>
+				<string>/Volumes/AMRUTHAM/Sri Sri Anna/Srimad Bhagavatam/Video/Mastering/Final Cut Pro/FCPXML/Localized/ta/SKANDHA 01.fcpxmld/</string>
+				<key>orchestrate</key>
+				<true/>
+			</dict>
+		</dict>
+	</dict>
+</dict>
+</plist>

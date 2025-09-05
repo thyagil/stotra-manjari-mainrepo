@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>id</key>
+	<string>svj_lalitha_sahasranamam</string>
+	<key>friendly_name</key>
+	<string>Lalitha Sahasranamam</string>
+	<key>type</key>
+	<string>audiobook</string>
+    <key>format</key>
+    <string>standalone</string>
+	<key>description</key>
+	<string>Rendering of Lalitha Sahasranamam by Sivananada Vijayalakshmi</string>
+	<key>artist</key>
+	<string>Sivananda Vijayalakshmi</string>
+	<key>category</key>
+	<array>
+		<string>Stotram</string>
+		<string>Lalitha Devi</string>
+		<string>Sahasranamam</string>
+	</array>
+	<key>languages</key>
+	<array>
+		<string>sa</string>
+		<string>ta</string>
+		<string>en</string>
+	</array>
+	<key>contributors</key>
+	<array>
+		<dict>
+			<key>role</key>
+			<string>Singing</string>
+			<key>name</key>
+			<string>Sivananda Vijayalakshmi</string>
+		</dict>
+	</array>
+	<key>overview</key>
+	<string>A superb rendering of Lalitha Sahasranamam</string>
+	<key>preview</key>
+	<string>A thousand names on the Divine Mother</string>
+	<key>images</key>
+	<dict>
+		<key>cover</key>
+		<string>cover.jpg</string>
+		<key>banner</key>
+		<string>banner.png</string>
+	</dict>
+	<key>app_status</key>
+	<dict>
+		<key>featured</key>
+		<true/>
+		<key>published</key>
+		<false/>
+		<key>monetization</key>
+		<dict>
+			<key>isPremium</key>
+			<false/>
+			<key>currency</key>
+			<string>USD</string>
+			<key>price</key>
+			<real>29.99</real>
+		</dict>
+	</dict>
+	<key>deployment</key>
+	<dict>
+		<key>working</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/WORKBENCH/assets/projects/sgp_srimad_ramayanam/</string>
+		</dict>
+		<key>staging</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/WORKBENCH/stotra-manjari/staging/sgp_srimad_ramayanam</string>
+		</dict>
+		<key>production</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/web/stotra-manjari-assets/projects/sgp_srimad_ramayanam</string>
+		</dict>
+	</dict>
+	<key>volumes</key>
+	<array>
+        <dict>
+            <key>id</key><string>volume01</string>
+            <key>name</key><string>Lalitha Sahasranamam</string>
+            <key>subtitle</key><string></string>
+            <key>chapters</key>
+            <array>
+                <dict>
+                    <key>id</key><string>chapter001</string>
+                    <key>index</key><integer>1</integer>
+                    <key>title</key><string>Lalitha Sahasranamam</string>
+                    <key>subtitle</key><string>Opening</string>
+                    <key>state</key><integer>2</integer>
+                </dict>
+            </array>
+        </dict>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,88 @@
+{
+  "projects": [
+    {
+      "id": "ramayanam_sriramghanapatigal",
+      "title": "Śrīmad Rāmāyaṇam",
+      "subtitle": "Rendered by Brahmasri Sriram Ghanapatigal",
+      "categories": ["Purana", "Ramayana"],
+      "languages": ["sa", "ta", "en"],
+      "thumbnail": "https://amrutham.synology.me/projects/ramayanam_sriramghanapatigal/images/cover.jpg",
+      "metadataUrl": "https://amrutham.synology.me/projects/ramayanam_sriramghanapatigal/metadata/metadata.json",
+      "monetization": { "isPremium": false },
+      "visible": true,
+      "status": "published"
+    },
+    {
+      "id": "bhagavad_gita_audio",
+      "title": "Bhagavad Gītā (Audio)",
+      "subtitle": "Chanting with English meanings",
+      "categories": ["Upanishad", "Gita"],
+      "languages": ["sa", "en"],
+      "thumbnail": "https://via.placeholder.com/400x600.png?text=Bhagavad+Gita",
+      "metadataUrl": "https://example.com/gita/metadata.json",
+      "monetization": { "isPremium": true },
+      "visible": true,
+      "status": "published"
+    },
+    {
+      "id": "hanuman_chalisa",
+      "title": "Hanumān Cālīsā",
+      "subtitle": "Sacred hymn with audio and text",
+      "categories": ["Stotra"],
+      "languages": ["sa", "hi", "en"],
+      "thumbnail": "https://via.placeholder.com/400x600.png?text=Hanuman+Chalisa",
+      "metadataUrl": "https://example.com/hanuman/metadata.json",
+      "monetization": { "isPremium": false },
+      "visible": true,
+      "status": "published"
+    },
+    {
+      "id": "lalitha_sahasranamam",
+      "title": "Lalitā Sahasranāmam",
+      "subtitle": "Thousand names of the Goddess",
+      "categories": ["Stotra", "Devi"],
+      "languages": ["sa", "ta", "en"],
+      "thumbnail": "https://via.placeholder.com/400x600.png?text=Lalitha",
+      "metadataUrl": "https://example.com/lalitha/metadata.json",
+      "monetization": { "isPremium": false },
+      "visible": true,
+      "status": "published"
+    },
+    {
+      "id": "upanishad_stories",
+      "title": "Upaniṣad Stories",
+      "subtitle": "Wisdom from the ancient texts",
+      "categories": ["Upanishad"],
+      "languages": ["en"],
+      "thumbnail": "https://via.placeholder.com/400x600.png?text=Upanishads",
+      "metadataUrl": "https://example.com/upanishads/metadata.json",
+      "monetization": { "isPremium": true },
+      "visible": true,
+      "status": "published"
+    },
+    {
+      "id": "sundara_kandam",
+      "title": "Sundara Kāṇḍam",
+      "subtitle": "The heart of Rāmāyaṇam",
+      "categories": ["Purana", "Ramayana"],
+      "languages": ["sa", "ta"],
+      "thumbnail": "https://via.placeholder.com/400x600.png?text=Sundara+Kandam",
+      "metadataUrl": "https://example.com/sundara/metadata.json",
+      "monetization": { "isPremium": false },
+      "visible": true,
+      "status": "published"
+    },
+    {
+      "id": "daily_sloka_pack",
+      "title": "Daily Śloka Pack",
+      "subtitle": "30 slokas to brighten your mornings",
+      "categories": ["Stotra"],
+      "languages": ["sa", "en"],
+      "thumbnail": "https://via.placeholder.com/400x600.png?text=Daily+Slokas",
+      "metadataUrl": "https://example.com/daily/metadata.json",
+      "monetization": { "isPremium": false },
+      "visible": true,
+      "status": "published"
+    }
+  ]
+}

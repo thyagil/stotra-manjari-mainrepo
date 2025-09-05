@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>id</key>
+  <string></string>
+  <key>friendly_name</key>
+  <string></string>
+  <key>type</key>
+  <string></string>
+  <key>description</key>
+  <string></string>
+  <key>artist</key>
+  <string></string>
+  <key>category</key>
+  <array>
+    <string></string>
+  </array>
+  <key>languages</key>
+  <array>
+    <string></string>
+  </array>
+  <key>contributors</key>
+  <array>
+    <dict>
+      <key>role</key>
+      <string></string>
+      <key>name</key>
+      <string></string>
+    </dict>
+  </array>
+  <key>overview</key>
+  <string></string>
+  <key>preview</key>
+  <string></string>
+
+  <key>images</key>
+  <dict>
+    <key>cover</key>
+    <string></string>
+    <key>banner</key>
+    <string></string>
+  </dict>
+
+  <key>app_status</key>
+  <dict>
+    <key>featured</key>
+    <false/>
+    <key>published</key>
+    <false/>
+    <key>monetization</key>
+    <dict>
+      <key>isPremium</key>
+      <false/>
+      <key>currency</key>
+      <string></string>
+      <key>price</key>
+      <real>0.0</real>
+    </dict>
+  </dict>
+
+  <key>deployment</key>
+  <dict>
+    <key>working</key>
+    <dict>
+      <key>root_dir</key>
+      <string></string>
+    </dict>
+    <key>staging</key>
+    <dict>
+      <key>root_dir</key>
+      <string></string>
+    </dict>
+    <key>production</key>
+    <dict>
+      <key>root_dir</key>
+      <string></string>
+    </dict>
+  </dict>
+
+  <key>volumes</key>
+  <array>
+    <!-- Each item is the filename of a volume plist -->
+    <string>volume01.plist</string>
+  </array>
+</dict>
+</plist>

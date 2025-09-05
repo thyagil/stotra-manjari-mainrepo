@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>id</key>
+	<string>bha_kanakadhara_stotram</string>
+	<key>friendly_name</key>
+	<string>Kanakadhara Stotram</string>
+	<key>type</key>
+	<string>audiobook</string>
+	<key>description</key>
+	<string>Rendering of Kanakadhara Stotram by Bhavadhaarini Anantaraman</string>
+	<key>artist</key>
+	<string>Srimati Bhavadhaarini Anantaraman</string>
+	<key>category</key>
+	<array>
+		<string>Stotram</string>
+		<string>Adi Shankara</string>
+		<string>Mahalakshmi</string>
+	</array>
+	<key>languages</key>
+	<array>
+		<string>sa</string>
+		<string>ta</string>
+		<string>en</string>
+	</array>
+	<key>contributors</key>
+	<array>
+		<dict>
+			<key>role</key>
+			<string>Singing</string>
+			<key>name</key>
+			<string>Srimati Bhavadhaarini Anantaraman</string>
+		</dict>
+	</array>
+	<key>overview</key>
+	<string>A musical rendering of Kanakadhara Stotram</string>
+	<key>preview</key>
+	<string>A stotram on Mahalakshmi composed by Sri Adi Shankaracharya</string>
+	<key>images</key>
+	<dict>
+		<key>cover</key>
+		<string>cover.jpg</string>
+		<key>banner</key>
+		<string>banner.png</string>
+	</dict>
+	<key>app_status</key>
+	<dict>
+		<key>featured</key>
+		<true/>
+		<key>published</key>
+		<false/>
+		<key>monetization</key>
+		<dict>
+			<key>isPremium</key>
+			<false/>
+			<key>currency</key>
+			<string>USD</string>
+			<key>price</key>
+			<real>29.99</real>
+		</dict>
+	</dict>
+	<key>deployment</key>
+	<dict>
+		<key>working</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/WORKBENCH/assets/projects/sgp_srimad_ramayanam/</string>
+		</dict>
+		<key>staging</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/WORKBENCH/stotra-manjari/staging/sgp_srimad_ramayanam</string>
+		</dict>
+		<key>production</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/web/stotra-manjari-assets/projects/sgp_srimad_ramayanam</string>
+		</dict>
+	</dict>
+	<key>volumes</key>
+	<array>
+        <dict>
+            <key>id</key><string>volume01</string>
+            <key>name</key><string>Kanakadhara Stotram</string>
+            <key>subtitle</key><string>By Adi Shankaracharya</string>
+            <key>chapters</key>
+            <array>
+                <dict>
+                    <key>id</key><string>chapter641</string>
+                    <key>index</key><integer>1</integer>
+                    <key>title</key><string>Kanakadhara Stotram</string>
+                    <key>subtitle</key><string>Opening</string>
+                    <key>state</key><integer>2</integer>
+                </dict>
+            </array>
+        </dict>
+	</array>
+</dict>
+</plist>

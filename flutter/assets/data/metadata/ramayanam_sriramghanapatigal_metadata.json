@@ -1,0 +1,44 @@
+{
+  "id": "ramayanam_sriramghanapatigal",
+  "title": "Śrīmad Rāmāyaṇam",
+  "subtitle": "Rendered by Brahmasri Sriram Ghanapatigal",
+  "description": "The Śrīmad Rāmāyaṇam is one of the greatest epics of ancient India. Rendered by Brahmasri Sriram Ghanapatigal with devotion and precision, this version brings the timeless story of Lord Rāma to life with traditional chanting and clear pronunciation. It is a spiritual guide as much as it is a cultural treasure.",
+  "languages": ["sa", "ta", "en"],
+  "categories": ["Purana", "Ramayana"],
+  "contributors": [
+    { "role": "Reciter", "name": "Brahmasri Sriram Ghanapatigal" },
+    { "role": "Editor", "name": "Amrutham Digital" }
+  ],
+  "volumes": [
+    {
+      "id": "bala_kanda",
+      "title": "Bāla Kāṇḍa",
+      "chapters": 77,
+      "thumbnail": "https://via.placeholder.com/400x600.png?text=Bala+Kanda"
+    },
+    {
+      "id": "ayodhya_kanda",
+      "title": "Ayodhyā Kāṇḍa",
+      "chapters": 119,
+      "thumbnail": "https://via.placeholder.com/400x600.png?text=Ayodhya+Kanda"
+    },
+    {
+      "id": "aranya_kanda",
+      "title": "Āraṇya Kāṇḍa",
+      "chapters": 75,
+      "thumbnail": "https://via.placeholder.com/400x600.png?text=Aranya+Kanda"
+    }
+  ],
+  "audioSamples": [
+    {
+      "title": "Opening Invocation",
+      "url": "https://example.com/audio/ramayanam_intro.mp3"
+    },
+    {
+      "title": "Sundara Kāṇḍa Sample",
+      "url": "https://example.com/audio/sundara_sample.mp3"
+    }
+  ],
+  "monetization": { "isPremium": false },
+  "status": "published"
+}

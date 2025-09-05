@@ -1,0 +1,946 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chapters</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>chapter001</string>
+			<key>index</key>
+			<integer>1</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sage Narada Meets Valmiki</string>
+			<key>title</key>
+			<string>Sarga 1</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter002</string>
+			<key>index</key>
+			<integer>2</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Brahma Visits Valmiki</string>
+			<key>title</key>
+			<string>Sarga 2</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter003</string>
+			<key>index</key>
+			<integer>3</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Valmiki Composes Ramayana</string>
+			<key>title</key>
+			<string>Sarga 3</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter004</string>
+			<key>index</key>
+			<integer>4</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Song of Ramayana</string>
+			<key>title</key>
+			<string>Sarga 4</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter005</string>
+			<key>index</key>
+			<integer>5</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The City of Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 5</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter006</string>
+			<key>index</key>
+			<integer>6</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Splendor of Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 6</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter007</string>
+			<key>index</key>
+			<integer>7</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Ministers of Dasaratha</string>
+			<key>title</key>
+			<string>Sarga 7</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter008</string>
+			<key>index</key>
+			<integer>8</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vedic Rituals for Progeny</string>
+			<key>title</key>
+			<string>Sarga 8</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter009</string>
+			<key>index</key>
+			<integer>9</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Legend of Sage Rishyasringa</string>
+			<key>title</key>
+			<string>Sarga 9</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter010</string>
+			<key>index</key>
+			<integer>10</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rishyasringa enticed</string>
+			<key>title</key>
+			<string>Sarga 10</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter011</string>
+			<key>index</key>
+			<integer>11</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rishyasringa arrives in Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 11</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter012</string>
+			<key>index</key>
+			<integer>12</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Preparations for Ashvamedha</string>
+			<key>title</key>
+			<string>Sarga 12</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter013</string>
+			<key>index</key>
+			<integer>13</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Ashwamedha Sacrifice</string>
+			<key>title</key>
+			<string>Sarga 13</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter014</string>
+			<key>index</key>
+			<integer>14</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Putrakameshti Ritual</string>
+			<key>title</key>
+			<string>Sarga 14</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter015</string>
+			<key>index</key>
+			<integer>15</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rishyasringa Presides</string>
+			<key>title</key>
+			<string>Sarga 15</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter016</string>
+			<key>index</key>
+			<integer>16</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Divine Porridge</string>
+			<key>title</key>
+			<string>Sarga 16</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter017</string>
+			<key>index</key>
+			<integer>17</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Brahma’s order to the Gods</string>
+			<key>title</key>
+			<string>Sarga 17</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter018</string>
+			<key>index</key>
+			<integer>18</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The birth of Dasaratha’s sons</string>
+			<key>title</key>
+			<string>Sarga 18</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter019</string>
+			<key>index</key>
+			<integer>19</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Arrival of Sage Vishwamitra in Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 19</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter020</string>
+			<key>index</key>
+			<integer>20</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dasaratha’s unwillingness to send Rama</string>
+			<key>title</key>
+			<string>Sarga 20</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter021</string>
+			<key>index</key>
+			<integer>21</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Anger of Vishwamitra</string>
+			<key>title</key>
+			<string>Sarga 21</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter022</string>
+			<key>index</key>
+			<integer>22</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama &amp; Lakshmana go with Vishwamitra</string>
+			<key>title</key>
+			<string>Sarga 22</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter023</string>
+			<key>index</key>
+			<integer>23</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The sojourn alongside Ganga &amp; Sarayu</string>
+			<key>title</key>
+			<string>Sarga 23</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter024</string>
+			<key>index</key>
+			<integer>24</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Tataka</string>
+			<key>title</key>
+			<string>Sarga 24</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter025</string>
+			<key>index</key>
+			<integer>25</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Tataka Contd.</string>
+			<key>title</key>
+			<string>Sarga 25</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter026</string>
+			<key>index</key>
+			<integer>26</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The killing of Tataka</string>
+			<key>title</key>
+			<string>Sarga 26</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter027</string>
+			<key>index</key>
+			<integer>27</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vishwamitra gives Rama divine weapons</string>
+			<key>title</key>
+			<string>Sarga 27</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter028</string>
+			<key>index</key>
+			<integer>28</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vishwamitra teaches Rama use of weaponry</string>
+			<key>title</key>
+			<string>Sarga 28</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter029</string>
+			<key>index</key>
+			<integer>29</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Legend of Lord Vamana</string>
+			<key>title</key>
+			<string>Sarga 29</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter030</string>
+			<key>index</key>
+			<integer>30</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama &amp; Lakshmana guard Vishwamitra's sacrifice altar</string>
+			<key>title</key>
+			<string>Sarga 30</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter031</string>
+			<key>index</key>
+			<integer>31</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Travel to the City of Mythila</string>
+			<key>title</key>
+			<string>Sarga 31</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter032</string>
+			<key>index</key>
+			<integer>32</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Kusanabha</string>
+			<key>title</key>
+			<string>Sarga 32</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter033</string>
+			<key>index</key>
+			<integer>33</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Brahmadatta</string>
+			<key>title</key>
+			<string>Sarga 33</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter034</string>
+			<key>index</key>
+			<integer>34</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Vishwamitra's ancestry</string>
+			<key>title</key>
+			<string>Sarga 34</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter035</string>
+			<key>index</key>
+			<integer>35</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of River Ganga</string>
+			<key>title</key>
+			<string>Sarga 35</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter036</string>
+			<key>index</key>
+			<integer>36</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Uma and her curse</string>
+			<key>title</key>
+			<string>Sarga 36</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter037</string>
+			<key>index</key>
+			<integer>37</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Kartikeya</string>
+			<key>title</key>
+			<string>Sarga 37</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter038</string>
+			<key>index</key>
+			<integer>38</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Emperor Sagara</string>
+			<key>title</key>
+			<string>Sarga 38</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter039</string>
+			<key>index</key>
+			<integer>39</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sagara's sons search the sacrificial horse</string>
+			<key>title</key>
+			<string>Sarga 39</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter040</string>
+			<key>index</key>
+			<integer>40</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Sage Kapila burns the sons of Sagara</string>
+			<key>title</key>
+			<string>Sarga 40</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter041</string>
+			<key>index</key>
+			<integer>41</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Anshuman goes in search of the horse</string>
+			<key>title</key>
+			<string>Sarga 41</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter042</string>
+			<key>index</key>
+			<integer>42</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>King Bhageeratha's effort to bring Ganga to Earth</string>
+			<key>title</key>
+			<string>Sarga 42</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter043</string>
+			<key>index</key>
+			<integer>43</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>River Ganga descent onto Earth</string>
+			<key>title</key>
+			<string>Sarga 43</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter044</string>
+			<key>index</key>
+			<integer>44</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Brahma commends Bhageeratha</string>
+			<key>title</key>
+			<string>Sarga 44</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter045</string>
+			<key>index</key>
+			<integer>45</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The churning of the Milky Ocean</string>
+			<key>title</key>
+			<string>Sarga 45</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter046</string>
+			<key>index</key>
+			<integer>46</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Diti seeks a son to kill Indra</string>
+			<key>title</key>
+			<string>Sarga 46</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter047</string>
+			<key>index</key>
+			<integer>47</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of the seven Maruts</string>
+			<key>title</key>
+			<string>Sarga 47</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter048</string>
+			<key>index</key>
+			<integer>48</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Ahalya</string>
+			<key>title</key>
+			<string>Sarga 48</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter049</string>
+			<key>index</key>
+			<integer>49</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The redemption of Ahalya</string>
+			<key>title</key>
+			<string>Sarga 49</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter050</string>
+			<key>index</key>
+			<integer>50</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The redemption of Ahalya Contd.</string>
+			<key>title</key>
+			<string>Sarga 50</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter051</string>
+			<key>index</key>
+			<integer>51</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Vishwamitra</string>
+			<key>title</key>
+			<string>Sarga 51</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter052</string>
+			<key>index</key>
+			<integer>52</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Vishwamitra Contd.</string>
+			<key>title</key>
+			<string>Sarga 52</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter053</string>
+			<key>index</key>
+			<integer>53</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vishwamitra wants Kamadhenu</string>
+			<key>title</key>
+			<string>Sarga 53</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter054</string>
+			<key>index</key>
+			<integer>54</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Kamadhenu fights back</string>
+			<key>title</key>
+			<string>Sarga 54</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter055</string>
+			<key>index</key>
+			<integer>55</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vishwamitra ruins Vasishta's hermitage</string>
+			<key>title</key>
+			<string>Sarga 55</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter056</string>
+			<key>index</key>
+			<integer>56</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vasishta nullifies Vishwamitra's weapons</string>
+			<key>title</key>
+			<string>Sarga 56</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter057</string>
+			<key>index</key>
+			<integer>57</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Trisanku</string>
+			<key>title</key>
+			<string>Sarga 57</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter058</string>
+			<key>index</key>
+			<integer>58</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Trishanku seeks protection of Vishwamitra</string>
+			<key>title</key>
+			<string>Sarga 58</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter059</string>
+			<key>index</key>
+			<integer>59</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The curse on the sons of Vashishta</string>
+			<key>title</key>
+			<string>Sarga 59</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter060</string>
+			<key>index</key>
+			<integer>60</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The ascension of Trishanku to heaven</string>
+			<key>title</key>
+			<string>Sarga 60</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter061</string>
+			<key>index</key>
+			<integer>61</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Shunashepa</string>
+			<key>title</key>
+			<string>Sarga 61</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter062</string>
+			<key>index</key>
+			<integer>62</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The sacrifical offering of King Ambarisha</string>
+			<key>title</key>
+			<string>Sarga 62</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter063</string>
+			<key>index</key>
+			<integer>63</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The banishment of Menaka</string>
+			<key>title</key>
+			<string>Sarga 63</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter064</string>
+			<key>index</key>
+			<integer>64</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vishvamitra curses Rambha</string>
+			<key>title</key>
+			<string>Sarga 64</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter065</string>
+			<key>index</key>
+			<integer>65</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Vishwamita becomes Brahmarishi</string>
+			<key>title</key>
+			<string>Sarga 65</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter066</string>
+			<key>index</key>
+			<integer>66</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Legend of Shiva's bow</string>
+			<key>title</key>
+			<string>Sarga 66</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter067</string>
+			<key>index</key>
+			<integer>67</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Rama breaks Shiva's bow</string>
+			<key>title</key>
+			<string>Sarga 67</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter068</string>
+			<key>index</key>
+			<integer>68</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Janaka invites Dasaratha to Mythila</string>
+			<key>title</key>
+			<string>Sarga 68</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter069</string>
+			<key>index</key>
+			<integer>69</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The meeting of Dasaratha and Janaka in Mythila</string>
+			<key>title</key>
+			<string>Sarga 69</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter070</string>
+			<key>index</key>
+			<integer>70</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Lineage of Ishvaaku</string>
+			<key>title</key>
+			<string>Sarga 70</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter071</string>
+			<key>index</key>
+			<integer>71</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Lineage of Janaka</string>
+			<key>title</key>
+			<string>Sarga 71</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter072</string>
+			<key>index</key>
+			<integer>72</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The marriage alliances of Bharata and Shatrughna</string>
+			<key>title</key>
+			<string>Sarga 72</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter073</string>
+			<key>index</key>
+			<integer>73</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The marriage of Dasaratha's sons</string>
+			<key>title</key>
+			<string>Sarga 73</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter074</string>
+			<key>index</key>
+			<integer>74</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The arrival of Parasurama</string>
+			<key>title</key>
+			<string>Sarga 74</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter075</string>
+			<key>index</key>
+			<integer>75</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Legends of the Shiva and Vishnu bows</string>
+			<key>title</key>
+			<string>Sarga 75</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter076</string>
+			<key>index</key>
+			<integer>76</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Pride of Parashurama broken</string>
+			<key>title</key>
+			<string>Sarga 76</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter077</string>
+			<key>index</key>
+			<integer>77</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The return to Ayodhya</string>
+			<key>title</key>
+			<string>Sarga 77</string>
+		</dict>
+	</array>
+	<key>id</key>
+	<string>volume01</string>
+	<key>images</key>
+	<dict>
+		<key>thumbnail</key>
+		<string>thumbnail.png</string>
+	</dict>
+	<key>name</key>
+	<string>Bala Kandam</string>
+	<key>state</key>
+	<integer>2</integer>
+	<key>subtitle</key>
+	<string>77 Sargas</string>
+</dict>
+</plist>

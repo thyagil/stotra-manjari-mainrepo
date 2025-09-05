@@ -1,0 +1,67 @@
+{
+  "id": "bha_kanakadhara_stotram",
+  "friendly_name": "Kanakadhara Stotram",
+  "type": "audiobook",
+  "description": "Rendering of Kanakadhara Stotram by Bhavadhaarini Anantaraman",
+  "artist": "Srimati Bhavadhaarini Anantaraman",
+  "category": [
+    "Stotram",
+    "Adi Shankara",
+    "Mahalakshmi"
+  ],
+  "languages": [
+    "sa",
+    "ta",
+    "en"
+  ],
+  "contributors": [
+    {
+      "role": "Singing",
+      "name": "Srimati Bhavadhaarini Anantaraman"
+    }
+  ],
+  "overview": "A musical rendering of Kanakadhara Stotram",
+  "preview": "A stotram on Mahalakshmi composed by Sri Adi Shankaracharya",
+  "images": {
+    "cover": "cover.jpg",
+    "banner": "banner.png"
+  },
+  "app_status": {
+    "featured": true,
+    "published": false,
+    "monetization": {
+      "isPremium": false,
+      "currency": "USD",
+      "price": 29.99
+    }
+  },
+  "deployment": {
+    "working": {
+      "root_dir": "/Volumes/WORKBENCH/assets/projects/sgp_srimad_ramayanam/"
+    },
+    "staging": {
+      "root_dir": "/Volumes/WORKBENCH/stotra-manjari/staging/sgp_srimad_ramayanam"
+    },
+    "production": {
+      "root_dir": "/Volumes/web/stotra-manjari-assets/projects/sgp_srimad_ramayanam"
+    }
+  },
+  "structure": {
+    "volumes": [
+      {
+        "id": "volume01",
+        "name": "Kanakadhara Stotram",
+        "subtitle": "By Adi Shankaracharya",
+        "chapters": [
+          {
+            "id": "chapter641",
+            "index": 1,
+            "title": "Kanakadhara Stotram",
+            "subtitle": "Opening",
+            "state": 2
+          }
+        ]
+      }
+    ]
+  }
+}

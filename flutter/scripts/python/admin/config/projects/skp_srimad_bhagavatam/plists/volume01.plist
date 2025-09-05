@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>chapters</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>chapter001</string>
+			<key>index</key>
+			<integer>1</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Questions by the Sages</string>
+			<key>title</key>
+			<string>Sarga 1</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter002</string>
+			<key>index</key>
+			<integer>2</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Divinity and Divine Service</string>
+			<key>title</key>
+			<string>Sarga 2</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter003</string>
+			<key>index</key>
+			<integer>3</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Krishna Is the Source of All Incarnations</string>
+			<key>title</key>
+			<string>Sarga 3</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter004</string>
+			<key>index</key>
+			<integer>4</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Appearance of Śrī Nārada</string>
+			<key>title</key>
+			<string>Sarga 4</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter005</string>
+			<key>index</key>
+			<integer>5</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Nārada's Instructions on Śrīmad-Bhāgavatam for Vyāsadeva</string>
+			<key>title</key>
+			<string>Sarga 5</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter006</string>
+			<key>index</key>
+			<integer>6</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Conversation Between Nārada and Vyāsadeva</string>
+			<key>title</key>
+			<string>Sarga 6</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter007</string>
+			<key>index</key>
+			<integer>7</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Son of Droṇa Punished</string>
+			<key>title</key>
+			<string>Sarga 7</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter008</string>
+			<key>index</key>
+			<integer>8</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Prayers by Queen Kuntī and Parīkshit Saved</string>
+			<key>title</key>
+			<string>Sarga 8</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter009</string>
+			<key>index</key>
+			<integer>9</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Passing Away of Bhīshmadeva in the Presence of Lord Krishna</string>
+			<key>title</key>
+			<string>Sarga 9</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter010</string>
+			<key>index</key>
+			<integer>10</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Departure of Lord Krishna for Dvārakā</string>
+			<key>title</key>
+			<string>Sarga 10</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter011</string>
+			<key>index</key>
+			<integer>11</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Lord Krishna's Entrance into Dvārakā</string>
+			<key>title</key>
+			<string>Sarga 11</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter012</string>
+			<key>index</key>
+			<integer>12</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Birth of Emperor Parīkshit</string>
+			<key>title</key>
+			<string>Sarga 12</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter013</string>
+			<key>index</key>
+			<integer>13</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Dhrtarāshtra Quits Home</string>
+			<key>title</key>
+			<string>Sarga 13</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter014</string>
+			<key>index</key>
+			<integer>14</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Disappearance of Lord Krishna</string>
+			<key>title</key>
+			<string>Sarga 14</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter015</string>
+			<key>index</key>
+			<integer>15</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Pāndavas Retire Timely</string>
+			<key>title</key>
+			<string>Sarga 15</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter016</string>
+			<key>index</key>
+			<integer>16</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>How Parīkshit Received the Age of Kali</string>
+			<key>title</key>
+			<string>Sarga 16</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter017</string>
+			<key>index</key>
+			<integer>17</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Punishment and Reward of Kali</string>
+			<key>title</key>
+			<string>Sarga 17</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter018</string>
+			<key>index</key>
+			<integer>18</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>Mahārāja Parīkshit Cursed by a Brāhmaṇa Boy</string>
+			<key>title</key>
+			<string>Sarga 18</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>chapter019</string>
+			<key>index</key>
+			<integer>19</integer>
+			<key>state</key>
+			<integer>2</integer>
+			<key>subtitle</key>
+			<string>The Appearance of Sri Śuka</string>
+			<key>title</key>
+			<string>Sarga 19</string>
+		</dict>
+	</array>
+	<key>id</key>
+	<string>volume01</string>
+	<key>images</key>
+	<dict>
+		<key>thumbnail</key>
+		<string>thumbnail.png</string>
+	</dict>
+	<key>name</key>
+	<string>Skandam 01</string>
+	<key>state</key>
+	<integer>2</integer>
+	<key>subtitle</key>
+	<string>19 Adhyayas</string>
+</dict>
+</plist>

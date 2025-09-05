@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>id</key>
+	<string>sgp_srimad_ramayanam</string>
+	<key>friendly_name</key>
+	<string>Srimad Ramayanam</string>
+	<key>type</key>
+	<string>audiobook</string>
+	<key>description</key>
+	<string>Rendering of Srimad Valmiki Ramayanam by Sriram Ghanapatigal</string>
+	<key>artist</key>
+	<string>Brahmasri Sriram Ghanapatigal</string>
+	<key>category</key>
+	<array>
+		<string>Purana</string>
+		<string>Ramayana</string>
+	</array>
+	<key>languages</key>
+	<array>
+		<string>sa</string>
+		<string>ta</string>
+		<string>en</string>
+	</array>
+	<key>contributors</key>
+	<array>
+		<dict>
+			<key>role</key>
+			<string>Chanting</string>
+			<key>name</key>
+			<string>Brahmasri Sriram Ghanapatigal</string>
+		</dict>
+		<dict>
+			<key>role</key>
+			<string>Scholar</string>
+			<key>name</key>
+			<string>Brahmasri H. Sitarama Murthy</string>
+		</dict>
+	</array>
+	<key>overview</key>
+	<string>A comprehensive chanting of Srimad Valmiki Ramayanam with multiple language support.</string>
+	<key>preview</key>
+	<string>Selected excerpts from the Bala Kandam recitation.</string>
+	<key>images</key>
+	<dict>
+		<key>cover</key>
+		<string>cover.jpg</string>
+		<key>banner</key>
+		<string>banner.png</string>
+	</dict>
+	<key>app_status</key>
+	<dict>
+		<key>featured</key>
+		<true/>
+		<key>published</key>
+		<false/>
+		<key>monetization</key>
+		<dict>
+			<key>isPremium</key>
+			<false/>
+			<key>currency</key>
+			<string>USD</string>
+			<key>price</key>
+			<real>29.99</real>
+		</dict>
+	</dict>
+	<key>deployment</key>
+	<dict>
+		<key>working</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/WORKBENCH/assets/projects/sgp_srimad_ramayanam/</string>
+		</dict>
+		<key>staging</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/WORKBENCH/stotra-manjari/staging/sgp_srimad_ramayanam</string>
+		</dict>
+		<key>production</key>
+		<dict>
+			<key>root_dir</key>
+			<string>/Volumes/web/stotra-manjari-assets/projects/sgp_srimad_ramayanam</string>
+		</dict>
+	</dict>
+	<key>volumes</key>
+	<array>
+		<dict>
+			<key>id</key>
+			<string>volume01</string>
+			<key>name</key>
+			<string>Bala Kandam</string>
+			<key>subtitle</key>
+			<string>77 Sargas</string>
+			<key>csv_file</key>
+			<string>volume01.csv</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>volume02</string>
+			<key>name</key>
+			<string>Ayodhya Kandam</string>
+			<key>subtitle</key>
+			<string>119 Sargas</string>
+			<key>csv_file</key>
+			<string>volume02.csv</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>volume03</string>
+			<key>name</key>
+			<string>Āraṇya Kandam</string>
+			<key>subtitle</key>
+			<string>75 Sargas</string>
+			<key>csv_file</key>
+			<string>volume03.csv</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>volume04</string>
+			<key>name</key>
+			<string>Kishkindā Kāṇḍam</string>
+			<key>subtitle</key>
+			<string>67 Sargas</string>
+			<key>csv_file</key>
+			<string>volume03.csv</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>volume05</string>
+			<key>name</key>
+			<string>Sundara Kandam</string>
+			<key>subtitle</key>
+			<string>68 Sargas</string>
+			<key>csv_file</key>
+			<string>volume05.csv</string>
+		</dict>
+		<dict>
+			<key>id</key>
+			<string>volume06</string>
+			<key>name</key>
+			<string>Yuddha Kandam</string>
+			<key>subtitle</key>
+			<string>128 Sargas</string>
+			<key>csv_file</key>
+			<string>volume06.csv</string>
+		</dict>
+	</array>
+</dict>
+</plist>
