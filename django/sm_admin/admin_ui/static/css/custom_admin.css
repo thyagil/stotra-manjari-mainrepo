@@ -1,0 +1,16 @@
+/* Fix Select2 dropdown colors */
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+    background-color: #f0f0f0 !important;  /* light grey background */
+    color: #333 !important;                 /* dark text */
+    border: 1px solid #ccc !important;
+}
+
+.select2-container--default .select2-results__option {
+    background-color: #fff !important;  /* white background for dropdown */
+    color: #000 !important;             /* black text */
+}
+
+.select2-container--default .select2-results__option--highlighted {
+    background-color: #007bff !important; /* blue highlight */
+    color: #fff !important;               /* white text */
+}

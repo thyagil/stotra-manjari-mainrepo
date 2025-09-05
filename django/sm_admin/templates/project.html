@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ project.friendly_name }}</h2>
+<p><strong>Type:</strong> {{ project.type }} | <strong>Format:</strong> {{ project.format }}</p>
+<p><strong>Artist:</strong> {{ project.artist }}</p>
+
+<hr>
+<h4>Pipeline</h4>
+<div class="d-flex flex-wrap gap-2">
+    <button class="btn btn-outline-primary">Extract Audio</button>
+    <button class="btn btn-outline-primary">Extract Text</button>
+    <button class="btn btn-outline-primary">Translate</button>
+    <button class="btn btn-outline-primary">Content Tweaks</button>
+    <button class="btn btn-outline-primary">Durations</button>
+    <button class="btn btn-outline-success">Build Metadata</button>
+</div>
+{% endblock %}
