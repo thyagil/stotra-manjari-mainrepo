@@ -1,0 +1,72 @@
+# ----------------------
+# Line endings
+# ----------------------
+# Ensure consistent LF line endings in text files
+* text=auto eol=lf
+
+# ----------------------
+# Source code
+# ----------------------
+*.py     text diff=python
+*.dart   text diff=java    # closest match for Dart
+*.js     text diff=javascript
+*.ts     text diff=javascript
+*.java   text diff=java
+*.kt     text diff=kotlin
+*.swift  text diff=swift
+
+# ----------------------
+# Web / Markup / Config
+# ----------------------
+*.html   text diff=html
+*.css    text diff=css
+*.scss   text diff=css
+*.md     text diff=markdown
+*.json   text diff=json
+*.yml    text diff=yaml
+*.yaml   text diff=yaml
+*.xml    text diff=xml
+*.toml   text
+*.ini    text
+*.cfg    text
+
+# ----------------------
+# Data / Docs
+# ----------------------
+*.csv    text diff=csv
+*.txt    text
+*.rst    text
+
+# ----------------------
+# Images / Binary (no diff)
+# ----------------------
+*.png    binary
+*.jpg    binary
+*.jpeg   binary
+*.gif    binary
+*.ico    binary
+*.pdf    binary
+*.ttf    binary
+*.otf    binary
+*.woff   binary
+*.woff2  binary
+*.mp3    binary
+*.wav    binary
+*.mp4    binary
+*.mov    binary
+*.avi    binary
+
+# ----------------------
+# Archives (no diff)
+# ----------------------
+*.zip    binary
+*.tar    binary
+*.gz     binary
+*.rar    binary
+
+# ----------------------
+# Project-specific
+# ----------------------
+# Prevent line ending issues for shell/python scripts
+*.sh     text eol=lf
+*.py     text eol=lf

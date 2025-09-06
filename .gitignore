@@ -1,0 +1,109 @@
+# ----------------------
+# IDE / Editor metadata
+# ----------------------
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.atom/
+.history
+
+# ----------------------
+# macOS / System junk
+# ----------------------
+.DS_Store
+.svn/
+migrate_working_dir/
+
+# ----------------------
+# Logs
+# ----------------------
+*.log
+*.swp
+.build/
+.buildlog/
+
+# ----------------------
+# Python
+# ----------------------
+__pycache__/
+*.pyc
+*.pyo
+*.sqlite3
+env/
+venv/
+
+# ----------------------
+# Django
+# ----------------------
+media/
+staticfiles/
+
+# ----------------------
+# Flutter / Dart / Pub
+# ----------------------
+build/
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+**/doc/api/
+**/ios/Flutter/.last_build_id
+coverage/
+pubspec.lock
+
+# ----------------------
+# Android
+# ----------------------
+android/.gradle/
+android/app/build/
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/key.properties
+*.jks
+*.keystore
+
+# ----------------------
+# iOS / CocoaPods
+# ----------------------
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/ServiceDefinitions.json
+
+# ----------------------
+# Symbolication / obfuscation
+# ----------------------
+app.*.symbols
+app.*.map.json
+
+# ----------------------
+# Project-specific secrets
+# ----------------------
+lib/services/secret.json
+images/screenshots
+scripts/python/Global/temp
+
+# ----------------------
+# NAS / Staging assets (DO NOT COMMIT)
+# ----------------------
+/Volumes/LTFNAS2/data-stotra-manjari/
+/Volumes/LTFNAS2/data-stotra-manjari/*
+/Volumes/LTFNAS2/data-stotra-manjari/pre-staging/
+/Volumes/LTFNAS2/data-stotra-manjari/pre-staging/*
+stotra-manjari-assets/
+stotra-manjari-assets/*
+
+flutter/lib/services/secrets.dart
+
+# Archives / installers
+*.tar.gz
+*.zip
+*.tgz

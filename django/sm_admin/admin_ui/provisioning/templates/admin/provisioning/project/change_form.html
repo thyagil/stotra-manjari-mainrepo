@@ -1,9 +1,0 @@
-{% extends "admin/change_form.html" %}
-{% load i18n admin_urls %}
-
-{% block object-tools-items %}
-{{ block.super }}
-<li><a href="{{ preview_marketplace_url }}" class="historylink">Preview Marketplace JSON</a></li>
-<li><a href="{{ preview_project_url }}" class="historylink">Preview Project JSON</a></li>
-<li><a href="{{ publish_staging_url }}" class="historylink">Publish to Staging</a></li>
-{% endblock %}

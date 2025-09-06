@@ -1,16 +1,59 @@
-/* Fix Select2 dropdown colors */
-.select2-container--default .select2-selection--multiple .select2-selection__choice {
-    background-color: #f0f0f0 !important;  /* light grey background */
-    color: #333 !important;                 /* dark text */
-    border: 1px solid #ccc !important;
-}
+/* ================================
+   🎨 Stotra Manjari Admin Styling
+   ================================ */
 
+/* --- Dropdown menus (Select2) --- */
 .select2-container--default .select2-results__option {
-    background-color: #fff !important;  /* white background for dropdown */
-    color: #000 !important;             /* black text */
+    background-color: black !important;
+    color: white !important;
+    font-size: 14px;
+    padding: 6px 10px;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: orange !important;
+    color: black !important;
 }
 
-.select2-container--default .select2-results__option--highlighted {
-    background-color: #007bff !important; /* blue highlight */
-    color: #fff !important;               /* white text */
+
+/* Remove the right-hand sidebar completely */
+.col-12.col-lg-3 {
+    display: none !important;
 }
+
+/* Expand the main content area to full width */
+.col-12.col-lg-9 {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+}
+
+/* Remove form-control stretching from admin buttons */
+#jazzy-actions-top .btn.form-control {
+    width: auto !important;
+    display: inline-block !important;
+    height: auto !important;
+    padding: 6px 12px !important;
+    line-height: 1.0 !important;
+}
+
+/* Flatten object-tools so History looks like Save/Delete */
+#jazzy-actions-top .object-tools {
+    display: contents !important;  /* remove <ul>/<li> layout effect */
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+#jazzy-actions-top .object-tools li {
+    display: contents !important;  /* prevent block alignment */
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#jazzy-actions-top .object-tools a.btn {
+    display: inline-block !important;
+    padding: 6px 12px !important;
+    line-height: 1.5 !important;
+    height: auto !important;
+    vertical-align: middle !important;
+}
+

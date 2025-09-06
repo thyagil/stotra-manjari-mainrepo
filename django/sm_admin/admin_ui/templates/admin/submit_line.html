@@ -1,0 +1,45 @@
+{% load i18n admin_urls jazzmin %}
+{% get_jazzmin_ui_tweaks as jazzmin_ui %}
+
+{% block submit-row %}
+<div class="btn-toolbar mb-3" role="toolbar" style="gap:10px; flex-wrap:wrap;">
+
+    {% if show_save %}
+    <button type="submit" name="_save" class="btn {{ jazzmin_ui.button_classes.success }}">
+        {% trans 'Save' %}
+    </button>
+    {% endif %}
+
+    {% if show_save_as_new %}
+    <button type="submit" name="_saveasnew" class="btn {{ jazzmin_ui.button_classes.info }}">
+        {% trans "Save as new" %}
+    </button>
+    {% endif %}
+
+    {% if show_save_and_add_another %}
+    <button type="submit" name="_addanother" class="btn {{ jazzmin_ui.button_classes.info }}">
+        {% trans "Save and add another" %}
+    </button>
+    {% endif %}
+
+    {% if show_save_and_continue %}
+    <button type="submit" name="_continue" class="btn {{ jazzmin_ui.button_classes.info }}">
+        {% if can_change %}{% trans "Save and continue editing" %}
+        {% else %}{% trans "Save and view" %}{% endif %}
+    </button>
+    {% endif %}
+
+    {% if show_delete_link and original %}
+    {% url opts|admin_urlname:'delete' original.pk|admin_urlquote as delete_url %}
+    <a href="{% add_preserved_filters delete_url %}" class="btn {{ jazzmin_ui.button_classes.danger }}">
+        {% trans "Delete" %}
+    </a>
+    {% endif %}
+
+    {% if show_close %}
+    <a href="{% url opts|admin_urlname:'changelist' %}" class="btn {{ jazzmin_ui.button_classes.secondary }}">
+        {% trans "Close" %}
+    </a>
+    {% endif %}
+</div>
+{% endblock %}

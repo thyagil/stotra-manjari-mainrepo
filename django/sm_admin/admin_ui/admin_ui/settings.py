@@ -42,7 +42,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    "jazzmin", #grappelli, jazzmin, suit, material, jet admin,
+    "jazzmin",
+    #"nested_admin", #grappelli, jazzmin, suit, material, jet admin, nested_admin
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
@@ -70,7 +71,7 @@ ROOT_URLCONF = "admin_ui.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -142,12 +143,18 @@ JAZZMIN_SETTINGS = {
 
     "order_with_respect_to": [
         "provisioning",
+        "provisioning.Artist",
+        "provisioning.Category",
+        "provisioning.Language",
+        "provisioning.Project",
+        "provisioning.Volume",
+        "provisioning.Chapter",
         "orchestration",
         "deployment",
     ],
 
     # Custom colors (pick your palette)
-    "custom_css": None,
+    "custom_css": "css/custom_admin.css",
     "custom_js": None,
     "show_ui_builder": True,  # 🔥 lets you play with colors live
 }
@@ -158,14 +165,14 @@ JAZZMIN_UI_TWEAKS = {
     "footer_small_text": False,
     "body_small_text": False,
     "brand_small_text": False,
-    "brand_colour": "navbar-navy",
+    "brand_colour": "navbar-primary",
     "accent": "accent-warning",
-    "navbar": "navbar-warning navbar-light",
+    "navbar": "navbar-primary navbar-dark",
     "no_navbar_border": False,
     "navbar_fixed": False,
     "layout_boxed": False,
     "footer_fixed": False,
-    "sidebar_fixed": False,
+    "sidebar_fixed": True,
     "sidebar": "sidebar-light-warning",
     "sidebar_nav_small_text": False,
     "sidebar_disable_expand": False,
@@ -173,8 +180,8 @@ JAZZMIN_UI_TWEAKS = {
     "sidebar_nav_compact_style": False,
     "sidebar_nav_legacy_style": False,
     "sidebar_nav_flat_style": True,
-    "theme": "superhero",
-    "dark_mode_theme": "darkly",
+    "theme": "cyborg",
+    "dark_mode_theme": "cyborg",
     "button_classes": {
         "primary": "btn-primary",
         "secondary": "btn-secondary",
@@ -183,9 +190,9 @@ JAZZMIN_UI_TWEAKS = {
         "danger": "btn-danger",
         "success": "btn-success"
     },
-    "custom_css": "css/custom_admin.css",  # 👈 add your own CSS
+    "custom_css": "css/custom_admin.css",
+    "actions_sticky_top": True,
 }
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 

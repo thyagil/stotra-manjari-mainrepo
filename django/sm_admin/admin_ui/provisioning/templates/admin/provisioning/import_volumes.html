@@ -1,25 +1,25 @@
 {% extends "admin/base_site.html" %}
 {% load i18n static %}
 
-{% block title %}{% blocktrans %}Import Chapters into {{ volume.name }}{% endblocktrans %}{% endblock %}
+{% block title %}{% blocktrans %}Import Volumes into {{ project.project_name }}{% endblocktrans %}{% endblock %}
 
 {% block breadcrumbs %}
 <div class="breadcrumbs">
     <a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
     › <a href="{% url 'admin:app_list' app_label=opts.app_label %}">{{ opts.app_config.verbose_name }}</a>
-    › <a href="{% url 'admin:provisioning_volume_changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
-    › <a href="{% url 'admin:provisioning_volume_change' volume.id %}">{{ volume }}</a>
-    › {% trans "Import Chapters" %}
+    › <a href="{% url 'admin:provisioning_project_changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
+    › <a href="{% url 'admin:provisioning_project_change' project.id %}">{{ project }}</a>
+    › {% trans "Import Volumes" %}
 </div>
 {% endblock %}
 
 {% block content %}
 <div class="card shadow-sm p-4">
-    <h1 class="mb-4">{% blocktrans %}Import Chapters into {{ volume.name }}{% endblocktrans %}</h1>
+    <h1 class="mb-4">{% blocktrans %}Import Volumes into {{ project.project_name }}{% endblocktrans %}</h1>
 
     <p class="text-muted">
         Upload a CSV file with columns:
-        <code>volume_number</code>, <code>chapter_number</code>, <code>subtitle</code>.
+        <code>volume_number</code>, <code>volume_name</code>, <code>subtitle</code>.
     </p>
 
     <form method="post" enctype="multipart/form-data" class="form">
@@ -39,7 +39,7 @@
             <button type="submit" class="btn btn-success">
                 <i class="fas fa-upload"></i> {% trans "Upload CSV" %}
             </button>
-            <a href="{% url 'admin:provisioning_volume_change' volume.id %}" class="btn btn-secondary ml-2">
+            <a href="{% url 'admin:provisioning_project_change' project.id %}" class="btn btn-secondary ml-2">
                 {% trans "Cancel" %}
             </a>
         </div>
