@@ -14,7 +14,6 @@
 {% endblock %}
 
 {% block coltype %}colM{% endblock %}
-
 {% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} change-form{% endblock %}
 
 {% if not is_popup %}
@@ -43,10 +42,11 @@
 {% block content_title %} {{ opts.verbose_name_plural|capfirst }} {% endblock %}
 
 {% block content %}
-<div id="content-main" class="col-12">
+<div id="content-main" class="col-12" data-current-tab="{{ current_tab|default:'' }}">
     <form {% if has_file_field %}enctype="multipart/form-data" {% endif %}
           action="{{ form_url }}" method="post" id="{{ opts.model_name }}_form" novalidate>
         {% csrf_token %}
+
         {% block form_top %}{% endblock %}
 
         {% if errors %}
@@ -69,45 +69,28 @@
             {% if is_popup %}<input type="hidden" name="{{ is_popup_var }}" value="1">{% endif %}
             {% if to_field %}<input type="hidden" name="{{ to_field_var }}" value="{{ to_field }}">{% endif %}
 
-            <div id="jazzy-actions-top"
-                 class="btn-toolbar mb-3"
-                 role="toolbar"
-                 style="gap:8px; flex-wrap:nowrap;">
-
-                {# Save/Delete/etc. #}
+            <div id="jazzy-actions-top" class="btn-toolbar mb-3" role="toolbar" style="gap:8px; flex-wrap:nowrap;">
                 {% submit_row %}
-
-                {# History (from your change_form_object_tools.html) #}
                 {% change_form_object_tools %}
 
-                {# Project-specific buttons #}
+                <div class="btn-toolbar mb-3" role="toolbar" style="gap:10px; flex-wrap:wrap;">
+                {% if opts.model_name == "volume" %}
+                    <a href="{{ import_chapters_url }}" class="btn btn-outline-warning" title="Import Chapters"><i class="fas fa-file-import"></i></a>
+                {% elif opts.model_name == "project" %}
+                    <a href="{{ import_volumes_url }}" class="btn btn-outline-warning" title="Import Volumes"><i class="fas fa-layer-group"></i></a>
+                {% endif %}
+                </div>
+
                 {% if opts.model_name == "project" %}
                 <div class="btn-toolbar mb-3" role="toolbar" style="gap:10px; flex-wrap:wrap;">
-                <a href="{{ import_volumes_url }}" class="btn btn-outline-warning" title="Import Volumes">
-                    <i class="fas fa-layer-group"></i>
-                </a>
-                <a href="{{ preview_marketplace_url }}" class="btn btn-outline-info" title="Preview Marketplace JSON">
-                <i class="fas fa-store"></i>
-                </a>
-                <a href="{{ preview_project_url }}" class="btn btn-outline-danger" title="Preview Project JSON">
-                    <i class="fas fa-file-code"></i>
-                </a>
-                <a href="{{ publish_staging_url }}" class="btn btn-outline-success" title="Publish to Staging">
-                    <i class="fas fa-cloud-upload-alt"></i>
-                </a>
+                    <a href="{{ preview_marketplace_url }}" class="btn btn-outline-info" title="Preview Marketplace JSON"><i class="fas fa-store"></i></a>
+                    <a href="{{ preview_project_url }}" class="btn btn-outline-danger" title="Preview Project JSON"><i class="fas fa-file-code"></i></a>
+                    <a href="{{ publish_staging_url }}" class="btn btn-outline-success" title="Publish to Staging"><i class="fas fa-cloud-upload-alt"></i></a>
                 </div>
                 {% endif %}
 
-                {# Volume-specific buttons #}
-                {% if opts.model_name == "volume" %}
-                <div class="btn-toolbar mb-3" role="toolbar" style="gap:10px; flex-wrap:wrap;">
-                <a href="{{ import_chapters_url }}" class="btn btn-outline-warning" title="Import Chapters">
-                    <i class="fas fa-file-import"></i>
-                </a>
-                </div>
-                {% endif %}
+
             </div>
-
 
             {% block field_sets %}
             <div class="col-12">
@@ -118,17 +101,30 @@
                     </div>
                 </div>
             </div>
+
+            {# Inject into Jazzmin's tab-volumes fieldset #}
+            {% if volumes_tab_content %}
+            <div class="form-row tab-volumes">
+                {{ volumes_tab_content|safe }}
+            </div>
+            {% endif %}
             {% endblock %}
 
-            {% block after_field_sets %}{% endblock %}
             {% block inline_field_sets %}{% endblock %}
             {% block after_related_objects %}{% endblock %}
         </div>
 
-        {# 🛑 Kill the sidebar rendering of History/View on site #}
         {% block object-tools-items %}{% endblock %}
 
-
+        {% block submit_buttons_bottom %}
+        <div class="submit-row" style="text-align: right;">
+            {% if orchestration_url %}
+            <a href="{{ orchestration_url }}" class="btn btn-primary{% if not original.metadata_is_valid %} disabled{% endif %}">
+                Next Step >> Orchestration
+            </a>
+            {% endif %}
+        </div>
+        {% endblock %}
     </form>
 </div>
 {% endblock %}
@@ -140,5 +136,8 @@
 {% if jazzmin_settings.related_modal_active %}
 <script type="text/javascript" src="{% static 'jazzmin/plugins/bootstrap-show-modal/bootstrap-show-modal.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'jazzmin/js/related-modal.js' %}"></script>
+{% if volumes_tab_content %}
+{% endif %}
+
 {% endif %}
 {% endblock %}

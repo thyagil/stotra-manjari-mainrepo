@@ -1,0 +1,138 @@
+{% extends "admin/base_site.html" %}
+{% load static i18n %}
+
+{% block content %}
+<div id="content-main" class="col-12">
+    <h2>Orchestration for {{ project.project_name }}</h2>
+
+    <div class="row" style="margin-top:20px;">
+
+        <!-- Audio Extraction -->
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0 text-primary">Audio Extraction</h5>
+                </div>
+                <div class="card-body">
+                    <form method="post">
+                        {% csrf_token %}
+
+                        <!-- Volume field (only if present) -->
+                        {% if form.volume %}
+                        <div class="form-group">
+                            {{ form.volume.label_tag }}
+                            {{ form.volume }}
+                        </div>
+                        {% endif %}
+
+                        <!-- Video path field with Browse button -->
+                        <div class="form-group">
+                            <label for="id_video_dir">Video folder/file path</label>
+                            <div class="input-group">
+                                <input type="text" name="video_dir" class="form-control"
+                                       id="id_video_dir"
+                                       value="{{ form.video_dir.value|default_if_none:'' }}">
+                                <div class="input-group-append">
+                                    <button type="button" class="btn btn-outline-secondary" onclick="pickPath()">Browse…</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Audio format -->
+                        <div class="form-group">
+                            {{ form.audio_format.label_tag }}
+                            {{ form.audio_format }}
+                        </div>
+
+                        <!-- Output dir -->
+                        <div class="form-group">
+                            {{ form.output_dir.label_tag }}
+                            {{ form.output_dir }}
+                        </div>
+
+                        <button type="submit" class="btn btn-outline-primary">▶ Run Audio Extraction</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Content Generation -->
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-header bg-info text-white">Content Generation</div>
+                <div class="card-body">
+                    <p>Generates content from .pptm / .key and .txt metadata.</p>
+                    <a href="#" class="btn btn-outline-info">▶ Run Content Generation</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Durations Extraction -->
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-header bg-warning text-dark">Durations Extraction</div>
+                <div class="card-body">
+                    <p>Extracts durations from .fcpxml files.</p>
+                    <a href="#" class="btn btn-outline-warning">▶ Run Durations Extraction</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Meanings Generation -->
+        <div class="col-12 mb-3">
+            <div class="card">
+                <div class="card-header bg-success text-white">Meanings Generation</div>
+                <div class="card-body">
+                    <p>Generates meanings using OpenAI calls.</p>
+                    <a href="#" class="btn btn-outline-success">▶ Run Meanings Generation</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom nav button -->
+    <div class="submit-row" style="text-align:right; margin-top:20px;">
+        <a href="{{ deployment_url }}" class="btn btn-primary">
+            Last Step >> Deployment
+        </a>
+    </div>
+</div>
+
+<!-- Hidden file input for folder/file picking -->
+<input type="file" id="hiddenPicker" style="display:none;" />
+
+<script>
+    function pickPath() {
+        let picker = document.getElementById("hiddenPicker");
+
+        {% if is_multi_file_project %}
+            // Allow folder selection
+            picker.setAttribute("webkitdirectory", "");
+            picker.removeAttribute("multiple");
+        {% else %}
+            // Only single file
+            picker.removeAttribute("webkitdirectory");
+            picker.removeAttribute("directory");
+        {% endif %}
+
+        picker.onchange = e => {
+            let files = e.target.files;
+            if (files.length > 0) {
+                if (files[0].webkitRelativePath) {
+                    // Folder → take parent folder path
+                    let fullPath = files[0].webkitRelativePath;
+                    let folderPath = fullPath.split("/")[0];
+                    document.getElementById("id_video_dir").value = folderPath;
+                } else {
+                    // Standalone file
+                    document.getElementById("id_video_dir").value = files[0].name;
+                }
+            }
+            // Reset so nothing uploads
+            picker.value = "";
+        };
+
+        picker.click();
+    }
+</script>
+{% endblock %}

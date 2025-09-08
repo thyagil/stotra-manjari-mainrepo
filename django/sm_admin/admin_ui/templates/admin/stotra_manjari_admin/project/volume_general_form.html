@@ -1,0 +1,69 @@
+<div class="card">
+    <div class="p-5">
+        <!-- Code -->
+        <div class="form-group field-code">
+            <div class="row">
+                <label class="col-sm-3 text-left" for="{{ form.code.id_for_label }}">
+                    Code <span class="text-red">*</span>
+                </label>
+                <div class="col-sm-7 field-code">
+                    {{ form.code }}
+                    {{ form.code.errors }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Name -->
+        <div class="form-group field-name">
+            <div class="row">
+                <label class="col-sm-3 text-left" for="{{ form.name.id_for_label }}">
+                    Name <span class="text-red">*</span>
+                </label>
+                <div class="col-sm-7 field-name">
+                    {{ form.name }}
+                    {{ form.name.errors }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Subtitle -->
+        <div class="form-group field-subtitle">
+            <div class="row">
+                <label class="col-sm-3 text-left" for="{{ form.subtitle.id_for_label }}">
+                    Subtitle
+                </label>
+                <div class="col-sm-7 field-subtitle">
+                    {{ form.subtitle }}
+                    {{ form.subtitle.errors }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Thumbnail -->
+        <div class="form-group field-thumbnail">
+            <div class="row">
+                <label class="col-sm-3 text-left" for="{{ form.thumbnail.id_for_label }}">
+                    Thumbnail
+                </label>
+                <div class="col-sm-7 field-thumbnail">
+                    {{ form.thumbnail }}
+                    {{ form.thumbnail.errors }}
+                </div>
+            </div>
+        </div>
+
+        <!-- Thumbnail Preview -->
+        <div class="form-group field-thumbnail_preview">
+            <div class="row">
+                <label class="col-sm-3 text-left">
+                    Thumbnail Preview
+                </label>
+                <div class="col-sm-7 field-thumbnail_preview">
+                    <div class="readonly">
+                        {{ thumbnail_preview|safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

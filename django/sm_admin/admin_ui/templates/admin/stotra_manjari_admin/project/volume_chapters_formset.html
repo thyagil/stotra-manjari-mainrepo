@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="p-4">
+        <table class="table table-bordered table-sm">
+            <thead class="thead-light">
+            <tr>
+                <th style="width:60px;">Index</th>
+                <th style="width:100px;">Title</th>
+                <th>Subtitle</th>
+                <th style="width:60px;">State</th>
+                <th style="width:40px;"></th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for form in chapters_formset.forms %}
+            <tr>
+                <td>{{ form.index }}</td>
+                <td>{{ form.title }}</td>
+                <td>{{ form.subtitle }}</td>
+                <td>{{ form.state }}</td>
+                <td>
+                    {% if form.instance.pk %}
+                    <input type="checkbox" name="{{ form.prefix }}-DELETE"> Delete
+                    {% endif %}
+                </td>
+            </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+        {{ chapters_formset.management_form }}
+    </div>
+</div>

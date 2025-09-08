@@ -2,6 +2,10 @@
    🎨 Stotra Manjari Admin Styling
    ================================ */
 
+/* ================================
+   🎨 Stotra Manjari Admin Styling
+   ================================ */
+
 /* --- Dropdown menus (Select2) --- */
 .select2-container--default .select2-results__option {
     background-color: black !important;
@@ -9,11 +13,48 @@
     font-size: 14px;
     padding: 6px 10px;
 }
+
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
-    background-color: orange !important;
+    background-color: orange!important;  /* light blue highlight is #4da6ff  */
     color: black !important;
 }
 
+/* --- Multi-select tag boxes --- */
+.select2-container--default .select2-selection__choice {
+    display: flex !important;              /* align X + text inline */
+    align-items: center !important;        /* vertical centering */
+    gap: 4px !important;                   /* space between X and text */
+    background-color: #4da6ff !important;  /* light blue background */
+    color: black !important;               /* readable text */
+    border: 1px solid #357ab8 !important;  /* darker border for contrast */
+    padding: 2px 6px !important;
+    margin-top: 2px !important;
+    font-size: 13px !important;
+}
+
+.select2-container--default .select2-selection__choice__remove {
+    order: -1;                             /* show X before text */
+    position: static !important;           /* keep inline, no overlap */
+    margin: 0 !important;
+    font-size: 14px !important;
+    line-height: 1 !important;
+    color: black !important;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.select2-container--default .select2-selection__choice__remove:hover {
+    color: red !important;                 /* 🔴 hover effect */
+}
+
+
+/* --- Table header text color override --- */
+#result_list thead th .text a,
+#result_list thead th .text span {
+    color: #4da6ff !important;  /* light blue */
+    font-weight: 600 !important;
+    text-decoration: none !important; /* prevent underline */
+}
 
 /* Remove the right-hand sidebar completely */
 .col-12.col-lg-3 {
@@ -37,14 +78,14 @@
 
 /* Flatten object-tools so History looks like Save/Delete */
 #jazzy-actions-top .object-tools {
-    display: contents !important;  /* remove <ul>/<li> layout effect */
+    display: contents !important;
     margin: 0 !important;
     padding: 0 !important;
     list-style: none !important;
 }
 
 #jazzy-actions-top .object-tools li {
-    display: contents !important;  /* prevent block alignment */
+    display: contents !important;
     margin: 0 !important;
     padding: 0 !important;
 }
@@ -57,3 +98,14 @@
     vertical-align: middle !important;
 }
 
+/* Force the volumes tab content to take full width */
+.form-row.field-volumes_tab_content > div {
+    display: block !important;
+    width: 100% !important;
+}
+
+.form-row.field-volumes_tab_content .readonly {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+}

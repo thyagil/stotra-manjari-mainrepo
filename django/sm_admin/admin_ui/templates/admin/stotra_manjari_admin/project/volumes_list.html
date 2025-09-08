@@ -1,0 +1,25 @@
+{% load admin_urls %}
+<table class="table table-striped">
+    <thead>
+    <tr><th>Code</th><th>Name</th><th>Thumbnail</th></tr>
+    </thead>
+    <tbody>
+    {% for v in volumes %}
+    <tr>
+        <td>
+            <a href="{% url 'admin:stotra_manjari_admin_project_change' project.id %}?tab=volumes&volume_id={{ v.id }}#volumes-tab">
+                {{ v.code }}
+            </a>
+        </td>
+        <td>{{ v.name }}</td>
+        <td>
+            {% if v.thumbnail %}
+            <img src="{{ v.thumbnail.url }}" style="height:60px;">
+            {% endif %}
+        </td>
+    </tr>
+    {% empty %}
+    <tr><td colspan="3"><em>No volumes yet.</em></td></tr>
+    {% endfor %}
+    </tbody>
+</table>

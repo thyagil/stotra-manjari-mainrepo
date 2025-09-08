@@ -1,0 +1,6 @@
+<h3>Edit Chapter: {{ chapter.title }} ({{ chapter.code }})</h3>
+<p><strong>Subtitle:</strong> {{ chapter.subtitle }}</p>
+<p><strong>Index:</strong> {{ chapter.index }}</p>
+
+<a href="{% url 'admin:stotra_manjari_admin_project_change' project.id %}?volume_id={{ chapter.volume.id }}#volumes-tab"
+   class="btn btn-secondary mt-3">← Back to Volume</a>

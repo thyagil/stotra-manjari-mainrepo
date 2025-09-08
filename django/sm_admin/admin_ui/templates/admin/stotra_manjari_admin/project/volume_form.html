@@ -1,0 +1,20 @@
+<ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+        <a class="nav-link active" data-toggle="tab" href="#volume-general" role="tab">General</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" data-toggle="tab" href="#volume-chapters" role="tab">Chapters</a>
+    </li>
+</ul>
+
+<div class="tab-content mt-3">
+    <div class="tab-pane fade show active" id="volume-general" role="tabpanel">
+        {% include "admin/stotra_manjari_admin/project/volume_general_form.html" %}
+    </div>
+    <div class="tab-pane fade" id="volume-chapters" role="tabpanel">
+        {% include "admin/stotra_manjari_admin/project/volume_chapters_formset.html" %}
+    </div>
+</div>
+
+<a href="{% url 'admin:stotra_manjari_admin_project_change' project.id %}#volumes-tab"
+   class="btn btn-secondary mt-3">← Back to Volumes list</a>

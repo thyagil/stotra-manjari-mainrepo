@@ -22,7 +22,7 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 # Optional: keep your app-specific static files here
 STATICFILES_DIRS = [
-    BASE_DIR / "static",
+    BASE_DIR / "static", # makes admin_ui/static available
     ]
 
 MEDIA_URL = "/media/"
@@ -38,6 +38,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+X_FRAME_OPTIONS = "SAMEORIGIN"
 
 # Application definition
 
@@ -51,9 +52,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
 
-    "provisioning.apps.ProvisioningConfig",
-    "orchestration.apps.OrchestrationConfig",
-    "deployment.apps.DeploymentConfig",
+    "stotra_manjari_admin.apps.StotraManjariAdminConfig",
 ]
 
 MIDDLEWARE = [
@@ -116,14 +115,14 @@ JAZZMIN_SETTINGS = {
     # Icons (FontAwesome or Jazzmin icons)
     "icons": {
         # Provisioning models
-        "provisioning.Project": "fas fa-book",
-        "provisioning.Volume": "fas fa-layer-group",
-        "provisioning.Chapter": "fas fa-scroll",
-        "provisioning.Artist": "fas fa-user",
-        "provisioning.Category": "fas fa-tags",
-        "provisioning.Language": "fas fa-language",
-        "provisioning.ProjectImage": "fas fa-image",
-        "provisioning.Contributor": "fas fa-users",
+        "stotra_manjari_admin.Project": "fas fa-book",
+        "stotra_manjari_admin.Volume": "fas fa-layer-group",
+        "stotra_manjari_admin.Chapter": "fas fa-scroll",
+        "stotra_manjari_admin.Artist": "fas fa-user",
+        "stotra_manjari_admin.Category": "fas fa-tags",
+        "stotra_manjari_admin.Language": "fas fa-language",
+        "stotra_manjari_admin.ProjectImage": "fas fa-image",
+        "provisstotra_manjari_adminioning.Contributor": "fas fa-users",
 
         # Orchestration models
         "orchestration.AudioExtraction": "fas fa-music",
@@ -142,13 +141,13 @@ JAZZMIN_SETTINGS = {
     "hide_models": [],
 
     "order_with_respect_to": [
-        "provisioning",
-        "provisioning.Artist",
-        "provisioning.Category",
-        "provisioning.Language",
-        "provisioning.Project",
-        "provisioning.Volume",
-        "provisioning.Chapter",
+        "stotra_manjari_admin",
+        "stotra_manjari_admin.Artist",
+        "stotra_manjari_admin.Category",
+        "stotra_manjari_admin.Language",
+        "stotra_manjari_admin.Project",
+        "stotra_manjari_admin.Volume",
+        "stotra_manjari_admin.Chapter",
         "orchestration",
         "deployment",
     ],
@@ -165,7 +164,7 @@ JAZZMIN_UI_TWEAKS = {
     "footer_small_text": False,
     "body_small_text": False,
     "brand_small_text": False,
-    "brand_colour": "navbar-primary",
+    "brand_colour": "navbar-danger",
     "accent": "accent-warning",
     "navbar": "navbar-primary navbar-dark",
     "no_navbar_border": False,

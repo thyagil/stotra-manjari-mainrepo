@@ -1,0 +1,40 @@
+<div class="js-inline-admin-formset inline-group" id="chapters-group" data-inline-type="tabular">
+    <fieldset class="module">
+        <table class="table table-hover text-nowrap">
+            <thead>
+            <tr>
+                <th class="column-index">Index</th>
+                <th class="column-title">Title</th>
+                <th class="column-subtitle">Subtitle</th>
+                <th class="column-state">State</th>
+                <th class="column-code">Code</th>
+                <th>Delete?</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for form in chapters_formset.forms %}
+            <tr class="form-row dynamic-chapters">
+                {{ form.id }} {{ form.volume }}
+                <td class="field-index">{{ form.index }}</td>
+                <td class="field-title">{{ form.title }}</td>
+                <td class="field-subtitle">{{ form.subtitle }}</td>
+                <td class="field-state">{{ form.state }}</td>
+                <td class="field-code">{{ form.code }}</td>
+                <td class="delete">{{ form.DELETE }}</td>
+            </tr>
+            {% endfor %}
+
+            <!-- Empty form template -->
+            <tr class="form-row empty-form" id="chapters-empty">
+                {{ chapters_formset.empty_form.id }} {{ chapters_formset.empty_form.volume }}
+                <td class="field-index">{{ chapters_formset.empty_form.index }}</td>
+                <td class="field-title">{{ chapters_formset.empty_form.title }}</td>
+                <td class="field-subtitle">{{ chapters_formset.empty_form.subtitle }}</td>
+                <td class="field-state">{{ chapters_formset.empty_form.state }}</td>
+                <td class="field-code">{{ chapters_formset.empty_form.code }}</td>
+                <td class="delete">{{ chapters_formset.empty_form.DELETE }}</td>
+            </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</div>

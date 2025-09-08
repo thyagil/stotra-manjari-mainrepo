@@ -1,0 +1,39 @@
+{% extends "admin/base_site.html" %}
+{% load static i18n %}
+
+{% block content %}
+<div id="content-main" class="col-12">
+    <h2>Deployment for {{ project.project_name }}</h2>
+
+    <div class="row" style="margin-top:20px;">
+        <!-- Pre-Staging Deployment -->
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card">
+                <div class="card-header bg-secondary text-white">Pre-Staging</div>
+                <div class="card-body">
+                    <p>Deploys audio, durations, content, meanings, images, and metadata to the staging environment.</p>
+                    <a href="#" class="btn btn-outline-secondary">▶ Deploy to Pre-Staging</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Production Deployment -->
+        <div class="col-12 col-md-6 mb-3">
+            <div class="card">
+                <div class="card-header bg-dark text-white">Production</div>
+                <div class="card-body">
+                    <p>Deploys all finalized assets to Google Cloud Storage (production).</p>
+                    <a href="#" class="btn btn-outline-dark">▶ Deploy to Production</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back navigation -->
+    <div class="submit-row" style="text-align:right; margin-top:20px;">
+        <a href="{% url 'admin:provisioning_project_change' project.id %}" class="btn btn-outline-secondary">
+            « Back to Project
+        </a>
+    </div>
+</div>
+{% endblock %}
